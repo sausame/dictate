@@ -258,7 +258,7 @@ def run(name, configFile):
 
             prGreen('Please input the sequence number (default is {}):'.format(num));
 
-            sequenceNum = stdinReadline(10)
+            sequenceNum = stdinReadline(10, isPrompt=False)
 
             try:
                 if len(sequenceNum) > 0:
@@ -273,7 +273,7 @@ def run(name, configFile):
 
         prGreen('Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 1):')
 
-        sequenceNum = stdinReadline(10)
+        sequenceNum = stdinReadline(10, isPrompt=False)
 
         if '2' == sequenceNum:
             test(configFile, ttsConfigFile, contentFile)

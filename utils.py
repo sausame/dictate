@@ -58,7 +58,7 @@ def countdown(t):
         time.sleep(1) 
         t -= 1
 
-def stdinReadline(timeout = 0, isStrip=True):
+def stdinReadline(timeout=0, isStrip=True, isPrompt=True):
 
     content = ''
 
@@ -70,9 +70,10 @@ def stdinReadline(timeout = 0, isStrip=True):
 
         while timeout: 
 
-            mins, secs = divmod(timeout, 60) 
-            timer = '{:02d}:{:02d}'.format(mins, secs) 
-            print('\033[91m{}\033[00m'.format(timer), end='\r') 
+            if isPrompt:
+                mins, secs = divmod(timeout, 60) 
+                timer = '{:02d}:{:02d}'.format(mins, secs) 
+                print('\033[91m{}\033[00m'.format(timer), end='\r') 
 
             inputFlag, _, _ = select.select([sys.stdin], [], [], 1)
 
