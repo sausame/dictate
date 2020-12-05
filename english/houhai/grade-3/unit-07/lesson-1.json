@@ -1,0 +1,167 @@
+{
+	"contents-list":[
+		{
+			"word":"beautiful",
+			"chinese":"漂亮的",
+			"explanation":"giving pleasure to the mind or the senses",
+			"samples": [
+				"What a beautiful garden it is."
+			]
+		}, {
+			"word":"park",
+			"chinese":"公园",
+			"explanation":"a piece of public land in or near a city that is kept free of houses and other buildings and can be used for pleasure and exercise.",
+			"samples": [
+				"We went for a walk in the park."
+			]
+		}, {
+			"word":"picnic",
+			"chinese":"野餐",
+			"explanation":"a meal that is eaten outdoors especially during a trip away from home.",
+			"samples": [
+				"We decided to have a picnic on the beach."
+			]
+		}, {
+			"word":"enter",
+			"chinese":"参加",
+			"explanation":"to officially say that you will be in a race, competition, etc.",
+			"samples": [
+				"She won the race last year, but this year she decided not to enter."
+			]
+		}, {
+			"word":"race",
+			"chinese":"比赛",
+			"explanation":"a competition between people, animals, vehicles, etc., to see which one is fastest.",
+			"samples": [
+				"A bicycle race will be held tomorrow."
+			]
+		}, {
+			"word":"trophy",
+			"chinese":"奖杯",
+			"explanation":"an object, such as a large cup or sculpture, that is given as a prize for winning a competition.",
+			"samples": [
+				"He raised up the golf trophy."
+			]
+		}, {
+			"word":"push",
+			"chinese":"推",
+			"explanation":"to use force to move someone or something forward or away from you.",
+			"samples": [
+				"Do you want to push the shopping cart."
+			]
+		}, {
+			"word":"win",
+			"chinese":"赢",
+			"explanation":"to achieve victory in a fight, contest, game,etc.",
+			"samples": [
+				"They won the war."
+			]
+		}, {
+			"word":"in front",
+			"chinese":"领先",
+			"explanation":"in the leading position in a race or competition.",
+			"samples": [
+				"She's still in front, but the other runners are catching up to her."
+			]
+		}, {
+			"word":"behind",
+			"chinese":"落后",
+			"explanation":"losing to someone or something in a race or competition.",
+			"samples": [
+				"\"How far behind the other runners was she?\"\"At least 50 yards behind them.\""
+			]
+		}, {
+			"word":"chase",
+			"chinese":"追赶",
+			"explanation":"to follow and try to catch.",
+			"samples": [
+				"The cops chased the thief."
+			]
+		}, {
+			"word":"fall off",
+			"chinese":"掉落",
+			"explanation":"to stop being attached to something.",
+			"samples": [
+				"The handle was so loose that is almost fell off."
+			]
+		}, {
+			"word":"fast",
+			"chinese":"快速的",
+			"explanation":"moving or able to move quickly.",
+			"samples": [
+				"She's a very fast runner."
+			]
+		}, {
+			"word":"cross",
+			"chinese":"穿过",
+			"explanation":"to go from one side of something to the other.",
+			"samples": [
+				"The dog crossed the street."
+			]
+		}, {
+			"word":"finishing line",
+			"chinese":"终点线",
+			"explanation":"a line that marks the end of a race.",
+			"samples": [
+				"The exhaustion was replaced by relief as they crossed the finishing line."
+			]
+		}, {
+			"word":"drop",
+			"chinese":"掉落",
+			"explanation":"to let something fall",
+			"samples": [
+				"She dropped the apple core into the trash can."
+			]
+		}, {
+			"word":"leave",
+			"chinese":"离开",
+			"explanation":"to go away from a person.",
+			"samples": [
+				"She left her friends and went home."
+			]
+		}, {
+			"word":"cycling",
+			"chinese":"骑车",
+			"explanation":"the sport or activity of riding a bicycle.",
+			"samples": [
+				"He does a lot of cycling."
+			]
+		}, {
+			"word":"running",
+			"chinese":"跑步",
+			"explanation":"the activity or sport of running.",
+			"samples": [
+				"They go running every evening."
+			]
+		}, {
+			"word":"sailing",
+			"chinese":"帆船运动",
+			"explanation":"the sport or activity of traveling on water in a sailboat.",
+			"samples": [
+				"She likes sailing."
+			]
+		}, {
+			"word":"diving",
+			"chinese":"潜水",
+			"explanation":"a sport or activity in which people swim underwater while using special equipment to breathe.",
+			"samples": [
+				"He likes deep-sea diving."
+			]
+		}, {
+			"word":"climbing",
+			"chinese":"爬山",
+			"explanation":"the sport of climbing mountains or rocks.",
+			"samples": [
+				"He goes climbing nearly every weekend."
+			]
+		}, {
+			"word":"riding",
+			"chinese":"骑马",
+			"explanation":"the sport or activity of riding a horse, bicycle, motorcycle, etc.",
+			"samples": [
+				"We'll go riding after the rain stops."
+			]
+		}
+	]
+}
+

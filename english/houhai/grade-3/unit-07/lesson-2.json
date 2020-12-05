@@ -1,0 +1,139 @@
+{
+	"contents-list":[
+		{
+			"word":"different",
+			"chinese":"不同的",
+			"explanation":"not of the same kind",
+			"samples": [
+				"The two brothers could not have been more different."
+			]
+		}, {
+			"word":"kick",
+			"chinese":"踢",
+			"explanation":"to hit someone or something with your foot.",
+			"samples": [
+				"He kicked the ball into the goal."
+			]
+		}, {
+			"word":"strong",
+			"chinese":"强壮的",
+			"explanation":"having great physical power and ability.",
+			"samples": [
+				"He's as strong as an ox."
+			]
+		}, {
+			"word":"student",
+			"chinese":"学生",
+			"explanation":"a person who attends a school, college, or university.",
+			"samples": [
+				"She is a student at our local elementary school."
+			]
+		}, {
+			"word":"practice",
+			"chinese":"练习",
+			"explanation":"to do something again and again in oeder to become better at it.",
+			"samples":
+			    "To be a good musician, you have to practice a lot."
+		
+		}, {
+			"word":"hour",
+			"chinese":"小时",
+			"explanation":"one of the 24 equal parts of a day.",
+			"samples": [
+				"The job pays ten dollars an hour."
+			]
+		}, {
+			"word":"train",
+			"chinese":"训练",
+			"explanation":"to try to make yourself stronger, faster or better at doing something before competing in an event or competition.",
+			"samples": [
+				"The team trains five hours a day."
+			]
+		}, {
+			"word":"hard",
+			"chinese":"努力",
+			"explanation":"with a lot of effort or energy.",
+			"samples": [
+				"You have to work hard in order to succeed."
+			]
+		}, {
+			"word":"champion",
+			"chinese":"冠军",
+			"explanation":"someone or something, such as a team or an animal that has won a contest or competition especially in sports.",
+			"samples": [
+				"Our team will play the defending champions next week."
+			]
+		}, {
+			"word":"fight",
+			"chinese":"搏斗",
+			"explanation":"a boxing match",
+			"samples": [
+				"It is a fight for the heavyweight title."
+			]
+		}, {
+			"word":"calm",
+			"chinese":"平静的",
+			"explanation":"not angry, upset, excited, etc.",
+			"samples": [
+				"The teacher asked us to remain calm after the fire alarm went off."
+			]
+		}, {
+			"word":"excited",
+			"chinese":"兴奋的",
+			"explanation":"very enthusiastic and eager about something.",
+			"samples": [
+				"They were excited about the trip."
+			]
+		}, {
+			"word":"match",
+			"chinese":"比赛",
+			"explanation":"a contest between two or more players or teams",
+			"samples": [
+				"I watched a boring soccer match last week."
+			]
+		}, {
+			"word":"give up",
+			"chinese":"放弃",
+			"explanation":"to stop an activity or effort.",
+			"samples": [
+				"The is too hard; I give up!"
+			]
+		}, {
+			"word":"gymnast",
+			"chinese":"体操运动员",
+			"explanation":"a person who performs various physical exercises on a mat or on special equipment as part of an athletic competition.",
+			"samples": [
+				"She was gymnast for seven years."
+			]
+		}, {
+			"word":"boxer",
+			"chinese":"拳击运动员",
+			"explanation":"someone who participates in the sport of boxing.",
+			"samples": [
+				"He was a heavyweight boxer."
+			]
+		}, {
+			"word":"footballer",
+			"chinese":"足球运动员",
+			"explanation":"a person who plays soccer.",
+			"samples": [
+				"He becomes the most famous footballer in the world."
+			]
+		}, {
+			"word":"tennis player",
+			"chinese":"网球运动员",
+			"explanation":"an athlete who plays tennis.",
+			"samples": [
+				"He was a top ranked tennis player in high school."
+			]
+		}, {
+			"word":"cyclist",
+			"chinese":"自行车运动员",
+			"explanation":"some who rides a bicycle.",
+			"samples": [
+				"A group of cyclists are waving towards us."
+			]
+		}
+	]
+}
+

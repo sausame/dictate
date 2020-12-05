@@ -1,0 +1,118 @@
+{
+	"contents-list":[
+		{
+			"word":"concert",
+			"chinese":"音乐会",
+			"explanation":"a public performance of music.",
+			"samples": [
+				"A rock concert will be held next month."
+			]
+		}, {
+			"word":"studio",
+			"chinese":"摄影棚",
+			"explanation":"a place where movies are made.",
+			"samples": [
+				"I rented a studio in the city."
+			]
+		}, {
+			"word":"director",
+			"chinese":"导演",
+			"explanation":"a person who directs a play, movie, etc.",
+			"samples": [
+				"He is a protential movie director."
+			]
+		}, {
+			"word":"shoot, shot",
+			"chinese":"摄制",
+			"explanation":"to film or photograph.",
+			"samples": [
+				"The movie was shot in Australia."
+			]
+		}, {
+			"word":"role",
+			"chinese":"角色",
+			"explanation":"the character played by an actor.",
+			"samples": [
+				"I had a major role in the city."
+			]
+		}, {
+			"word":"dressing room",
+			"chinese":"化妆间",
+			"explanation":"a room where performers, actors, etc., can change their clothes.",
+			"samples": [
+				"He waited in his dressing room util it was time for him to appear on stage."
+			]
+		}, {
+			"word":"lines",
+			"chinese":"台词",
+			"explanation":"the words that an actor speaks in a play, movie, etc.",
+			"samples": [
+				"All of the actors should have their lines memorized by next Friday."
+			]
+		}, {
+			"word":"talent",
+			"chinese":"天赋",
+			"explanation":"a special ability that allows someone to do something well.",
+			"samples": [
+				"I have no musical talent."
+			]
+		}, {
+			"word":"pretty",
+			"chinese":"漂亮的",
+			"explanation":"attractive to look at usually in a simple or delicate way.",
+			"samples": [
+				"She has a pretty face."
+			]
+		}, {
+			"word":"set",
+			"chinese":"布景",
+			"explanation":"a place where a movie or television program is filmed or a play is performed.",
+			"samples": [
+				"Quiet on the set!"
+			]
+		}, {
+			"word":"autograph",
+			"chinese":"亲笔签名",
+			"explanation":"the signature of a famous person.",
+			"samples": [
+				"We asked her for her autograph."
+			]
+		}, {
+			"word":"act",
+			"chinese":"表演",
+			"explanation":"to perform the words and actions of a character in a play, movie, etc.",
+			"samples": [
+				"She can sing, dance, and act."
+			]
+		}, {
+			"word":"pop group",
+			"chinese":"流行乐队",
+			"explanation":"a small group of people who play, and, or sing pop music together.",
+			"samples": [
+				"The Beatles will always be the world's most famous pop group."
+			]
+		}, {
+			"word":"interview",
+			"chinese":"采访",
+			"explanation":"a meeting between a reporter and another person in order to get information for a news story.",
+			"samples": [
+				"The journalist is doing interviews with political leaders."
+			]
+		}, {
+			"word":"audience",
+			"chinese":"观众",
+			"explanation":"a group of people who gather together to listen to something, such as a concert, or watch something, such as a movie or play.",
+			"samples": [
+				"The audience clapped and cheered."
+			]
+		}, {
+			"word":"stage",
+			"chinese":"舞台",
+			"explanation":"a raised platform in a theater, auditorium, etc., where the performers stand.",
+			"samples": [
+				"The actors walked out onto the stage."
+			]
+		}
+	]
+}
+

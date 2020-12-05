@@ -1,0 +1,174 @@
+{
+	"contents-list":[
+		{
+			"word":"inventor",
+			"chinese":"发明家",
+			"explanation":"someone who has invented something or whose job is to invent things.",
+			"samples": [
+				"Thomas Edison was a great inventor."
+			]
+		}, {
+			"word":"hot air balloon",
+			"chinese":"热气球",
+			"explanation":"a large balloon that is filled with heated air and that floats in the sky with a basket underneath for people to ride in.",
+			"samples": [
+				"A trip in a hot air balloon is amazing."
+			]
+		}, {
+			"word":"smoke",
+			"chinese":"烟雾",
+			"explanation":"the cloud of black, gray, or white gases and dust that is produced by burning something.",
+			"samples": [
+				"We could see black smoke from the house fire."
+			]
+		}, {
+			"word":"fill",
+			"chinese":"充满",
+			"explanation":"to make something full",
+			"samples": [
+				"May I fill your glass for you?"
+			]
+		}, {
+			"word":"silk",
+			"chinese":"丝绸",
+			"explanation":"a smooth, soft, and shiny cloth that is made from thread produced by silkworms.",
+			"samples": [
+				"I want to give my mom a silk scarf."
+			]
+		}, {
+			"word":"try",
+			"chinese":"试验",
+			"explanation":"to do or use something in order to see if it works or will be successful.",
+			"samples": [
+				"He tried a few things to remove the stain, but nothing worked."
+			]
+		}, {
+			"word":"invention",
+			"chinese":"发明",
+			"explanation":"something invented.",
+			"samples": [
+				"The light bulb was one of the most important inventions of the 19th century."
+			]
+		}, {
+			"word":"passenger",
+			"chinese":"乘客",
+			"explanation":"a person who is traveling from one place to another in a car, bus, train, ship, airplane, etc., and who is not driving or working on it.",
+			"samples": [
+				"There were two passengers in the car in addition to the driver."
+			]
+		}, {
+			"word":"flight",
+			"chinese":"飞行",
+			"explanation":"a journey on an airplane.",
+			"samples": [
+				"That will be an overnight flight."
+			]
+		}, {
+			"word":"minute",
+			"chinese":"分钟",
+			"explanation":"a unit of time equal to 60 seconds.",
+			"samples": [
+				"Bake the cake for 25-30 minutes."
+			]
+		}, {
+			"word":"air",
+			"chinese":"空中",
+			"explanation":"the space or sky that is filled with air.",
+			"samples": [
+				"A bird is flying in the air."
+			]
+		}, {
+			"word":"land",
+			"chinese":"着陆",
+			"explanation":"to return to the ground or another surface after a flight.",
+			"samples": [
+				"The plane landed on the runway."
+			]
+		}, {
+			"word":"field",
+			"chinese":"田野",
+			"explanation":"an open area of land without trees or buildings",
+			"samples": [
+				"The green fields are so beautiful."
+			]
+		}, {
+			"word":"farmer",
+			"chinese":"农夫",
+			"explanation":"a person who runs a farm.",
+			"samples": [
+				"My uncle has been a farmer for 60 years."
+			]
+		}, {
+			"word":"ride",
+			"chinese":"行程",
+			"explanation":"a usually short journey in or on a vehicle.",
+			"samples": [
+				"He took me for a ride on his motorcycle."
+			]
+		}, {
+			"word":"bottle",
+			"chinese":"瓶子",
+			"explanation":"a glass or plastic container that has a narrow neck and usually has no handle.",
+			"samples": [
+				"Shall I open another bottle of wine?"
+			]
+		}, {
+			"word":"bus",
+			"chinese":"公共汽车",
+			"explanation":"a large vehicle that is used for carrying passengers especially along a particular route at particular times.",
+			"samples": [
+				"I usually go to work by bus."
+			]
+		}, {
+			"word":"plane",
+			"chinese":"飞机",
+			"explanation":"a vehicle that has wings and an engine and can carry people or things in the air.",
+			"samples": [
+				"We will be traveling to Rome by plane."
+			]
+		}, {
+			"word":"ship",
+			"chinese":"船",
+			"explanation":"a large boat used for traveling long distances over the sea.",
+			"samples": [
+				"A sailing ship disappeared."
+			]
+		}, {
+			"word":"port",
+			"chinese":"港口",
+			"explanation":"a town or city where ships stop to load and unload cargo.",
+			"samples": [
+				"Boston is a major U.S. port."
+			]
+		}, {
+			"word":"airport",
+			"chinese":"飞机场",
+			"explanation":"a place where aircraft land and take off and where there are buildings for passengers to wait in and for aircraft to be sheltered.",
+			"samples": [
+				"We arrived at the airport just in time to catch the plane."
+			]
+		}, {
+			"word":"stop",
+			"chinese":"车站",
+			"explanation":"the place where a bus or train regularly stops on a route to let passengers get on and off.",
+			"samples": [
+				"I'm getting off at the next stop."
+			]
+		}, {
+			"word":"platform",
+			"chinese":"站台",
+			"explanation":"a flat area next to railroad tracks where people wait for a train or subway.",
+			"samples": [
+				"Our train is boarding on platform 6."
+			]
+		}, {
+			"word":"station",
+			"chinese":"车站",
+			"explanation":"a place where buses, trains, etc., regularly stop so that passengers can get on and off.",
+			"samples": [
+				"They drove him to the bus station."
+			]
+		}
+	]
+}
+

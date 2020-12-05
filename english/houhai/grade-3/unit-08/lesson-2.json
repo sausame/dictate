@@ -1,0 +1,132 @@
+{
+	"contents-list":[
+		{
+			"word":"cool",
+			"chinese":"凉的，吸引人的",
+			"explanation":"very fashionable, stylish, or appealing in a way that is generally approved of especially by young people",
+			"samples": [
+				"You look cool in those jeans."
+			]
+		}, {
+			"word":"job",
+			"chinese":"工作",
+			"explanation":"a duty, task, or function that someone or something has",
+			"samples": [
+				"When I asked her to clean up the mess, she said, \"That's not my job.\""
+			]
+		}, {
+			"word":"sleep",
+			"chinese":"睡觉",
+			"explanation":"to rest your mind and body by closing your eyes and becoming unconscious.",
+			"samples": [
+				"Did you sleep well last night?"
+			]
+		}, {
+			"word":"check",
+			"chinese":"检查",
+			"explanation":"to look at something carefully to find mistakes, problems, etc., or to make sure there is nothing wrong with it.",
+			"samples": [
+				"Make sure to check your spelling."
+			]
+		}, {
+			"word":"medicine",
+			"chinese":"药",
+			"explanation":"a substance that is used in treating disease or relieving pain and that is usually in the form of a pill or a liquid.",
+			"samples": [
+				"He forgot to take his medicine."
+			]
+		}, {
+			"word":"kill",
+			"chinese":"杀死",
+			"explanation":"to cause the death of a person, an animal or a plant.",
+			"samples": [
+				"The poison kills rats"
+			]
+		}, {
+			"word":"grass",
+			"chinese":"草",
+			"explanation":"plants that have narrow green leaves, that are eaten by cows, sheep, horses, etc., and that are commonly grown on lawns and in gardens",
+			"samples": [
+				"It's time to cut the grass."
+			]
+		}, {
+			"word":"area",
+			"chinese":"地区",
+			"explanation":"a part or section within a larger place.",
+			"samples": [
+				"The area is surrounding the lake."
+			]
+		}, {
+			"word":"hard",
+			"chinese":"困难",
+			"explanation":"difficult to experience",
+			"samples": [
+				"He has learned a hard lesson."
+			]
+		}, {
+			"word":"sick",
+			"chinese":"生病的",
+			"explanation":"affected with disease or illness",
+			"samples": [
+				"He is at home sick in bed."
+			]
+		}, {
+			"word":"hairdresser",
+			"chinese":"理发师",
+			"explanation":"a person who cuts and shapes hair.",
+			"samples": [
+				"I asked my hairdresser to cut my hair."
+			]
+		}, {
+			"word":"doctor",
+			"chinese":"医生",
+			"explanation":"a person who is skilled in the science of medicine.",
+			"samples": [
+				"I think you should see a doctor."
+			]
+		}, {
+			"word":"taxi driver",
+			"chinese":"出租车司机",
+			"explanation":"a person whose job is to drive a taxi.",
+			"samples": [
+				"We told the taxi driver to take us to the library."
+			]
+		}, {
+			"word":"pilot",
+			"chinese":"飞行员",
+			"explanation":"a person who flies an airplane, helicopter, etc.",
+			"samples": [
+				"Jerry wants to be an airline pilot."
+			]
+		}, {
+			"word":"actor",
+			"chinese":"演员",
+			"explanation":"a person who acts in a play, movie, etc.",
+			"samples": [
+				"His wife is also an actor."
+			]
+		}, {
+			"word":"dentist",
+			"chinese":"牙医",
+			"explanation":"a person whose job is to care for people's teeth.",
+			"samples": [
+				"I have an appointment with my dentist today."
+			]
+		}, {
+			"word":"shop assistant",
+			"chinese":"店员",
+			"explanation":"a person whose job is to help the customers in a store.",
+			"samples": [
+				"The shop assistant lauphed with him and gave him his money back."
+			]
+		}, {
+			"word":"firefighter",
+			"chinese":"消防员",
+			"explanation":"a member of a group that works to put out fires.",
+			"samples": [
+				"It took firefighters over two hours to put out the fire."
+			]
+		}
+	]
+}
+

@@ -1,0 +1,104 @@
+{
+	"contents-list":[
+		{
+			"word":"star",
+			"chinese":"明星",
+			"explanation":"the most important and well-known performer in a movie, play, etc.",
+			"samples": [
+				"She's the star of the show."
+			]
+		}, {
+			"word":"normal",
+			"chinese":"普通的",
+			"explanation":"usual or ordinary.",
+			"samples": [
+				"He had a normal childhood."
+			]
+		}, {
+			"word":"then",
+			"chinese":"在那时",
+			"explanation":"at that time",
+			"samples": [
+				"It was then believed that the Earth was flat."
+			]
+		}, {
+			"word":"audition",
+			"chinese":"视镜",
+			"explanation":"a short performance to show the talents of someone, such as an actor or a musician, who is being considered for a role in a play, a position in an orchestra, etc.",
+			"samples": [
+				"He went to an audition for a new TV show."
+			]
+		}, {
+			"word":"feel",
+			"chinese":"感觉",
+			"explanation":"used to describe or ask about someone's physical or mental state.",
+			"samples": [
+				"I feel dizzy."
+			]
+		}, {
+			"word":"nervous",
+			"chinese":"紧张的",
+			"explanation":"having or showing feelings of being worried and afraid about what might happen.",
+			"samples": [
+				"She feels nervous about her job interview."
+			]
+		}, {
+			"word":"strange",
+			"chinese":"奇怪的",
+			"explanation":"different from what is usual, normal, or expected.",
+			"samples": [
+				"Does his behavior seem strange to you?"
+			]
+		}, {
+			"word":"relax",
+			"chinese":"放松",
+			"explanation":"to become or to cause something to become less tense, tight, or stiff.",
+			"samples": [
+				"The muscles in my neck and shoulders should relax after a nice hot shower."
+			]
+		}, {
+			"word":"lucky",
+			"chinese":"幸运的",
+			"explanation":"having good luck.",
+			"samples": [
+				"I feel lucky to be alive."
+			]
+		}, {
+			"word":"princess",
+			"chinese":"公主",
+			"explanation":"a female member of a royal family.",
+			"samples": [
+				"The princess in the fairy story had long hair."
+			]
+		}, {
+			"word":"marry",
+			"chinese":"结婚",
+			"explanation":"to become the husband or wife of someone.",
+			"samples": [
+				"I asked her to marry me."
+			]
+		}, {
+			"word":"handsome",
+			"chinese":"英俊的",
+			"explanation":"of men, good-looking",
+			"samples": [
+				"Jack has a handsome face."
+			]
+		}, {
+			"word":"prince",
+			"chinese":"王子",
+			"explanation":"a male member of a royal family.",
+			"samples": [
+				"He looks like the Prince of Monaco."
+			]
+		}, {
+			"word":"joke",
+			"chinese":"玩笑",
+			"explanation":"someting said or done to cause laughter.",
+			"samples": [
+				"Is this your idea of a joke?"
+			]
+		}
+	]
+}
+

@@ -1,0 +1,146 @@
+{
+	"contents-list":[
+		{
+			"word":"same",
+			"chinese":"同样的",
+			"explanation":"not different",
+			"samples": [
+				"He has lived in the same city all his life."
+			]
+		}, {
+			"word":"place",
+			"chinese":"地方",
+			"explanation":"a specific area of region of the world",
+			"samples": [
+				"I've heard it's a good place to raise children."
+			]
+		}, {
+			"word":"path",
+			"chinese":"道路",
+			"explanation":"a track that is made by people or animals walking over the ground",
+			"samples": [
+				"The path led down the hill."
+			]
+		}, {
+			"word":"cave",
+			"chinese":"山洞",
+			"explanation":"a large hole that was formed by natural processes in the side of a cliff or hill or under the ground.",
+			"samples": [
+				"She took me by the hand and led me into the cave."
+			]
+		}, {
+			"word":"horrible",
+			"chinese":"可怕的",
+			"explanation":"causing horror",
+			"samples": [
+				"A horrible accident happened in the street."
+			]
+		}, {
+			"word":"bat",
+			"chinese":"蝙蝠",
+			"explanation":"an animal that has wings and a furry body like a mouse",
+			"samples": [
+				"The tunnel is a place only a bat could love."
+			]
+		}, {
+			"word":"shark",
+			"chinese":"鲨鱼",
+			"explanation":"a large and often dangerous sea fish with very sharp teeth",
+			"samples": [
+				"Sharks were circling around our boat."
+			]
+		}, {
+			"word":"butterfly",
+			"chinese":"蝴蝶",
+			"explanation":"a kind of insect that has a long thin body and brightly colored wings and that flies mostly during the day",
+			"samples": [
+				"I shut my eyes and tried to see the butterfly."
+			]
+		}, {
+			"word":"bird",
+			"chinese":"鸟",
+			"explanation":"an animal that has wings and is covered with feathers",
+			"samples": [
+				"A large bird flew overhead."
+			]
+		}, {
+			"word":"dolphin",
+			"chinese":"海豚",
+			"explanation":"a small usually gray whale that has a pointed nose.",
+			"samples": [
+				"Dolphins move quickly in the water."
+			]
+		}, {
+			"word":"eagle",
+			"chinese":"鹰",
+			"explanation":"a large bird that has very good eyesight and that kills other birds and animals for food",
+			"samples": [
+				"Eagles use their powerful eyes to find food."
+			]
+		}, {
+			"word":"leopard",
+			"chinese":"豹子",
+			"explanation":"A large brownish-yellow cat with black spots that lives in Asia and Africa",
+			"samples": [
+				"The zoo has three leopards."
+			]
+		}, {
+			"word":"swan",
+			"chinese":"天鹅",
+			"explanation":"a large usually white bird that lives on or near water and that has a very long and graceful neck",
+			"samples": [
+				"We took some bread to feed the swans."
+			]
+		}, {
+			"word":"whale",
+			"chinese":"鲸鱼",
+			"explanation":"an often very large animal that lives in the ocean and that is a mammal rather than a fish",
+			"samples": [
+				"Blue whales are the largest and loudest animals in the world."
+			]
+		}, {
+			"word":"worm",
+			"chinese":"蠕虫",
+			"explanation":"a long, thin animal that has a soft body with no legs or bones and that often lives in the ground",
+			"samples": [
+				"I often see worms in the garden."
+			]
+		}, {
+			"word":"torch",
+			"chinese":"手电筒",
+			"explanation":"a small electric light that can be carried in your hand and that runs on batteries",
+			"samples": [
+				"She flashed the torch into the dark room."
+			]
+		}, {
+			"word":"binoculars",
+			"chinese":"望远镜",
+			"explanation":"a device that you hold up to your eyes and look through to see things that are far away",
+			"samples": [
+				"The bird in that tree can be seen through a pair of binoculars."
+			]
+		}, {
+			"word":"insect",
+			"chinese":"昆虫",
+			"explanation":"a small animal that has six legs and a body formed of three parts and that may have wings",
+			"samples": [
+				"The picture book introduces flies, bees, and other insects."
+			]
+		}, {
+			"word":"short",
+			"chinese":"短的",
+			"explanation":"not tall",
+			"samples": [
+				"He is short for his age."
+			]
+		}, {
+			"word":"small",
+			"chinese":"小的",
+			"explanation":"little in size",
+			"samples": [
+				"They live in a small house."
+			]
+		}
+	]
+}
+

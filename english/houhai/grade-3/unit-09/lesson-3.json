@@ -1,0 +1,76 @@
+{
+	"contents-list":[
+		{
+			"word":"holiday",
+			"chinese":"假期",
+			"explanation":"a period of time that a person spends away from home, school, or business usually in order to relax or travel.",
+			"samples": [
+				"She spent two weeks on holiday in Italy."
+			]
+		}, {
+			"word":"city centre",
+			"chinese":"市中心",
+			"explanation":"the main or central part of a city.",
+			"samples": [
+				"It's impossible to park in the city centre."
+			]
+		}, {
+			"word":"expensive",
+			"chinese":"昂贵的",
+			"explanation":"costing a lot of money.",
+			"samples": [
+				"I cannot afford the expensive car."
+			]
+		}, {
+			"word":"cheap",
+			"chinese":"便宜的",
+			"explanation":"not costing a lot of money.",
+			"samples": [
+				"This is a place where you can get a cheap meal."
+			]
+		}, {
+			"word":"travel",
+			"chinese":"旅行",
+			"explanation":"to go on a trip or journey.",
+			"samples": [
+				"She enjoys traveling around Europe"
+			]
+		}, {
+			"word":"visit",
+			"chinese":"参观",
+			"explanation":"to go to a place for pleasure, as part of your job, etc.",
+			"samples": [
+				"We visited the zoo."
+			]
+		}, {
+			"word":"museum",
+			"chinese":"博物馆",
+			"explanation":"a building in which interesting and valuable things, such as paintings and sculptures, or scientific or historical objects, are collected and shown to the public.",
+			"samples": [
+				"She visited an art museum last Sunday."
+			]
+		}, {
+			"word":"buy, bought",
+			"chinese":"买",
+			"explanation":"to get something by paying money for it.",
+			"samples": [
+				"I bought a computer."
+			]
+		}, {
+			"word":"swim, swam",
+			"chinese":"游泳",
+			"explanation":"to move through water by moving your arms and legs.",
+			"samples": [
+				"She swam across the pool."
+			]
+		}, {
+			"word":"wear, wore",
+			"chinese":"穿着",
+			"explanation":"to use or have something as clothing.",
+			"samples": [
+				"I don't wear glasses."
+			]
+		}
+	]
+}
+

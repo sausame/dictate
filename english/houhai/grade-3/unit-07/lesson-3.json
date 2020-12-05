@@ -1,0 +1,48 @@
+{
+	"contents-list":[
+		{
+			"word":"competition",
+			"chinese":"比赛",
+			"explanation":"the act or process of trying to get or win something, such as a prize or a higher level of success, that someone else is also trying to get or win.",
+			"samples": [
+				"There will be fierce competition for the top sports."
+			]
+		}, {
+			"word":"coach",
+			"chinese":"教练",
+			"explanation":"a person who teaches and trains an athlete or performer.",
+			"samples": [
+				"Suzy was drama coach when she was young."
+			]
+		}, {
+			"word":"country",
+			"chinese":"国家",
+			"explanation":"an area of land that is controlled by its own government.",
+			"samples": [
+				"The two countries have a lot in common."
+			]
+		}, {
+			"word":"fan",
+			"chinese":"狂热爱好者",
+			"explanation":"a person who likes and admires someone, such as a famous person, or something, such as a sport or a sports team in a very enthusiastic way.",
+			"samples": [
+				"I am a huge baseball fan."
+			]
+		}, {
+			"word":"player",
+			"chinese":"运动员",
+			"explanation":"a person who plays a sport or game.",
+			"samples": [
+				"She's one of the team's best players."
+			]
+		}, {
+			"word":"team",
+			"chinese":"队",
+			"explanation":"a group of people who compete in a sport, game, etc., against another group.",
+			"samples": [
+				"He is the best player on his team."
+			]
+		}
+	]
+}
+

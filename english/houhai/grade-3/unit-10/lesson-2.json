@@ -1,0 +1,111 @@
+{
+	"contents-list":[
+		{
+			"word":"the world",
+			"chinese":"世界",
+			"explanation":"the earth and all the people and things on it.",
+			"samples": [
+				"He is famous throughout the world."
+			]
+		}, {
+			"word":"record",
+			"chinese":"记载",
+			"explanation":"an official written document that gives proof of something, or tells about past events.",
+			"samples": [
+				"There is no record of their first meeting."
+			]
+		}, {
+			"word":"cartoon",
+			"chinese":"卡通片",
+			"explanation":"a film or television show made by photographing a series of drawings.",
+			"samples": [
+				"The kids are watching cartoons."
+			]
+		}, {
+			"word":"poor",
+			"chinese":"贫穷的",
+			"explanation":"having little money or few possessions.",
+			"samples": [
+				"We were too poor to buy new clothes."
+			]
+		}, {
+			"word":"neighbor",
+			"chinese":"邻居",
+			"explanation":"a person who lives next to or near another person.",
+			"samples": [
+				"We invited our friends and neighors."
+			]
+		}, {
+			"word":"company",
+			"chinese":"公司",
+			"explanation":"a business organization that makes, buys, or sells goods or provides services in exchange for money.",
+			"samples": [
+				"He runs his own trucking company."
+			]
+		}, {
+			"word":"garage",
+			"chinese":"车库",
+			"explanation":"a building or part of a building in which a car, truck, etc., is kept.",
+			"samples": [
+				"We bought a house with two-car garage."
+			]
+		}, {
+			"word":"dwarf",
+			"chinese":"矮人",
+			"explanation":"a creature that looks like a small man, and that often lives underground, and has magical powers.",
+			"samples": [
+				"Seven Dwarfs are very kindhearted."
+			]
+		}, {
+			"word":"dream",
+			"chinese":"梦想",
+			"explanation":"something that you have wanted very much to do, be, or have for a long time.",
+			"samples": [
+				"He has had a lifelong dream of becoming an actor."
+			]
+		}, {
+			"word":"adventure",
+			"chinese":"探险",
+			"explanation":"an exciting or dangerous experience.",
+			"samples": [
+				"The book tells an adventure story."
+			]
+		}, {
+			"word":"film",
+			"chinese":"电影",
+			"explanation":"a recording of moving images that tells a story, and that people watch on a screen or television.",
+			"samples": [
+				"He's interested in making films about war."
+			]
+		}, {
+			"word":"comedy",
+			"chinese":"喜剧",
+			"explanation":"a play, movie, television program, novel, etc., that is meant to make people lauph.",
+			"samples": [
+				"The new comedy is the network's most popular television show."
+			]
+		}, {
+			"word":"drama",
+			"chinese":"戏剧",
+			"explanation":"a piece of writing that tells a story and is performed on a stage.",
+			"samples": [
+				"He is reading an ancient Greek drama."
+			]
+		}, {
+			"word":"musical",
+			"chinese":"音乐剧",
+			"explanation":"a movie or play that tells a story with songs and often dancing.",
+			"samples": [
+				"He plays an important role in a Broadway musical."
+			]
+		}, {
+			"word":"science fiction",
+			"chinese":"科幻",
+			"explanation":"stories about how people and societies are affected by imaginary scientific developments in the future.",
+			"samples": [
+				"Time travel exists only in the realm of science fiction."
+			]
+		}
+	]
+}
+

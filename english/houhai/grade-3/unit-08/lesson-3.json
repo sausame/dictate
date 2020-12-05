@@ -1,0 +1,83 @@
+{
+	"contents-list":[
+		{
+			"word":"lake",
+			"chinese":"湖",
+			"explanation":"a large are of water that is surrounded by land",
+			"samples": [
+				"They own a cottage by the lake."
+			]
+		}, {
+			"word":"dinosaur",
+			"chinese":"恐龙",
+			"explanation":"one of many reptiles that lived on Earth millions of years ago",
+			"samples": [
+				"Pictures of dinosaurs were shown in Jurassic Park."
+			]
+		}, {
+			"word":"thousands of",
+			"chinese":"很多的",
+			"explanation":"an amount that is more than 2000",
+			"samples": [
+				"Thousands of people visited the shrine."
+			]
+		}, {
+			"word":"hundreds of",
+			"chinese":"很多的",
+			"explanation":"a very large number",
+			"samples": [
+				"I've seen that movie hundreds of times."
+			]
+		}, {
+			"word":"story",
+			"chinese":"故事",
+			"explanation":"a description of how something happened",
+			"samples": [
+				"The movie is based on a true story."
+			]
+		}, {
+			"word":"secret",
+			"chinese":"秘密",
+			"explanation":"an fact or piece of information that is kept hidden from other people",
+			"samples": [
+				"Don't tell him about the party, it's a secret."
+			]
+		}, {
+			"word":"mystery",
+			"chinese":"谜",
+			"explanation":"something that is not known",
+			"samples": [
+				"Where they went is a mystery."
+			]
+		}, {
+			"word":"live",
+			"chinese":"居住",
+			"explanation":"to have a home in a specified place",
+			"samples": [
+				"We lived in the city."
+			]
+		}, {
+			"word":"capital",
+			"chinese":"首都",
+			"explanation":"a city in which the main offices of a government are located",
+			"samples": [
+				"Beijing is China's capital."
+			]
+		}, {
+			"word":"building",
+			"chinese":"建筑",
+			"explanation":"a structure, such as a house, hospital, school, etc. with a roof and walls that is used as a place for people to live, work, do activities, store things, etc.",
+			"samples": [
+				"My office is in that small brick building."
+			]
+		}, {
+			"word":"interesting",
+			"chinese":"有趣的",
+			"explanation":"attracting your attention and making you want to learn more about something or to be involved in something.",
+			"samples": [
+				"This is one of the most interesting books I've read all year."
+			]
+		}
+	]
+}
+

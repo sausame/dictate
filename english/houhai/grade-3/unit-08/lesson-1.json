@@ -1,0 +1,119 @@
+{
+	"contents-list":[
+		{
+			"word":"river",
+			"chinese":"河流",
+			"explanation":"a large natural flow of water that crosses an area of land and goes into an ocean, a lake, etc.",
+			"samples": [
+				"They have a house on the river."
+			]
+		}, {
+			"word":"hear",
+			"chinese":"听见",
+			"explanation":"to be aware of sound through the ear.",
+			"samples": [
+				"Do you hear that music?"
+			]
+		}, {
+			"word":"footstep",
+			"chinese":"脚步",
+			"explanation":"the sound of a foot making a step.",
+			"samples": [
+				"We could hear the approaching footsteps."
+			]
+		}, {
+			"word":"stairs",
+			"chinese":"楼梯",
+			"explanation":"a series of steps that go from on level or floor to another.",
+			"samples": [
+				"She ran down the stairs."
+			]
+		}, {
+			"word":"family",
+			"chinese":"家人",
+			"explanation":"a group of people who are related to each other.",
+			"samples": [
+				"There were a lot of families at the circus."
+			]
+		}, {
+			"word":"ghost",
+			"chinese":"鬼",
+			"explanation":"the soul of a dead person thought of as living in an unseen world or as appearing to living people.",
+			"samples": [
+				"The house is haunted by ghosts."
+			]
+		}, {
+			"word":"knight",
+			"chinese":"骑士",
+			"explanation":"a soldier in the past who had a high social rank and who fought while riding a horse and usually wearing armor.",
+			"samples": [
+				"The princess was rescued by a handsome knight."
+			]
+		}, {
+			"word":"stupid",
+			"chinese":"愚蠢的",
+			"explanation":"not intelligent.",
+			"samples": [
+				"I'm not stupid enough to fall for that trick."
+			]
+		}, {
+			"word":"trick",
+			"chinese":"诡计",
+			"explanation":"a clever and skillful action that someone performs to entertain or amuse people.",
+			"samples": [
+				"That was dirty trick."
+			]
+		}, {
+			"word":"flat",
+			"chinese":"公寓楼",
+			"explanation":"an apartment typically on one floor.",
+			"samples": [
+				"They moved out of their old flat."
+			]
+		}, {
+			"word":"house",
+			"chinese":"房子",
+			"explanation":"a building in which a family lives.",
+			"samples": [
+				"Would you like to come to my house for dinner."
+			]
+		}, {
+			"word":"castle",
+			"chinese":"城堡",
+			"explanation":"a large building usually with high, thick walls and towers thet was built in the past to protect against attack.",
+			"samples": [
+				"Aristocrats used to own castles."
+			]
+		}, {
+			"word":"houseboat",
+			"chinese":"船屋",
+			"explanation":"a boat that is also used as a house.",
+			"samples": [
+				"The restaurant was originally built as houseboat."
+			]
+		},{
+			"word":"cottage",
+			"chinese":"小屋",
+			"explanation":"a small house especially in the country.",
+			"samples":[
+				"We rented a cottage for the weekend."
+			]
+		}, {
+			"word":"tower",
+			"chinese":"塔",
+			"explanation":"a tall, narrow bullding or steucture that may stand apart from or be attached to another building or structure.",
+			"samples":[
+				"I can see a bell tower clearly."
+			]
+		}, {
+			"word":"hut",
+			"chinese":"小屋",
+			"explanation":"a small and simple house or building.",
+			"samples":[
+				"We had a rest in a mud hut."
+			]
+		},	{
+				
+	]
+}
+
