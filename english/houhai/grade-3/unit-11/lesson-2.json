@@ -1,25 +1,88 @@
 {
 	"contents-list":[
 		{
-			"word":"",
-			"chinese":"",
-			"explanation":"",
+			"word":"unusual",
+			"chinese":"不平常的",
+			"explanation":"not normal or usual",
 			"samples": [
-				""
+				"It's not unusual for him to stay late at work."
 			]
 		}, {
-			"word":"",
-			"chinese":"",
-			"explanation":"",
+			"word":"lift",
+			"chinese":"电梯",
+			"explanation":"a machine used for carrying people and things to different levels in a building",
 			"samples": [
-				""
+				"We took the lift to the fifth floor."
 			]
 		}, {
-			"word":"",
-			"chinese":"",
-			"explanation":"",
+			"word":"bedroom",
+			"chinese":"卧室",
+			"explanation":"a room used for sleeping",
 			"samples": [
-				""
+				"I want a house with three bedrooms."
+			]
+		}, {
+			"word":"snake",
+			"chinese":"蛇",
+			"explanation":"an animal that has a long, thin body and no arms or legs",
+			"samples": [
+				"Tim was bitten by a poisonous snake."
+			]
+		}, {
+			"word":"pony",
+			"chinese":"小马",
+			"explanation":"a small horse",
+			"samples": [
+				"He rode a pony."
+			]
+		}, {
+			"word":"letter",
+			"chinese":"信",
+			"explanation":"a written or printed message to someone",
+			"samples": [
+				"Write a letter to me."
+			]
+		}, {
+			"word":"elephant",
+			"chinese":"大象",
+			"explanation":"a very large gray animal that has a long, flexible nose and two long tusks",
+			"samples": [
+				"A baby elephant gets milk from its mother."
+			]
+		}, {
+			"word":"goldfish",
+			"chinese":"金鱼",
+			"explanation":"a small usually orange fish that people often keep in ponds, or in fishbowls, or tanks as a pet.",
+			"samples": [
+				"Pet goldfish usually live no more than a decade."
+			]
+		}, {
+			"word":"kitten",
+			"chinese":"幼猫",
+			"explanation":"a young cat",
+			"samples": [
+				"Our cat just has six kittens."
+			]
+		}, {
+			"word":"parrot",
+			"chinese":"鹦鹉",
+			"explanation":"a bright-colored tropical bird that has a curved bill and the ability to imitate speech.",
+			"samples": [
+				"She used to keep a parrot in a cage."
+			]
+		}, {
+			"word":"puppy",
+			"chinese":"幼犬",
+			"explanation":"a young dog",
+			"samples": [
+				"Our dog just had four puppies."
+			]
+		}, {
+			"word":"rabbit",
+			"chinese":"兔子",
+			"explanation":"a small animal that usually lives in holes in the ground, and has long ears, soft fur, and back legs that are longer than its front legs",
+			"samples": [
+				"We keep rabbits as pets."
 			]
 		}
 	]
