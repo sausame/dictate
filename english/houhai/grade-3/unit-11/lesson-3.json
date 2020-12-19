@@ -1,23 +1,93 @@
 {
 	"contents-list":[
 		{
-			"word":"",
+			"word":"count",
 			"chinese":"",
-			"explanation":"",
+			"explanation":"to add people, or things together to find the total number",
+			"samples": [
+				"Count the plates on the table"
+			]
+		}, {
+			"word":"word",
+			"chinese":"",
+			"explanation":"a sound or combination of sounds that has a meaning and is spoken or written",
 			"samples": [
 				""
 			]
 		}, {
-			"word":"",
+			"word":"at first",
 			"chinese":"",
-			"explanation":"",
+			"explanation":"in or at the beginning",
 			"samples": [
 				""
 			]
 		}, {
-			"word":"",
+			"word":"person",
 			"chinese":"",
-			"explanation":"",
+			"explanation":"a human being",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"naughty",
+			"chinese":"",
+			"explanation":"behaving badly",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"lose lost",
+			"chinese":"",
+			"explanation":"to be unable to find something or someone",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"all around",
+			"chinese":"",
+			"explanation":"to or at various points in",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"find",
+			"chinese":"",
+			"explanation":"to get or discover something or someone, that you are looking for",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"front",
+			"chinese":"",
+			"explanation":"of or relating to the front",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"language",
+			"chinese":"",
+			"explanation":"the system of words or signs, that people use to express thoughts and feelings to each other",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"month",
+			"chinese":"",
+			"explanation":"any one of the 12 parts into which the year is divided",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"lizard",
+			"chinese":"",
+			"explanation":"a type of reptile, that has four legs and a long body and tail",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"meter",
+			"chinese":"",
+			"explanation":"the basic metric unit of length equal to about 39.37 inches",
 			"samples": [
 				""
 			]
