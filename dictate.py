@@ -278,14 +278,14 @@ def run(name, configFile):
         contentFile = pathnames[sequenceNum]
         prYellow('"{}" is selected.'.format(contentFile))
 
-        prGreen('Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 1):')
+        prGreen('Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 2):')
 
         sequenceNum = stdinReadline(10, isPrompt=False)
 
-        if '2' == sequenceNum:
-            test(configFile, ttsConfigFile, contentFile)
-        else:
+        if '1' == sequenceNum:
             study(configFile, ttsConfigFile, contentFile)
+        else:
+            test(configFile, ttsConfigFile, contentFile)
 
     except KeyboardInterrupt:
         pass
