@@ -22,6 +22,10 @@ def play(pathname, speed=1):
 
 def generateTts(tts, path, content):
 
+    content = content.strip()
+    if 0 == len(content):
+        return None
+
     md5 = hashlib.md5(content.encode('utf8')).hexdigest()
 
     prefix = os.path.join(path, md5)
@@ -118,6 +122,9 @@ def study(configFile, ttsConfigFile, contentFile):
             print('Sample:\n\t', sample)
 
             pathname = generateTts(tts, path, sample)
+
+            if pathname is None:
+                continue
 
             for index in range(MAX_NUM):
                 play(pathname, 0.8)
