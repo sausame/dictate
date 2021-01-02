@@ -1,0 +1,97 @@
+{
+	"contents-list":[
+		{
+			"word":"journey",
+			"chinese":"",
+			"explanation":"an act of traveling from one place to another",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"kilometre",
+			"chinese":"",
+			"explanation":"a unit of length equal to 1000 meters",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"plant",
+			"chinese":"",
+			"explanation":"a living thing that grows in the ground, usually has leaves or flowers, and needs sun and water to survive",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"survive",
+			"chinese":"",
+			"explanation":"to remain alive",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"sell, sold",
+			"chinese":"",
+			"explanation":"to exchange something for money",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"destroy",
+			"chinese":"",
+			"explanation":"to damage something so badly that it cannot be repaired",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"arrive",
+			"chinese":"",
+			"explanation":"to come to, or reach a place after traveling, being sent, etc.",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"canyon",
+			"chinese":"",
+			"explanation":"a deep valley with steep rock sides, and often a stream, or river flowing through it",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"cliff",
+			"chinese":"",
+			"explanation":"a high, steep surface of rock, earth, or ice",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"forest",
+			"chinese":"",
+			"explanation":"a thick growth of trees and bushes that covers a large area",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"mountain",
+			"chinese":"",
+			"explanation":"an area of land that rises very high above the land around it, and that is higher than a hill",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"ocean",
+			"chinese":"",
+			"explanation":"the salt water that covers much of the Earth's surface",
+			"samples": [
+				""
+			]
+		}, {
+			"word":"waterfall",
+			"chinese":"",
+			"explanation":"an area in a stream or river, where running water falls down from a high place, such as over the side of a cliff",
+			"samples": [
+				""
+			]
+		}
+	]
+}
+
