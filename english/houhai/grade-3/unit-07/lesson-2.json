@@ -32,8 +32,9 @@
 			"word":"practice",
 			"chinese":"练习",
 			"explanation":"to do something again and again in oeder to become better at it.",
-			"samples":
-			    "To be a good musician, you have to practice a lot."
+			"samples": [
+				"To be a good musician, you have to practice a lot."
+			]
 		
 		}, {
 			"word":"hour",
