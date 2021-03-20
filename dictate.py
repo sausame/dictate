@@ -55,7 +55,8 @@ def spell(tts, path, word):
 
 def study(configFile, ttsConfigFile, contentFile):
 
-    MAX_NUM = 3
+    MAX_WORD_PLAYING_NUM = 3
+    MAX_NUM = 1
 
     path = getProperty(configFile, 'output-path')
 
@@ -87,14 +88,14 @@ def study(configFile, ttsConfigFile, contentFile):
         wordPathname = generateTts(tts, path, word)
         pathnames = spell(tts, path, word)
 
-        for index in range(MAX_NUM):
+        for index in range(MAX_WORD_PLAYING_NUM):
 
             play(wordPathname)
             time.sleep(1)
 
             for pathname in pathnames:
-                play(pathname)
-                time.sleep(0.2)
+                play(pathname, 1.2)
+                time.sleep(0.1)
 
         value = stdinReadline(2)
         if 0 != len(value):
@@ -265,7 +266,7 @@ def run(name, configFile):
 
             prGreen('Please input the sequence number (default is {}):'.format(num));
 
-            sequenceNum = stdinReadline(10, isPrompt=False)
+            sequenceNum = stdinReadline(20, isPrompt=False)
 
             try:
                 if len(sequenceNum) > 0:
@@ -280,7 +281,7 @@ def run(name, configFile):
 
         prGreen('Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 2):')
 
-        sequenceNum = stdinReadline(10, isPrompt=False)
+        sequenceNum = stdinReadline(20, isPrompt=False)
 
         if '1' == sequenceNum:
             study(configFile, ttsConfigFile, contentFile)
