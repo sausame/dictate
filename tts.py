@@ -3,15 +3,18 @@
 
 import hashlib
 import json
+import pyttsx3
 import urllib.parse
 
 from network import Network
 
 class Tts:
 
-    def __init__(self, pathname):
+    CONFIG_FILE = 'templates/tts.json'
 
-        with open(pathname) as fp:
+    def __init__(self):
+        
+        with open(Tts.CONFIG_FILE) as fp:
             self.config = json.loads(fp.read())
 
             self.maxLength = int(self.config['max-length'])
@@ -82,4 +85,50 @@ class Tts:
         downloadUrl = '{}{}'.format(url, urllib.parse.urlencode(download))
 
         return Network.saveUrl(prefix, downloadUrl)
+
+
+class LocalTts:
+
+    CONFIG_FILE = 'templates/local-tts.json'
+
+    def __init__(self):
+
+        with open(LocalTts.CONFIG_FILE) as fp:
+            self.config = json.loads(fp.read())
+
+    def setLanguage(self, language):
+
+        for lang in self.config['languages']:
+            if language.lower() == lang['name']:
+                self.language = lang
+                break
+        else:
+            print('Not support language', language)
+
+        self.voiceIndex = None
+
+    def switchVoice(self):
+
+        if self.voiceIndex is None:
+            self.voiceIndex = 0
+        else:
+            self.voiceIndex += 1
+
+            if self.voiceIndex >= len(self.language['voiceIds']):
+                self.voiceIndex = 0
+
+    def generateTts(self, prefix, text):
+
+        engine = pyttsx3.init()
+
+        voiceId = self.language['voiceIds'][self.voiceIndex]
+        engine.setProperty('voice', voiceId)
+
+        pathname = '{}.mp3'.format(prefix)
+        engine.save_to_file(text, pathname)
+
+        engine.runAndWait()
+        engine.stop()
+
+        return pathname
 

@@ -10,7 +10,7 @@ import time
 import traceback
 import random
 
-from tts import Tts
+from tts import LocalTts as Tts
 from datetime import datetime
 from network import Network
 from utils import prRed, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, countdown, getchar, getPathnames, getProperty, reprDict, runCommand, stdinReadline, OutputPath, ThreadWritableObject
@@ -53,7 +53,7 @@ def spell(tts, path, word):
 
     return pathnames
 
-def study(configFile, ttsConfigFile, contentFile):
+def study(configFile, contentFile):
 
     MAX_WORD_PLAYING_NUM = 3
     MAX_NUM = 1
@@ -61,7 +61,7 @@ def study(configFile, ttsConfigFile, contentFile):
     path = getProperty(configFile, 'output-path')
 
     Network.setIsEnabled(True)
-    tts = Tts(ttsConfigFile)
+    tts = Tts()
 
     tts.setLanguage('english')
 
@@ -132,13 +132,13 @@ def study(configFile, ttsConfigFile, contentFile):
 
                 time.sleep(2)
 
-def test(configFile, ttsConfigFile, contentFile):
+def test(configFile, contentFile):
 
     path = getProperty(configFile, 'output-path')
 
     Network.setIsEnabled(True)
 
-    tts = Tts(ttsConfigFile)
+    tts = Tts()
     tts.setLanguage('english')
 
     with open(contentFile) as fp:
@@ -183,8 +183,15 @@ def test(configFile, ttsConfigFile, contentFile):
                 stdinReadline(10)
 
             print('Chinese:\n\t', content['chinese'])
+            tts.setLanguage('chinese')
+            tts.switchVoice()
+
+            pathname = generateTts(tts, path, content['chinese'])
+            play(pathname)
+
             stdinReadline(5)
 
+            tts.setLanguage('english')
             tts.switchVoice()
 
             word = content['word']
@@ -245,8 +252,6 @@ def run(name, configFile):
 
     OutputPath.init(configFile)
 
-    ttsConfigFile = 'templates/tts.json'
-
     try:
         print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
@@ -286,9 +291,9 @@ def run(name, configFile):
         sequenceNum = stdinReadline(20, isPrompt=False)
 
         if '1' == sequenceNum:
-            study(configFile, ttsConfigFile, contentFile)
+            study(configFile, contentFile)
         else:
-            test(configFile, ttsConfigFile, contentFile)
+            test(configFile, contentFile)
 
     except KeyboardInterrupt:
         pass
