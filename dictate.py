@@ -253,6 +253,8 @@ def run(name, configFile):
         sourcePath = getProperty(configFile, 'source-path')
         pathnames = getPathnames(sourcePath, '.json')
 
+        pathnames = sorted(pathnames, reverse=True)
+
         num = len(pathnames)
         sequenceNum = -1
         
