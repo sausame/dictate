@@ -20,7 +20,7 @@ def play(pathname, speed=1):
     cmd = 'mplayer -af scaletempo -speed {} {}'.format(speed, pathname)
     runCommand(cmd)
 
-def generateTts(tts, path, content):
+def generateTts(tts, path, content, speed=1.0):
 
     content = content.strip()
     if 0 == len(content):
@@ -35,7 +35,7 @@ def generateTts(tts, path, content):
     if os.path.exists(pathname):
         return pathname
 
-    pathname = tts.generateTts(prefix, content)
+    pathname = tts.generateTts(prefix, content, speed)
 
     return pathname
 
@@ -63,7 +63,6 @@ def study(configFile, contentFile):
     Network.setIsEnabled(True)
     tts = Tts()
 
-    tts.setLanguage('english')
 
     with open(contentFile) as fp:
         contentConfig = json.loads(fp.read())
@@ -78,12 +77,20 @@ def study(configFile, contentFile):
 
         print('---------------------------------------------------------------')
 
-        print('Chinese:\n\t', content['chinese'])
+        cnWord = content['chinese']
+        print('Chinese:\n\t', cnWord)
 
+        tts.setLanguage('chinese')
         tts.switchVoice()
+
+        pathname = generateTts(tts, path, cnWord)
+        play(pathname)
 
         word = content['word']
         print('Word:\n\t', word)
+
+        tts.setLanguage('english')
+        tts.switchVoice()
 
         wordPathname = generateTts(tts, path, word)
         pathnames = spell(tts, path, word)
@@ -105,10 +112,10 @@ def study(configFile, contentFile):
         print('Explanation:\n\t', explanation)
 
         tts.switchVoice()
-        pathname = generateTts(tts, path, explanation)
+        pathname = generateTts(tts, path, explanation, 0.8)
 
         for index in range(MAX_NUM):
-            play(pathname, 0.8)
+            play(pathname)
             time.sleep(2)
 
         value = stdinReadline(2)
@@ -122,14 +129,13 @@ def study(configFile, contentFile):
         for sample in samples:
             print('Sample:\n\t', sample)
 
-            pathname = generateTts(tts, path, sample)
+            pathname = generateTts(tts, path, sample, 0.8)
 
             if pathname is None:
                 continue
 
             for index in range(MAX_NUM):
-                play(pathname, 0.8)
-
+                play(pathname)
                 time.sleep(2)
 
 def test(configFile, contentFile):
@@ -165,21 +171,21 @@ def test(configFile, contentFile):
 
             explanation = content['explanation']
 
-            pathname = generateTts(tts, path, explanation)
+            pathname = generateTts(tts, path, explanation, 0.8)
 
             os.system('clear')
 
             print('---------------------------------------------------------------')
             print(len(contentConfig['contents-list']), 'words are left.')
 
-            play(pathname, 0.8)
+            play(pathname)
 
             value = stdinReadline(5, isStrip=False)
             print('Explanation:')
             print('\t', explanation)
 
             if 0 == len(value):
-                play(pathname, 0.8)
+                play(pathname)
                 stdinReadline(10)
 
             print('Chinese:\n\t', content['chinese'])
@@ -201,14 +207,14 @@ def test(configFile, contentFile):
             wordPathname = generateTts(tts, path, word)
             pathnames = spell(tts, path, word)
 
-            play(wordPathname, 0.8)
+            play(wordPathname)
             time.sleep(1)
 
             for pathname in pathnames:
                 play(pathname)
                 time.sleep(0.2)
 
-            play(wordPathname, 0.8)
+            play(wordPathname)
             time.sleep(1)
 
             samples = content['samples']
@@ -218,9 +224,9 @@ def test(configFile, contentFile):
 
                 print('\t', sample)
 
-                pathname = generateTts(tts, path, sample)
+                pathname = generateTts(tts, path, sample, 0.8)
 
-                play(pathname, 0.8)
+                play(pathname)
 
                 time.sleep(2)
 
@@ -245,8 +251,8 @@ def test(configFile, contentFile):
     message = 'You passed all the tests! Congradulations!'
     prPurple(message)
 
-    pathname = generateTts(tts, path, message)
-    play(pathname, 0.8)
+    pathname = generateTts(tts, path, message, 0.8)
+    play(pathname)
 
 def run(name, configFile):
 

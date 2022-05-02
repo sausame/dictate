@@ -117,12 +117,17 @@ class LocalTts:
             if self.voiceIndex >= len(self.language['voiceIds']):
                 self.voiceIndex = 0
 
-    def generateTts(self, prefix, text):
+    def generateTts(self, prefix, text, speed=1.0):
+
+        DEFAULT_RATE = 200
 
         engine = pyttsx3.init()
 
         voiceId = self.language['voiceIds'][self.voiceIndex]
         engine.setProperty('voice', voiceId)
+
+        rate = int(DEFAULT_RATE * speed)
+        engine.setProperty('rate', rate)     # setting up new voice rate
 
         pathname = '{}.mp3'.format(prefix)
         engine.save_to_file(text, pathname)
