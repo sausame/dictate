@@ -190,6 +190,10 @@ def displayImage(path):
     else:
         os.startfile(path)
 
+def playSound(pathname, speed=1):
+    cmd = 'mplayer -af scaletempo -speed {} {}'.format(speed, pathname)
+    runCommand(cmd)
+
 # update property of name to value
 def updateProperty(path, name, value):
     fp = None

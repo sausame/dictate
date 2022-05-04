@@ -10,320 +10,38 @@ import time
 import traceback
 import random
 
+from proc import Lesson
 from tts import LocalTts as Tts
 from datetime import datetime
 from network import Network
 from utils import prRed, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, countdown, getchar, getPathnames, getProperty, reprDict, runCommand, stdinReadline, OutputPath, ThreadWritableObject
 
-def play(pathname, speed=1):
-
-    cmd = 'mplayer -af scaletempo -speed {} {}'.format(speed, pathname)
-    runCommand(cmd)
-
-def generateTts(tts, path, content, speed=1.0):
-
-    content = content.strip()
-    if 0 == len(content):
-        return None
-
-    md5 = hashlib.md5(content.encode('utf8')).hexdigest()
-
-    prefix = os.path.join(path, md5)
-
-    pathname = '{}.mp3'.format(prefix)
-
-    if os.path.exists(pathname):
-        return pathname
-
-    pathname = tts.generateTts(prefix, content, speed)
-
-    return pathname
-
-def spell(tts, path, word):
-
-    pathnames = list()
-
-    for ch in word:
-
-        ch = ch.lower()
-
-        if ch >= 'a' and ch <= 'z':
-            pathname = generateTts(tts, path, ch)
-            pathnames.append(pathname)
-
-    return pathnames
-
-def study(configFile, contentFile):
-
-    MAX_WORD_PLAYING_NUM = 3
-    MAX_NUM = 1
-
-    path = getProperty(configFile, 'output-path')
-
-    Network.setIsEnabled(True)
-    tts = Tts()
-
-
-    with open(contentFile) as fp:
-        contentConfig = json.loads(fp.read())
-
-        if contentConfig is None:
-            print('No content')
-            return
-
-    for content in contentConfig['contents-list']:
-
-        os.system('clear')
-
-        print('---------------------------------------------------------------')
-
-        cnWord = content['chinese']
-        print('Chinese:\n\t', cnWord)
-
-        tts.setLanguage('chinese')
-        tts.switchVoice()
-
-        pathname = generateTts(tts, path, cnWord)
-        play(pathname)
-
-        word = content['word']
-        print('Word:\n\t', word)
-
-        tts.setLanguage('english')
-        tts.switchVoice()
-
-        wordPathname = generateTts(tts, path, word)
-        pathnames = spell(tts, path, word)
-
-        for index in range(MAX_WORD_PLAYING_NUM):
-
-            play(wordPathname)
-            time.sleep(1)
-
-            for pathname in pathnames:
-                play(pathname, 1.2)
-                time.sleep(0.1)
-
-        value = stdinReadline(2)
-        if 0 != len(value):
-            continue
-
-        explanation = content['explanation']
-        print('Explanation:\n\t', explanation)
-
-        tts.switchVoice()
-        pathname = generateTts(tts, path, explanation, 0.8)
-
-        for index in range(MAX_NUM):
-            play(pathname)
-            time.sleep(2)
-
-        value = stdinReadline(2)
-        if 0 != len(value):
-            continue
-
-        tts.switchVoice()
-
-        samples = content['samples']
-
-        for sample in samples:
-            print('Sample:\n\t', sample)
-
-            pathname = generateTts(tts, path, sample, 0.8)
-
-            if pathname is None:
-                continue
-
-            for index in range(MAX_NUM):
-                play(pathname)
-                time.sleep(2)
-
-def test(configFile, contentFile):
-
-    path = getProperty(configFile, 'output-path')
-
-    Network.setIsEnabled(True)
-
-    tts = Tts()
-    tts.setLanguage('english')
-
-    with open(contentFile) as fp:
-        contentConfig = json.loads(fp.read())
-
-        if contentConfig is None:
-            print('No content')
-            return
-
-    random.seed()
-
-    while len(contentConfig['contents-list']) > 0:
-
-        contents = copy.deepcopy(contentConfig['contents-list'])
-
-        for num in range(len(contents), 0, -1):
-
-            num -= 1
-            index = random.randint(0, num)
-
-            content = contents.pop(index)
-
-            tts.switchVoice()
-
-            explanation = content['explanation']
-
-            pathname = generateTts(tts, path, explanation, 0.8)
-
-            os.system('clear')
-
-            print('---------------------------------------------------------------')
-            print(len(contentConfig['contents-list']), 'words are left.')
-
-            play(pathname)
-
-            value = stdinReadline(5, isStrip=False)
-            print('Explanation:')
-            print('\t', explanation)
-
-            if 0 == len(value):
-                play(pathname)
-                stdinReadline(10)
-
-            print('Chinese:\n\t', content['chinese'])
-            tts.setLanguage('chinese')
-            tts.switchVoice()
-
-            pathname = generateTts(tts, path, content['chinese'])
-            play(pathname)
-
-            stdinReadline(5)
-
-            tts.setLanguage('english')
-            tts.switchVoice()
-
-            word = content['word']
-
-            print('Word:\n\t', word)
-
-            wordPathname = generateTts(tts, path, word)
-            pathnames = spell(tts, path, word)
-
-            play(wordPathname)
-            time.sleep(1)
-
-            for pathname in pathnames:
-                play(pathname)
-                time.sleep(0.2)
-
-            play(wordPathname)
-            time.sleep(1)
-
-            samples = content['samples']
-
-            print('Sample:')
-            for sample in samples:
-
-                print('\t', sample)
-
-                pathname = generateTts(tts, path, sample, 0.8)
-
-                play(pathname)
-
-                time.sleep(2)
-
-            print('Press any key except return key to skip "', word, '".')
-            value = stdinReadline(10)
-
-            if 0 == len(value):
-                continue
-
-            for index in range(len(contentConfig['contents-list'])):
-
-                aContent = contentConfig['contents-list'][index]
-
-                if aContent['word'] == content['word']:
-                    aContent = contentConfig['contents-list'].pop(index)
-                    print('"', aContent['word'], '" is skipped.')
-                    break
-
-
-    os.system('clear')
-
-    message = 'You passed all the tests! Congradulations!'
-    prPurple(message)
-
-    pathname = generateTts(tts, path, message, 0.8)
-    play(pathname)
-
 def run(name, configFile):
 
-    OutputPath.init(configFile)
+    sourcePath = getProperty(configFile, 'source-path')
+    outputPath = getProperty(configFile, 'output-path')
 
-    try:
-        print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+    lesson = Lesson(sourcePath, outputPath)
+    lesson.start()
 
-        sourcePath = getProperty(configFile, 'source-path')
-        pathnames = getPathnames(sourcePath, '.json')
+def main(argv):
 
-        pathnames = sorted(pathnames, reverse=True)
-
-        num = len(pathnames)
-        sequenceNum = -1
-        
-        while sequenceNum < 0 or sequenceNum >= num: 
-
-            prGreen('Please select a lesson you want to study:');
-
-            for index in range(num):
-                pathname = pathnames[index]
-                prLightPurple('{:3}\t{}'.format(index+1, pathname))
-
-            prGreen('Please input the sequence number (default is {}):'.format(num));
-
-            sequenceNum = stdinReadline(20, isPrompt=False)
-
-            try:
-                if len(sequenceNum) > 0:
-                    sequenceNum = int(sequenceNum) - 1
-                else:
-                    sequenceNum = num - 1
-            except ValueError as e:
-                sequenceNum = num - 1
-
-        contentFile = pathnames[sequenceNum]
-        prYellow('"{}" is selected.'.format(contentFile))
-
-        prGreen('Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 2):')
-
-        sequenceNum = stdinReadline(20, isPrompt=False)
-
-        if '1' == sequenceNum:
-            study(configFile, contentFile)
-        else:
-            test(configFile, contentFile)
-
-    except KeyboardInterrupt:
-        pass
-    except Exception as e:
-        print('Error occurs at', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-        traceback.print_exc(file=sys.stdout)
-    finally:
-        pass
-
-if __name__ == '__main__':
-
-    if len(sys.argv) < 1:
-        print('Usage:\n\t', sys.argv[0], '[config-file]\n')
+    if len(argv) < 1:
+        print('Usage:\n\t', argv[0], '[config-file]\n')
         exit()
 
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
 
-    name = os.path.basename(sys.argv[0])[:-3] # Remove ".py"
+    name = os.path.basename(argv[0])[:-3] # Remove ".py"
 
-    if len(sys.argv) > 1:
-        configFile = os.path.realpath(sys.argv[1])
+    if len(argv) > 1:
+        configFile = os.path.realpath(argv[1])
     else:
         configFile = 'config.ini'
 
     run(name, configFile)
+
+if __name__ == '__main__':
+    main(sys.argv)
 

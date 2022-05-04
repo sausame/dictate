@@ -119,6 +119,8 @@ class LocalTts:
 
     def generateTts(self, prefix, text, speed=1.0):
 
+        self.switchVoice()
+
         DEFAULT_RATE = 200
 
         engine = pyttsx3.init()
