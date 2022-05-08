@@ -6,18 +6,14 @@ import binascii
 import json
 import os
 import platform
-import pprint
 import random
 import re
-import requests
 import select
 import stat
-import string
 import sys
 import subprocess
 import threading
 import time
-import traceback
 
 from datetime import tzinfo, timedelta, datetime
 

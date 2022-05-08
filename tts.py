@@ -8,12 +8,13 @@ import urllib.parse
 
 from network import Network
 
+
 class Tts:
 
     CONFIG_FILE = 'templates/tts.json'
 
     def __init__(self):
-        
+
         with open(Tts.CONFIG_FILE) as fp:
             self.config = json.loads(fp.read())
 
@@ -44,8 +45,8 @@ class Tts:
 
         url = self.config['url']
 
-        accountId = self.config['accountId'] 
-        secretId = self.config['secretId'] 
+        accountId = self.config['accountId']
+        secretId = self.config['secretId']
 
         preparation = self.config['preparation']
         download = self.config['download']
@@ -78,7 +79,8 @@ class Tts:
         download['TXT'] = text
         download['CS'] = cs
 
-        preparationUrl = '{}{}'.format(url, urllib.parse.urlencode(preparation))
+        preparationUrl = '{}{}'.format(
+            url, urllib.parse.urlencode(preparation))
 
         Network.get(preparationUrl)
 
@@ -139,3 +141,21 @@ class LocalTts:
 
         return pathname
 
+    def say(self, text, speed=1.0):
+
+        self.switchVoice()
+
+        DEFAULT_RATE = 200
+
+        engine = pyttsx3.init()
+
+        voiceId = self.language['voiceIds'][self.voiceIndex]
+        engine.setProperty('voice', voiceId)
+
+        rate = int(DEFAULT_RATE * speed)
+        engine.setProperty('rate', rate)     # setting up new voice rate
+
+        engine.say(text)
+
+        engine.runAndWait()
+        engine.stop()

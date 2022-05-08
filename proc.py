@@ -11,11 +11,10 @@ import time
 import traceback
 
 from datetime import datetime
-from network import Network
 from tts import LocalTts as Tts
-from utils import mkdir, runCommand
-from utils import prRed, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, countdown, getchar, getPathnames, getProperty, playSound, reprDict, runCommand, stdinReadline, OutputPath, ThreadWritableObject
+from utils import mkdir, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, getPathnames, playSound, stdinReadline
 from word import Word
+
 
 class Procedure:
 
@@ -38,6 +37,7 @@ class Procedure:
             self.dirname = dirname
 
         mkdir(self.dirname)
+
 
 class StudyProcedure(Procedure):
 
@@ -89,13 +89,13 @@ class StudyProcedure(Procedure):
         print('Sample:\n\t', word.getSample())
         for index in range(MAX_NUM):
             word.playSample()
-       
+
 
 class TestProcedure(Procedure):
 
     def __init__(self, dirname=None, jsonPath=None, jsonContent=None):
         super().__init__(dirname, jsonPath, jsonContent)
- 
+
     def run(self):
 
         random.seed()
@@ -129,7 +129,7 @@ class TestProcedure(Procedure):
                         print('"', aContent['word'], '" is skipped.')
                         break
 
-        self.playGreeting()
+        self.sayGreeting()
 
     def testWord(self, content):
 
@@ -172,15 +172,16 @@ class TestProcedure(Procedure):
 
         return (len(value) > 0)
 
-    def playGreeting(self):
+    def sayGreeting(self):
 
         os.system('clear')
 
         message = 'You passed all the tests! Congradulations!'
         prPurple(message)
 
-        pathname = generateTts(tts, path, message, 0.8)
-        playSound(pathname)
+        tts = Tts()
+        tts.setLanguage('english')
+        tts.say(message)
 
 
 class Lesson:
@@ -200,16 +201,17 @@ class Lesson:
 
             num = len(pathnames)
             sequenceNum = -1
-            
-            while sequenceNum < 0 or sequenceNum >= num: 
 
-                prGreen('Please select a lesson you want to study:');
+            while sequenceNum < 0 or sequenceNum >= num:
+
+                prGreen('Please select a lesson you want to study:')
 
                 for index in range(num):
                     pathname = pathnames[index]
                     prLightPurple('{:3}\t{}'.format(index+1, pathname))
 
-                prGreen('Please input the sequence number (default is {}):'.format(num));
+                prGreen(
+                    'Please input the sequence number (default is {}):'.format(num))
 
                 sequenceNum = stdinReadline(20, isPrompt=False)
 
@@ -224,7 +226,8 @@ class Lesson:
             contentFile = pathnames[sequenceNum]
             prYellow('"{}" is selected.'.format(contentFile))
 
-            prGreen('Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 2):')
+            prGreen(
+                'Do you like to study or do a test?:\n\t1, study\n\t2, test\nPlease input sequence number (default is 2):')
 
             sequenceNum = stdinReadline(20, isPrompt=False)
 
@@ -242,6 +245,3 @@ class Lesson:
             traceback.print_exc(file=sys.stdout)
         finally:
             pass
-
-
-

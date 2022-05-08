@@ -1,20 +1,13 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-import copy
-import hashlib
-import json
 import os
 import sys
 import time
-import traceback
-import random
 
 from proc import Lesson
-from tts import LocalTts as Tts
-from datetime import datetime
-from network import Network
-from utils import prRed, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, countdown, getchar, getPathnames, getProperty, reprDict, runCommand, stdinReadline, OutputPath, ThreadWritableObject
+from utils import getProperty
+
 
 def run(name, configFile):
 
@@ -23,6 +16,7 @@ def run(name, configFile):
 
     lesson = Lesson(sourcePath, outputPath)
     lesson.start()
+
 
 def main(argv):
 
@@ -33,7 +27,7 @@ def main(argv):
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
 
-    name = os.path.basename(argv[0])[:-3] # Remove ".py"
+    name = os.path.basename(argv[0])[:-3]  # Remove ".py"
 
     if len(argv) > 1:
         configFile = os.path.realpath(argv[1])
@@ -42,6 +36,6 @@ def main(argv):
 
     run(name, configFile)
 
+
 if __name__ == '__main__':
     main(sys.argv)
-

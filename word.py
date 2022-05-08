@@ -7,7 +7,8 @@ import os
 import time
 
 from tts import LocalTts as Tts
-from utils import playSound, runCommand
+from utils import playSound
+
 
 class Word:
 
@@ -45,6 +46,17 @@ class Word:
 
         return self.samples[index]
 
+    def say(self, content, language='english', speed=1.0):
+
+        content = content.strip()
+        if 0 == len(content):
+            return None
+
+        tts = Tts()
+        tts.setLanguage(language)
+
+        tts.say(content, speed)
+
     def generateTts(self, content, language='english', speed=1.0):
 
         content = content.strip()
@@ -66,16 +78,13 @@ class Word:
         return pathname
 
     def playChinese(self):
-        pathname = self.generateTts(self.chinese, 'chinese')
-        playSound(pathname)
+        self.say(self.chinese, 'chinese')
 
     def playEnglish(self):
-        pathname = self.generateTts(self.english)
-        playSound(pathname)
+        self.say(self.english)
 
     def playExplanation(self):
-        pathname = self.generateTts(self.explanation)
-        playSound(pathname)
+        self.say(self.explanation)
 
     def playSample(self, index=0):
 
@@ -83,9 +92,7 @@ class Word:
             return
 
         sample = self.samples[index]
-
-        pathname = self.generateTts(sample)
-        playSound(pathname)
+        self.say(sample)
 
     def playLetters(self):
 
@@ -95,6 +102,3 @@ class Word:
             pathname = self.generateTts(letter)
             playSound(pathname)
             time.sleep(0.1)
-
-        return pathnames
-
