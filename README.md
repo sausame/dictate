@@ -4,4 +4,4 @@
 > apt install virtualenv python-pip
 
 ## Install packages for python
-> pip install urllib3 requests
+> pip install urllib3 requests pyttsx3
