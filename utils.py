@@ -117,8 +117,9 @@ def getPathnames(dirpath, suffix=None):
 
     return pathnames
 
-def getchar():
-    print('Please press return key to continue')
+def getchar(isPrompt=False):
+    if isPrompt:
+        print('Please press return key to continue')
     return sys.stdin.read(1)
 
 def atoi(src):
@@ -170,7 +171,7 @@ def runCommand(cmd, shell=False):
     output, unused_err = process.communicate()
     retcode = process.poll()
 
-    if retcode is not 0:
+    if retcode != 0:
         raise subprocess.CalledProcessError(retcode, cmd)
 
     return output
