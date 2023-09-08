@@ -20,7 +20,7 @@ def run(name, configFile):
 
 def main(argv):
 
-    if len(argv) < 1:
+    if len(argv) < 2:
         print('Usage:\n\t', argv[0], '[config-file]\n')
         exit()
 
