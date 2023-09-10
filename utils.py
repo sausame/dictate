@@ -16,6 +16,7 @@ import threading
 import time
 
 from datetime import tzinfo, timedelta, datetime
+from pytimedinput import timedKey
 
 def seconds2Datetime(seconds):
     #return time.strftime('%Y-%m-%d %H:%M:%S', time.localtime(seconds))
@@ -117,10 +118,17 @@ def getPathnames(dirpath, suffix=None):
 
     return pathnames
 
-def getchar(isPrompt=False):
+def getchar(timeout=-1, promptPrefix='Press any key to continue', isPrompt=True):
+
     if isPrompt:
-        print('Please press return key to continue')
-    return sys.stdin.read(1)
+        if timeout > 0:
+            prompt = '{} in {} seconds.\n'.format(promptPrefix, timeout)
+        else:
+            prompt = '{}.\n'.format(promptPrefix, timeout)
+    else:
+        prompt = ''
+
+    return timedKey(prompt=prompt, timeout=timeout)
 
 def atoi(src):
     if isinstance(src, int):
