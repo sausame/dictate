@@ -5,10 +5,11 @@ import os
 import random
 import sys
 import time
+import traceback
 
 from datetime import datetime
 from tts import LocalTts as Tts
-from utils import prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import getchar, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 class Character:
 
@@ -193,8 +194,6 @@ class Examiner:
         print('Accurate:', count)
 
     def test(self):
-        print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
-
         prGreen('Please input the length (default is 6):')
 
         length = stdinReadline(2)
@@ -202,6 +201,8 @@ class Examiner:
             length = 6
         else:
             length = int(length)
+
+        prCyan('The length is {}'.format(length))
 
         prGreen('Please input the number (default is 10):')
 
@@ -211,6 +212,8 @@ class Examiner:
         else:
             size = int(size)
 
+        prCyan('The size is {}'.format(size))
+
         prGreen('Please input the type [0: number, 1: post code] (default is 0):')
 
         charType = stdinReadline(2)
@@ -218,6 +221,8 @@ class Examiner:
             charType = 0
         else:
             charType = int(charType)
+            
+        prCyan('The type is {}'.format(charType))
 
         self.testLoop(length, size, charType)
 
@@ -226,10 +231,18 @@ def main(argv):
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
 
-    examiner = Examiner()
-    examiner.test()
+    try:
+        print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
-    name = os.path.basename(argv[0])[:-3]  # Remove ".py"
+        examiner = Examiner()
+        examiner.test()
+    except KeyboardInterrupt:
+        pass
+    except Exception as e:
+        print('Error occurs at', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        traceback.print_exc(file=sys.stdout)
+    finally:
+        pass
 
 if __name__ == '__main__':
     main(sys.argv)
