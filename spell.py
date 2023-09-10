@@ -221,7 +221,7 @@ class Examiner:
             charType = 0
         else:
             charType = int(charType)
-            
+
         prCyan('The type is {}'.format(charType))
 
         self.testLoop(length, size, charType)
