@@ -118,6 +118,12 @@ def getPathnames(dirpath, suffix=None):
 
     return pathnames
 
+def getch(isPrompt=True):
+    if isPrompt:
+        print('Please press return key to continue')
+
+    return sys.stdin.read(1)
+
 def getchar(timeout=-1, promptPrefix='Press any key to continue', isPrompt=True):
 
     if isPrompt:
