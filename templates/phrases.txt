@@ -1,0 +1,8 @@
+n n.
+v v.
+vi vi.
+vt vt.
+adj adj.
+adv adv.
+ady adv.
+adu adv.
