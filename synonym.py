@@ -20,18 +20,21 @@ class Synonym:
 
     def study(self, values):
 
-        num = int(len(values) / 2)
-        for index in range(num):
-            pos = index * 2
-            prYellow('{}\n\t{}'.format(values[pos], values[pos + 1]))
-            self.tts.say(values[pos])
+        prYellow(''.join(['-'] * 60))
 
-            _, timeout = getch(2, 'Press any key to skip')
-            if not timeout:
-                prRed('Skip {}'.format('|'.join(values)))
-                return True
+        content = '{0:{4}^20}|{1:{4}^20}\n{2:{4}^20}|{2:{4}^20}'.format(
+            values[0], values[2], values[1], values[3], chr(12288))
+        prYellow(content)
 
-        return False
+        word = '{},{}'.format(values[0], values[2])
+        self.tts.say(word)
+
+        _, timeout = getch(1, isPrompt=False)
+        if timeout:
+            return False
+
+        prRed('Skip {}'.format(word))
+        return True
 
     def test(self):
         pass
@@ -63,12 +66,14 @@ class SynonymChapter:
 
         random.seed()
 
+        prRed('Notice: press return key to skip one word')
+
         while len(rows) > 0:
 
             size = len(rows)
 
-            print('---------------------------------------------------------------')
-            print(size, 'synonymes are left.')
+            prYellow(''.join(['='] * 60))
+            prYellow('{} synonymes are left.'.format(size))
 
             indexes = [False] * size
             skipedIndexes = []
