@@ -1,8 +1,11 @@
 n n.
 v v.
+w v.
 vi vi.
 vt vt.
+adi adj.
 adj adj.
+ad; adj.
 adv adv.
 ady adv.
 adu adv.
