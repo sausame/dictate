@@ -50,7 +50,7 @@ class SynonymChapter:
         rows = []
 
         with open(pathname, newline='') as csvfile:
-            reader = csv.reader(csvfile, delimiter='|')
+            reader = csv.reader(csvfile, delimiter='\t')
 
             for row in reader:
                 rows.append(row)
