@@ -100,6 +100,8 @@ class SynonymPage:
 
     def parse(self, pathname):
 
+        prRed('Parsing {} ...'.format(pathname))
+
         lines = []
 
         with open(pathname) as fp:
@@ -233,13 +235,40 @@ class SynonymPage:
 
 def run(name, configFile):
 
+    def existCsv(txtPathname):
+        csvPathname = '{}.csv'.format(txtPathname[:-4])
+        return os.path.exists(csvPathname)
+
     try:
+        print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+
         synonymPath = getProperty(configFile, 'synonym-path')
+        pathnames = getPathnames(synonymPath, '.txt')
+
+        num = len(pathnames)
+        if num == 0:
+            prRed('No file is found in {}'.format(self.bookDir))
+            return
 
         phrase = Phrase()
-
         page = SynonymPage(phrase)
-        page.parse('./english/synonym/9988/unit-b1-1.txt')
+
+        succeededCount = 0
+        failedCount = 0
+        skippedCount = 0
+
+        for pathname in pathnames:
+            if existCsv(pathname):
+                skippedCount += 1
+                continue
+
+            if page.parse(pathname):
+                succeededCount += 1
+            else:
+                failedCount += 1
+
+        prGreen('Parsed {}, failed {}, skipped {}'.format(succeededCount, failedCount, skippedCount))
+
     except KeyboardInterrupt:
         pass
     except Exception as e:
