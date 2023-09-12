@@ -118,11 +118,30 @@ def getPathnames(dirpath, suffix=None):
 
     return pathnames
 
-def getch(isPrompt=True):
+def getch(timeout=-1, isPrompt=True):
+
     if isPrompt:
         print('Please press return key to continue')
 
-    return sys.stdin.read(1)
+    INTERVAL = 1
+
+    if timeout > 0: 
+        while timeout > 0: 
+
+            if isPrompt:
+                mins, secs = divmod(timeout, 60) 
+                timer = '{:02d}:{:02d}'.format(mins, secs) 
+                print('\033[91m{}\033[00m'.format(timer), end='\r') 
+
+            inputFlag, _, _ = select.select([sys.stdin], [], [], INTERVAL)
+            if inputFlag:
+                return sys.stdin.read(1), False
+
+            timeout -= INTERVAL
+        else:
+            return None, True
+
+    return sys.stdin.read(1), True
 
 def getchar(timeout=-1, promptPrefix='Press any key to continue', isPrompt=True):
 
