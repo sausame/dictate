@@ -1,32 +1,34 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import csv
 import os
 import random
 import re
 import sys
 import time
+import traceback
 
 from datetime import datetime
 from tts import LocalTts as Tts
-from utils import getchar, getPathnames, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 class Synonym:
 
     def __init__(self, tts):
         self.tts = tts
 
-    def studyLine(self, line):
-        words = re.split(r'[\t ]+', line.strip())
-        return self.study(words)
+    def study(self, values):
 
-    def study(self, words):
+        num = int(len(values) / 2)
+        for index in range(num):
+            pos = index * 2
+            prYellow('{}\n\t{}'.format(values[pos], values[pos + 1]))
+            self.tts.say(values[pos])
 
-        for word in words:
-            self.tts.say(word)
-
-            timeout = getchar(1, '{}, press any key to skip'.format(word))
+            _, timeout = getch(2, 'Press any key to skip')
             if not timeout:
+                prRed('Skip {}'.format('|'.join(values)))
                 return True
 
         return False
@@ -42,54 +44,58 @@ class SynonymChapter:
 
     def study(self, pathname):
 
-        with open(pathname) as fp:
-            lines = fp.read().splitlines()
+        rows = []
 
-        if len(lines) == 0:
+        with open(pathname, newline='') as csvfile:
+            reader = csv.reader(csvfile, delimiter='|')
+
+            for row in reader:
+                rows.append(row)
+
+        if len(rows) == 0:
             return
+
+        self.studyRows(rows)
+
+    def studyRows(self, rows):
 
         synonym = Synonym(self.tts)
 
-        for line in lines:
-            synonym.studyLine(line)
+        random.seed()
 
-        wholeContents = copy.deepcopy(self.contents)
+        while len(rows) > 0:
 
-        while len(lines) > 0:
-
-            size = len(lines)
+            size = len(rows)
 
             print('---------------------------------------------------------------')
-            print(size, 'synonym are left.')
+            print(size, 'synonymes are left.')
 
             indexes = [False] * size
-            studiedIndexes = []
+            skipedIndexes = []
 
             while True:
                 index = 0
 
-                pos = random.randint(0, size)
+                pos = random.randint(0, size - 1)
 
                 for offset in range(size):
                     index = (pos + offset) % size
-                    if not indexes[pos]:
+                    if not indexes[index]:
+                        indexes[index] = True
                         break
                 else:
                     break # Not found
 
-                line = lines[index]
+                skiped = synonym.study(rows[index])
+                if skiped:
+                    skipedIndexes.append(index)
 
-                studied = synonym.studyLine(line)
-
-                if studied:
-                    studiedIndexes.append(index)
-
-            if len(studiedIndexes) == 0:
+            if len(skipedIndexes) == 0:
                 continue
 
-            studiedIndexes = sorted(studiedIndexes, reverse=True)
-            for index in studiedIndexes:
-                lines.pop(index)
+            skipedIndexes = sorted(skipedIndexes, reverse=True)
+            for index in skipedIndexes:
+                rows.pop(index)
 
     def test(self):
         pass
@@ -105,12 +111,16 @@ class SynonymBook:
         try:
             print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
 
-            pathnames = getPathnames(self.bookDir, '.json')
-            pathnames = sorted(pathnames, reverse=True)
+            pathnames = getPathnames(self.bookDir, '.csv')
 
             num = len(pathnames)
-            sequenceNum = -1
+            if num == 0:
+                prRed('No file is found in {}'.format(self.bookDir))
+                return
+ 
+            pathnames = sorted(pathnames, reverse=True)
 
+            sequenceNum = -1
             while sequenceNum < 0 or sequenceNum >= num:
 
                 prGreen('Please select a chapter you want to study:')
@@ -141,7 +151,7 @@ class SynonymBook:
         except KeyboardInterrupt:
             pass
         except Exception as e:
-            print('Error occurs at', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            prRed('Error occurs at {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
             traceback.print_exc(file=sys.stdout)
         finally:
             pass
@@ -158,7 +168,6 @@ def main(argv):
 
     if len(argv) < 2:
         print('Usage:\n\t', argv[0], '[config-file]\n')
-        exit()
 
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
