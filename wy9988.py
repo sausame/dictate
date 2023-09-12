@@ -11,7 +11,8 @@ import traceback
 
 from datetime import datetime
 from tts import LocalTts as Tts
-from utils import getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import remove, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+
 
 class Phrase:
 
@@ -44,16 +45,64 @@ class Phrase:
                 return index
 
         return -1
-    
+
+    def matches(self, src):
+
+        if not src:
+            return False
+
+        texts = src.split('/')
+        if len(texts) == 0:
+            return False
+
+        for text in texts:
+
+            text = text.strip()
+            if len(text) == 0:
+                continue
+
+            pos = self.find(text)
+            if pos < 0:
+                return False
+
+        return True
+
     def get(self, src):
 
-        pos = self.find(src)
-        if pos < 0:
-            return src
+        if not src:
+            return None
 
-        return self.phrases[pos]
+        texts = src.split('/')
+        phrases = []
 
-class Explanation:    
+        for text in texts:
+
+            text = text.strip()
+            if len(text) == 0:
+                continue
+
+            pos = self.find(text)
+            if pos < 0:
+                return None
+
+            phrases.append(self.phrases[pos])
+
+        if len(phrases) == 0:
+            return None
+
+        return '/'.join(phrases)
+
+    def appendToList(self, alist, content):
+
+        text = self.get(content)
+
+        if text:
+            alist.append(text)
+        else:
+            alist.append(content)
+
+
+class Explanation:
 
     @staticmethod
     def get(phrase, explanation):
@@ -70,8 +119,9 @@ class Explanation:
                 if ord(word) >= 0x1000:
                     flag = True
                     if pos > start:
-                        content = phrase.get(explanation[start:pos].strip())
-                        parts.append(content)
+                        content = explanation[start:pos].strip()
+                        phrase.appendToList(parts, content)
+
                     start = pos
                 else:
                     continue
@@ -88,10 +138,10 @@ class Explanation:
             if flag:
                 parts.append(content)
             else:
-                content = phrase.get(content)
-                parts.append(content)
-        
+                phrase.appendToList(parts, content)
+
         return ' '.join(parts)
+
 
 class SynonymPage:
 
@@ -100,7 +150,7 @@ class SynonymPage:
 
     def parse(self, pathname):
 
-        prRed('Parsing {} ...'.format(pathname))
+        prGreen('Parsing {} ...'.format(pathname))
 
         lines = []
 
@@ -134,9 +184,17 @@ class SynonymPage:
     def append(self, lane, line):
 
         def appendContent(segments, content):
-            segments.append(self.phrase.get(content))
+            self.phrase.appendToList(segments, content)
 
         def appendText(lane, line):
+
+            if not re.search(r'[a-zA-Z]+', line):
+                pos = len(lane) - 1
+                if pos < 0:
+                    raise Exception('Error:{}'.format(line))
+
+                lane[pos] += line
+                return
 
             segments = line.split(' ')
             newSegments = []
@@ -159,18 +217,19 @@ class SynonymPage:
                             appendContent(newSegments, segment[:pos])
 
                         position = len(newSegments)
+
                         appendContent(newSegments, segment[pos:])
                         break
                 else:
                     appendContent(newSegments, segment)
 
-            for pos in range(position, 0, -1):
+            for pos in range(position - 1, -1, -1):
 
                 segment = newSegments[pos]
-                if self.phrase.find(segment) < 0:
+                if self.phrase.matches(segment):
                     continue
 
-                position = pos
+                position = pos + 1
                 break
 
             if position <= 0:
@@ -201,53 +260,82 @@ class SynonymPage:
         len1 = len(lane1)
         len2 = len(lane2)
 
-        if len1 != len2 and len1 % 2 != 0:
+        if len1 == len2 and len1 % 2 == 0:
+            succeeded = True
 
-            errorfile = '{}-error'.format(prefix)
-            with open(errorfile, 'w+') as fp:
-                for line in lane1:
-                    fp.write(line)
+            try:
+                cmd = 'rm {}-*.csv'.format(prefix)
+                runCommand(cmd)
+            except:
+                pass
 
-                fp.write('--------------------------------')
+            t = int(os.path.getmtime(pathname)) % 1000
+            filename = '{}-{}.csv'.format(prefix, t)
+        else:
+            succeeded = False
+            filename = '{}.error.csv'.format(prefix)
 
-                for line in lane2:
-                    fp.write(line)
+        try:
+            with open(filename, 'w+', newline='') as fp:
+                writer = csv.writer(fp, delimiter='\t')
 
-            prRed('Error is found in {} and saved into {}'.format(pathname, errorfile))
-            return False
+                '''
+                HEADERS = ['Expression 1', 'Explanation 1', 'Expression 2', 'Explanation 2']
+                writer.writerow(HEADERS)
+                '''
 
-        filename = '{}.csv'.format(prefix)
-        with open(filename, 'w+', newline='') as fp:
-            writer = csv.writer(fp, delimiter='|')
+                index = 0
 
-            '''
-            HEADERS = ['Expression 1', 'Explanation 1', 'Expression 2', 'Explanation 2']
-            writer.writerow(HEADERS)
-            '''
+                while index * 2 < len1 or index * 2 < len2:
+                    pos = index * 2
+                    index += 1
 
-            for index in range(int(len1 / 2)):
-                pos = index * 2
-                writer.writerow([lane1[pos], lane1[pos + 1], lane2[pos], lane2[pos + 1]])
+                    values = [''] * 4
 
-            prGreen('Successfully saved into {}'.format(filename))
+                    for i in range(2):
+                        pos += i
 
-        return True
+                        if pos < len1:
+                            values[i] = lane1[pos]
+
+                        if pos < len2:
+                            values[2 + i] = lane2[pos]
+
+                    writer.writerow(values)
+
+                if succeeded:
+                    prGreen('Successfully saved into {}'.format(filename))
+                else:
+                    prRed('Failed and saved into {}'.format(filename))
+
+                return succeeded
+
+        except Exception as e:
+            remove(filename)
+
+            prRed('Error occurs at {}'.format(
+                datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            traceback.print_exc(file=sys.stdout)
+
+        return False
+
 
 def run(name, configFile):
 
     def existCsv(txtPathname):
-        csvPathname = '{}.csv'.format(txtPathname[:-4])
+        t = int(os.path.getmtime(txtPathname)) % 1000
+        csvPathname = '{}-{}.csv'.format(txtPathname[:-4], t)
         return os.path.exists(csvPathname)
 
     try:
-        print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        prGreen('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
         synonymPath = getProperty(configFile, 'synonym-path')
         pathnames = getPathnames(synonymPath, '.txt')
 
         num = len(pathnames)
         if num == 0:
-            prRed('No file is found in {}'.format(self.bookDir))
+            prRed('No file is found in {}'.format(synonymPath))
             return
 
         phrase = Phrase()
@@ -267,15 +355,18 @@ def run(name, configFile):
             else:
                 failedCount += 1
 
-        prGreen('Parsed {}, failed {}, skipped {}'.format(succeededCount, failedCount, skippedCount))
+        prGreen('Parsed {}, failed {}, skipped {}'.format(
+            succeededCount, failedCount, skippedCount))
 
     except KeyboardInterrupt:
         pass
     except Exception as e:
-        print('Error occurs at', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        prRed('Error occurs at {}'.format(
+            datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
         traceback.print_exc(file=sys.stdout)
     finally:
         pass
+
 
 def main(argv):
 
@@ -293,6 +384,7 @@ def main(argv):
         configFile = 'config.ini'
 
     run(name, configFile)
+
 
 if __name__ == '__main__':
     main(sys.argv)
