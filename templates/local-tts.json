@@ -5,6 +5,12 @@
 			"name": "english",
 			"voiceIds": [
 				"com.apple.speech.synthesis.voice.Alex",
+				"com.apple.speech.synthesis.voice.moira",
+				"com.apple.speech.synthesis.voice.daniel",
+				"com.apple.speech.synthesis.voice.samantha"
+			],
+			"backupVoiceIds": [
+				"com.apple.speech.synthesis.voice.Alex",
 			   	"com.apple.speech.synthesis.voice.Fred",
 				"com.apple.speech.synthesis.voice.Victoria",
 				"com.apple.speech.synthesis.voice.daniel",
