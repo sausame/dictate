@@ -1,6 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
+import csv
 import os
 import random
 import re
@@ -10,7 +11,7 @@ import traceback
 
 from datetime import datetime
 from tts import LocalTts as Tts
-from utils import getch, getchar, getPathnames, getProperty, prGreen, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 class Phrase:
 
@@ -105,7 +106,7 @@ class SynonymPage:
             lines = fp.read().splitlines()
 
             if len(lines) == 0:
-                return
+                return False
 
         lane1 = []
         lane2 = []
@@ -126,10 +127,7 @@ class SynonymPage:
 
             self.append(curLane, line)
 
-        print(len(lane1), len(lane2))
-
-        for index in range(len(lane1)):
-            print(lane1[index], '\t', lane2[index])
+        return self.save(pathname, lane1, lane2)
 
     def append(self, lane, line):
 
@@ -175,15 +173,15 @@ class SynonymPage:
 
             if position <= 0:
                 string = ' '.join(newSegments)
-                lane.append(string)
+                lane.append(string.strip())
                 return
 
             string = ' '.join(newSegments[:position])
-            lane.append(string)
+            lane.append(string.strip())
 
             string = ' '.join(newSegments[position:])
             string = Explanation.get(self.phrase, string)
-            lane.append(string)
+            lane.append(string.strip())
 
         lineType = len(lane) % 2
         if 0 == lineType:
@@ -192,6 +190,46 @@ class SynonymPage:
 
         string = Explanation.get(self.phrase, line)
         lane.append(string)
+
+    def save(self, pathname, lane1, lane2):
+
+        pos = pathname.rfind('.')
+        prefix = pathname[:pos]
+
+        len1 = len(lane1)
+        len2 = len(lane2)
+
+        if len1 != len2 and len1 % 2 != 0:
+
+            errorfile = '{}-error'.format(prefix)
+            with open(errorfile, 'w+') as fp:
+                for line in lane1:
+                    fp.write(line)
+
+                fp.write('--------------------------------')
+
+                for line in lane2:
+                    fp.write(line)
+
+            prRed('Error is found in {} and saved into {}'.format(pathname, errorfile))
+            return False
+
+        filename = '{}.csv'.format(prefix)
+        with open(filename, 'w+', newline='') as fp:
+            writer = csv.writer(fp, delimiter='|')
+
+            '''
+            HEADERS = ['Expression 1', 'Explanation 1', 'Expression 2', 'Explanation 2']
+            writer.writerow(HEADERS)
+            '''
+
+            for index in range(int(len1 / 2)):
+                pos = index * 2
+                writer.writerow([lane1[pos], lane1[pos + 1], lane2[pos], lane2[pos + 1]])
+
+            prGreen('Successfully saved into {}'.format(filename))
+
+        return True
 
 def run(name, configFile):
 
