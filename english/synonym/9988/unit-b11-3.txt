@@ -1,5 +1,5 @@
 transportation n.交通工具，运输工具;运输，运送
-imit
+limit
 v 限制，限定
 distance n.距离;间距
 sail vt./vi.(船)航行;驾驶(帆船);(船)扬帆行驶
