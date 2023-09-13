@@ -206,20 +206,33 @@ class SynonymPage:
                 if len(segment) == 0:
                     continue
 
+                '''
                 if position >= 0:
                     appendContent(newSegments, segment)
                     continue
+                '''
 
                 for pos in range(len(segment)):
                     code = segment[pos]
 
                     if ord(code) >= 0x1000:
-                        if pos > 0:
-                            appendContent(newSegments, segment[:pos])
 
-                        position = len(newSegments)
+                        # Go back and ignore some chars
+                        for index in range(pos - 1, -1, -1):
+                            if segment[index] not in ['[', ']', '(', ')']:
+                                index += 1
+                                break
+                        else:
+                            index = pos
 
-                        appendContent(newSegments, segment[pos:])
+                        if index > 0:
+                            appendContent(newSegments, segment[:index])
+
+                        if position < 0:
+                            # Only set the value once
+                            position = len(newSegments)
+
+                        appendContent(newSegments, segment[index:])
                         break
                 else:
                     appendContent(newSegments, segment)
@@ -261,12 +274,16 @@ class SynonymPage:
         len1 = len(lane1)
         len2 = len(lane2)
 
+        errorFilename = '{}.error.csv'.format(prefix)
+        succeededFilename = '{}.csv'.format(prefix)
         if len1 == len2 and len1 % 2 == 0:
             succeeded = True
-            filename = '{}.csv'.format(prefix)
+            filename = succeededFilename
+
+            remove(errorFilename)
         else:
             succeeded = False
-            filename = '{}.error.csv'.format(prefix)
+            filename = errorFilename
 
         try:
             with open(filename, 'w+', newline='') as fp:
