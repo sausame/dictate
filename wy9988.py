@@ -219,11 +219,14 @@ class SynonymPage:
 
                         # Go back and ignore some chars
                         for index in range(pos - 1, -1, -1):
-                            if segment[index] not in ['[', ']', '(', ')']:
-                                index += 1
-                                break
+                            if segment[index] in ['[', ']', '(', ')']:
+                                continue
+
+                            # Found an invalid and break loop
+                            index += 1
+                            break
                         else:
-                            index = pos
+                            index = 0
 
                         if index > 0:
                             appendContent(newSegments, segment[:index])
@@ -245,7 +248,7 @@ class SynonymPage:
 
                 position = pos + 1
                 break
-
+            
             if position <= 0:
                 string = ' '.join(newSegments)
                 lane.append(string.strip())
