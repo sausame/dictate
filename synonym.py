@@ -26,7 +26,10 @@ class Synonym:
             values[0], values[2], values[1], values[3], chr(12288))
         prYellow(content)
 
-        word = '{},{}'.format(values[0], values[2])
+        first = random.randint(0, 1) * 2
+        second = 2 - first
+
+        word = '{},{}'.format(values[first], values[second])
         self.tts.say(word)
 
         _, timeout = getch(1, isPrompt=False)
