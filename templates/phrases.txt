@@ -3,9 +3,11 @@ v v.
 w v.
 vi vi.
 vt vt.
+wt vt.
 adi adj.
 adj adj.
 ad; adj.
 adv adv.
 ady adv.
 adu adv.
+prep prep.
