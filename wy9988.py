@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 import csv
+import json
 import os
 import random
 import re
@@ -11,7 +12,7 @@ import traceback
 
 from datetime import datetime
 from tts import LocalTts as Tts
-from utils import remove, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 
 class Phrase:
@@ -262,15 +263,7 @@ class SynonymPage:
 
         if len1 == len2 and len1 % 2 == 0:
             succeeded = True
-
-            try:
-                cmd = 'rm {}-*.csv'.format(prefix)
-                runCommand(cmd)
-            except:
-                pass
-
-            t = int(os.path.getmtime(pathname)) % 1000
-            filename = '{}-{}.csv'.format(prefix, t)
+            filename = '{}.csv'.format(prefix)
         else:
             succeeded = False
             filename = '{}.error.csv'.format(prefix)
@@ -320,22 +313,64 @@ class SynonymPage:
         return False
 
 
-def run(name, configFile):
+class SynonymDictionary:
 
-    def existCsv(txtPathname):
-        t = int(os.path.getmtime(txtPathname)) % 1000
-        csvPathname = '{}-{}.csv'.format(txtPathname[:-4], t)
+    def __init__(self, dirname):
+
+        self.dirname = dirname
+
+        self.dictpath = os.path.join(dirname, 'dictionary.json')
+
+        self.dictionary = dict()
+        self.phrase = Phrase()
+
+        self.load()
+
+    def __del__(self):
+        self.save()
+
+    def load(self):
+
+        if not os.path.exists(self.dictpath):
+            return
+
+        with open(self.dictpath) as fp:
+            content = json.loads(fp.read())
+            self.dictionary.update(content)
+
+    def save(self):
+        with open(self.dictpath, 'w+', newline='') as fp:
+            fp.write(reprDict(self.dictionary))
+
+    def getkey(self, pathname):
+        return pathname.replace('/', '-').replace('\\', '-').replace('.', '-')
+
+    def isParsed(self, pathname):
+
+        key = self.getkey(pathname)
+        if key not in self.dictionary.keys():
+            return False
+
+        value = int(os.path.getmtime(pathname))
+        if value != self.dictionary[key]:
+            return False
+
+        csvPathname = '{}.csv'.format(pathname[:-4])
         return os.path.exists(csvPathname)
 
-    try:
-        prGreen('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+    def update(self, pathname):
+        key = self.getkey(pathname)
+        value = int(os.path.getmtime(pathname))
 
-        synonymPath = getProperty(configFile, 'synonym-path')
-        pathnames = getPathnames(synonymPath, '.txt')
+        self.dictionary[key] = value
+
+    def parse(self):
+
+        pathnames = getPathnames(self.dirname, '.txt')
 
         num = len(pathnames)
         if num == 0:
-            prRed('No file is found in {}'.format(synonymPath))
+            prRed('No file is found in {}'.format(self.dirname))
             return
 
         phrase = Phrase()
@@ -346,17 +381,29 @@ def run(name, configFile):
         skippedCount = 0
 
         for pathname in pathnames:
-            if existCsv(pathname):
+            if self.isParsed(pathname):
                 skippedCount += 1
                 continue
 
             if page.parse(pathname):
+                self.update(pathname)
                 succeededCount += 1
             else:
                 failedCount += 1
 
         prGreen('Parsed {}, failed {}, skipped {}'.format(
             succeededCount, failedCount, skippedCount))
+
+
+def run(name, configFile):
+
+    try:
+        prGreen('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+
+        synonymPath = getProperty(configFile, 'synonym-path')
+
+        dictionary = SynonymDictionary(synonymPath)
+        dictionary.parse()
 
     except KeyboardInterrupt:
         pass
