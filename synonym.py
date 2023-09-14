@@ -11,7 +11,8 @@ import traceback
 
 from datetime import datetime
 from tts import LocalTts as Tts
-from utils import getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import getch, getchar, getPathnames, getProperty, reprDict, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+
 
 class Synonym:
 
@@ -20,14 +21,17 @@ class Synonym:
 
     def study(self, values):
 
-        prYellow(''.join(['-'] * 60))
-
-        content = '{0:{4}^20}|{1:{4}^20}\n{2:{4}^20}|{2:{4}^20}'.format(
-            values[0], values[2], values[1], values[3], chr(12288))
-        prYellow(content)
+        prYellow(''.join(['-'] * 100))
 
         first = random.randint(0, 1) * 2
         second = 2 - first
+
+        content = '{:^40}\t{:^40}'.format(values[first], values[second])
+        prLightGray(content)
+
+        content = '{:^40}\t{:^40}'.format(
+            values[first + 1], values[second + 1])
+        prPurple(content)
 
         word = '{},{}'.format(values[first], values[second])
         self.tts.say(word)
@@ -41,6 +45,7 @@ class Synonym:
 
     def test(self):
         pass
+
 
 class SynonymChapter:
 
@@ -75,7 +80,9 @@ class SynonymChapter:
 
             size = len(rows)
 
-            prYellow(''.join(['='] * 60))
+            os.system('clear')
+
+            prYellow(''.join(['='] * 100))
             prYellow('{} synonymes are left.'.format(size))
 
             indexes = [False] * size
@@ -92,7 +99,7 @@ class SynonymChapter:
                         indexes[index] = True
                         break
                 else:
-                    break # Not found
+                    break  # Not found
 
                 skiped = synonym.study(rows[index])
                 if skiped:
@@ -112,46 +119,117 @@ class SynonymChapter:
 class SynonymBook:
 
     def __init__(self, bookDir):
+
         self.bookDir = bookDir
+
+        self.chapters = []
+        self.chapterDict = dict()
+
+    def extend(self, pathname):
+
+        def getNumbers(src):
+
+            numbers = []
+
+            REGEX = r'(\d+)-(\d+)'
+            matches = re.finditer(REGEX, src, re.MULTILINE)
+
+            for matchNum, match in enumerate(matches, start=1):
+                for groupNum in range(0, len(match.groups())):
+                    groupNum = groupNum + 1
+                    numbers.append(int(match.group(groupNum)))
+
+            return numbers
+
+        numbers = getNumbers(pathname)
+
+        chapterNumber = numbers[0]
+        pageNumber = numbers[1]
+
+        if chapterNumber not in self.chapters:
+            self.chapters.append(chapterNumber)
+            self.chapters = sorted(self.chapters)
+
+        chapterKey = 'chapter-{}'.format(chapterNumber)
+
+        if chapterKey in self.chapterDict.keys():
+            chapter = self.chapterDict[chapterKey]
+        else:
+            chapter = dict()
+            chapter['pages'] = []
+
+        chapter['pages'].append(pageNumber)
+        chapter['pages'] = sorted(chapter['pages'])
+
+        pageKey = 'page-{}'.format(pageNumber)
+        chapter[pageKey] = pathname
+
+        self.chapterDict[chapterKey] = chapter
+
+    def load(self):
+
+        pathnames = getPathnames(self.bookDir, '.csv')
+
+        num = len(pathnames)
+        if num == 0:
+            prRed('No file is found in {}'.format(self.bookDir))
+            return False
+
+        for pathname in pathnames:
+            self.extend(pathname)
+
+        return True
 
     def study(self):
 
-        try:
-            print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        def readNumber(array, promptPrefix, timeout):
 
-            pathnames = getPathnames(self.bookDir, '.csv')
+            start = array[0]
+            end = array[len(array) - 1]
 
-            num = len(pathnames)
-            if num == 0:
-                prRed('No file is found in {}'.format(self.bookDir))
-                return
- 
-            pathnames = sorted(pathnames, reverse=True)
+            while True:
+                prCyan('{} from {} to {}, press return to select one randomly:'.format(
+                    promptPrefix, start, end))
 
-            sequenceNum = -1
-            while sequenceNum < 0 or sequenceNum >= num:
-
-                prGreen('Please select a chapter you want to study:')
-
-                for index in range(num):
-                    pathname = pathnames[index]
-                    prLightPurple('{:3}\t{}'.format(index+1, pathname))
-
-                prGreen(
-                    'Please input the sequence number (default is {}):'.format(num))
-
-                sequenceNum = stdinReadline(20, isPrompt=False)
+                number = stdinReadline(timeout, isPrompt=False)
 
                 try:
-                    if len(sequenceNum) > 0:
-                        sequenceNum = int(sequenceNum) - 1
-                    else:
-                        sequenceNum = num - 1
-                except ValueError as e:
-                    sequenceNum = num - 1
+                    if len(number) > 0:
+                        number = int(number)
+                        if number not in array:
+                            prRed(
+                                'No NO.{}, please choose another one'.format(number))
+                            continue
 
-            pathname = pathnames[sequenceNum]
-            prYellow('"{}" is selected.'.format(pathname))
+                        return number
+                except ValueError as e:
+                    pass
+
+                index = random.randint(0, len(array) - 1)
+                return array[index]
+
+        try:
+            os.system('clear')
+
+            print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+
+            if not self.load():
+                return
+
+            random.seed()
+
+            chapterNumber = readNumber(
+                self.chapters, 'Please select a chapter', 10)
+            prYellow('Chapter "{}" is selected.'.format(chapterNumber))
+
+            chapterKey = 'chapter-{}'.format(chapterNumber)
+            pageNumber = readNumber(
+                self.chapterDict[chapterKey]['pages'], 'Please select a page', 10)
+            prYellow('Page "{}" is selected.'.format(pageNumber))
+
+            pageKey = 'page-{}'.format(pageNumber)
+            pathname = self.chapterDict[chapterKey][pageKey]
+            prYellow('File "{}" is selected.'.format(pathname))
 
             chapter = SynonymChapter()
             chapter.study(pathname)
@@ -159,7 +237,8 @@ class SynonymBook:
         except KeyboardInterrupt:
             pass
         except Exception as e:
-            prRed('Error occurs at {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            prRed('Error occurs at {}'.format(
+                datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
             traceback.print_exc(file=sys.stdout)
         finally:
             pass
@@ -171,6 +250,7 @@ def run(name, configFile):
 
     book = SynonymBook(synonymPath)
     book.study()
+
 
 def main(argv):
 
@@ -188,6 +268,7 @@ def main(argv):
         configFile = 'config.ini'
 
     run(name, configFile)
+
 
 if __name__ == '__main__':
     main(sys.argv)
