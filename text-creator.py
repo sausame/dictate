@@ -117,7 +117,7 @@ class TextCreator:
                 prPurple(source)
                 self.sendNotification(source)
 
-            return updated
+            return updated, updatedIndex
 
         parts = [''] * 2
 
@@ -133,22 +133,23 @@ class TextCreator:
 
             source = pyperclip.paste()
             if not source:
-                time.sleep(3)
+                time.sleep(1)
                 continue
 
-            updated = update(parts, source)
+            updated, updatedIndex = update(parts, source)
 
             if updated:
 
                 if len(parts[0]) == 0 or len(parts[1]) == 0:
-                    time.sleep(3)
+                    time.sleep(1)
                     continue
 
-                self.sendNotification('Save ?')
-                prCyan('Save page {} of chapter {}?'.format(
-                    self.pageNumber, self.chapterNumber))
+                if updatedIndex >= 0:
+                    self.sendNotification('Save ?')
+                    prCyan('Save page {} of chapter {}?'.format(
+                        self.pageNumber, self.chapterNumber))
 
-                _, timeout = stdinReadline(5)
+                _, timeout = stdinReadline(2)
                 if timeout:
                     continue
 
@@ -161,7 +162,7 @@ class TextCreator:
             prCyan('Increase chapter number {} -> {}?'.format(self.chapterNumber,
                    self.chapterNumber + 1))
 
-            _, timeout = stdinReadline(10)
+            _, timeout = stdinReadline(3)
             if not timeout:
                 self.increase()
             else:
