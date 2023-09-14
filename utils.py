@@ -58,12 +58,15 @@ def countdown(t):
 def stdinReadline(timeout=0, isStrip=True, isPrompt=True):
 
     content = ''
+    isTimeout = False
 
     for index in range(1):
 
         if timeout <= 0:
             content = sys.stdin.readline()
             break
+
+        isTimeout = True
 
         while timeout: 
 
@@ -75,6 +78,7 @@ def stdinReadline(timeout=0, isStrip=True, isPrompt=True):
             inputFlag, _, _ = select.select([sys.stdin], [], [], 1)
 
             if inputFlag:
+                isTimeout = False
                 content = sys.stdin.readline()
                 break
 
@@ -83,7 +87,7 @@ def stdinReadline(timeout=0, isStrip=True, isPrompt=True):
     if isStrip:
         content = content.strip()
 
-    return content
+    return content, isTimeout
 
 def mkdir(path, mode=stat.S_IRUSR|stat.S_IWUSR|stat.S_IXUSR|stat.S_IRGRP|stat.S_IWGRP|stat.S_IXGRP|stat.S_IROTH|stat.S_IWOTH|stat.S_IXOTH):
     if not os.path.exists(path):
@@ -223,6 +227,21 @@ def displayImage(path):
 def playSound(pathname, speed=1):
     cmd = 'mplayer -af scaletempo -speed {} {}'.format(speed, pathname)
     runCommand(cmd)
+
+# The notifier function
+def notify(title, subtitle, message):
+
+    system = platform.system()
+
+    if system == 'Darwin':
+        t = '-title {!r}'.format(title)
+        s = '-subtitle {!r}'.format(subtitle)
+        m = '-message {!r}'.format(message)
+        os.system('terminal-notifier {}'.format(' '.join([m, t, s])))
+    elif system == 'Linux':
+        pass
+    else:
+        pass
 
 # update property of name to value
 def updateProperty(path, name, value):
