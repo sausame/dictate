@@ -151,31 +151,49 @@ class Sentence:
     @staticmethod
     def refine(string):
 
+        if len(string) == 0:
+            return None
+
         string = Phrase.replaceall(string)
         positions = Phrase.findall(string)
 
         if positions is not None:
             start, end = positions[0]
-            return string[:start], string[start:]
+            if start == 0:
+                return [string]
+
+            return [string[:start], string[start:]]
 
         position = Explanation.find(string)
         if position > 0:
-            return string[:position], string[position:]
+            return [string[:position], string[position:]]
 
-        return string, None
+        return [string]
 
 
-def run(name, configFile):
+def run(name, pathname):
 
     try:
-        prGreen('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        prBlack('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
-        filename = 'english/synonym/9988/unit-b6-1.txt'
-        with open(filename) as fp:
+        prBlack('Refining {}'.format(pathname))
+        with open(pathname) as fp:
             lines = fp.read().splitlines()
 
             for line in lines:
-                print(Sentence.refine(line))
+                sentences = Sentence.refine(line)
+                if not sentences:
+                    continue
+
+                changed = True
+                if len(sentences) == 1 and sentences[0] == line:
+                    changed = False
+
+                if changed:
+                    prCyan('{}'.format(line))
+                    prRed('\t{}'.format('\t|\t'.join(sentences)))
+                else:
+                    prGreen('{}'.format(line))
 
     except KeyboardInterrupt:
         pass
@@ -190,19 +208,16 @@ def run(name, configFile):
 def main(argv):
 
     if len(argv) < 2:
-        print('Usage:\n\t', argv[0], '[config-file]\n')
+        print('Usage:\n\t', argv[0], 'PATH-NAME\n')
+        return
 
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
 
     name = os.path.basename(argv[0])[:-3]  # Remove ".py"
+    pathname = os.path.realpath(argv[1])
 
-    if len(argv) > 1:
-        configFile = os.path.realpath(argv[1])
-    else:
-        configFile = 'config.ini'
-
-    run(name, configFile)
+    run(name, pathname)
 
 
 if __name__ == '__main__':
