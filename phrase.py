@@ -128,19 +128,27 @@ class Phrase:
 
 class Explanation:
 
-    REGEX = r"([^a-zA-Z0-9$ %'])"
+    EXCLUDE_REGEX = r"([^a-zA-Z0-9 .%$\-'])"
+    INCLUDE_REGEX = r'[a-zA-Z0-9]'
 
     # Find the first one
     @staticmethod
     def find(string):
 
-        matches = re.finditer(Explanation.REGEX, string, re.MULTILINE)
+        matches = re.finditer(Explanation.EXCLUDE_REGEX, string, re.MULTILINE)
 
         for matchNum, match in enumerate(matches, start=1):
 
             for groupNum in range(0, len(match.groups())):
                 groupNum = groupNum + 1
-                return match.start(groupNum)
+
+                start = match.start(groupNum)
+
+                if re.search(Explanation.INCLUDE_REGEX, string[:start], re.MULTILINE):
+                    return start
+
+                # Not found
+                return 0
 
         return -1
 
@@ -149,26 +157,117 @@ class Sentence:
 
     # Find the first one
     @staticmethod
-    def refine(string):
+    def refine(src):
 
-        if len(string) == 0:
+        if len(src) == 0:
             return None
 
-        string = Phrase.replaceall(string)
-        positions = Phrase.findall(string)
+        dest = Phrase.replaceall(src)
+        sentence = {
+            'exist-explanation': True,
+            'changed': dest != src,
+            'group': [dest]
+        }
+
+        positions = Phrase.findall(dest)
 
         if positions is not None:
             start, end = positions[0]
             if start == 0:
-                return [string]
+                return sentence
 
-            return [string[:start], string[start:]]
+            sentence['changed'] = True
+            sentence['group'] = [dest[:start], dest[start:]]
+            return sentence
 
-        position = Explanation.find(string)
+        position = Explanation.find(dest)
+        if position == 0:
+            return sentence
+
         if position > 0:
-            return [string[:position], string[position:]]
+            sentence['changed'] = True
+            sentence['group'] = [dest[:position], dest[position:]]
+            return sentence
 
-        return [string]
+        sentence['exist-explanation'] = False
+        return sentence
+
+
+class SentenceGroup:
+
+    def reset(self):
+        self.group = []
+
+    def read(self, pathname):
+
+        self.reset()
+
+        with open(pathname) as fp:
+            lines = fp.read().splitlines()
+
+            for line in lines:
+                sentence = Sentence.refine(line)
+                if not sentence:
+                    continue
+
+                self.extend(sentence)
+
+        return self.group
+
+    def extend(self, sentence):
+
+        def shouldExtendExplanation(sentence, group):
+            if not sentence['exist-explanation']:
+                return False
+
+            if len(sentence['group']) > 1:
+                return False
+
+            if len(group) % 2 == 1:
+                return False
+
+            return True
+
+        def shouldCombine(sentence, group):
+            if len(group) % 2 == 0:
+                return False
+
+            if len(sentence['group']) < 2:
+                return False
+
+            return True
+
+        if shouldExtendExplanation(sentence, self.group):
+            self.group[len(self.group) - 1] += sentence['group'][0]
+            return
+
+        if shouldCombine(sentence, self.group):
+            self.group.append(''.join(sentence['group']))
+            return
+
+        self.group.extend(sentence['group'])
+
+    def test(self, pathname):
+
+        prBlack('Refining {}'.format(pathname))
+
+        with open(pathname) as fp:
+            lines = fp.read().splitlines()
+
+            for line in lines:
+                sentence = Sentence.refine(line)
+                if not sentence:
+                    continue
+
+                if sentence['changed']:
+                    prCyan('{}'.format(line))
+                    group = sentence['group']
+                    if len(group) == 1:
+                        prRed('\t{}'.format(group[0]))
+                    else:
+                        prRed('\t{:40}\t{:40}'.format(group[0], group[1]))
+                else:
+                    prGreen('{}'.format(line))
 
 
 def run(name, pathname):
@@ -176,24 +275,15 @@ def run(name, pathname):
     try:
         prBlack('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
-        prBlack('Refining {}'.format(pathname))
-        with open(pathname) as fp:
-            lines = fp.read().splitlines()
+        group = SentenceGroup()
+        group.test(pathname)
 
-            for line in lines:
-                sentences = Sentence.refine(line)
-                if not sentences:
-                    continue
+        prBlack('{}'.format(''.join(['-'] * 60)))
 
-                changed = True
-                if len(sentences) == 1 and sentences[0] == line:
-                    changed = False
-
-                if changed:
-                    prCyan('{}'.format(line))
-                    prRed('\t{}'.format('\t|\t'.join(sentences)))
-                else:
-                    prGreen('{}'.format(line))
+        sentences = group.read(pathname)
+        for index in range(int(len(sentences) / 2)):
+            pos = index * 2
+            prCyan('{:40}\t{:40}'.format(sentences[pos], sentences[pos + 1]))
 
     except KeyboardInterrupt:
         pass

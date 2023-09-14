@@ -11,275 +11,31 @@ import time
 import traceback
 
 from datetime import datetime
+from phrase import SentenceGroup
 from tts import LocalTts as Tts
 from utils import remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 
-class Phrase:
+class SynonymPage(SentenceGroup):
 
-    def __init__(self):
-        with open('templates/phrases.txt') as fp:
-            lines = fp.read().splitlines()
-
-        if len(lines) == 0:
-            return
-
-        self.reagents1 = []
-        self.reagents2 = []
-
-        self.phrases = []
-
-        for line in lines:
-            parts = line.split(' ')
-
-            self.reagents1.append(parts[0])
-            self.reagents2.append('{}.'.format(parts[0]))
-            self.phrases.append(parts[1])
-
-    def find(self, src):
-        for index in range(len(self.reagents1)):
-            if src == self.reagents1[index]:
-                return index
-
-        for index in range(len(self.reagents2)):
-            if src == self.reagents2[index]:
-                return index
-
-        return -1
-
-    def matches(self, src):
-
-        if not src:
-            return False
-
-        texts = src.split('/')
-        if len(texts) == 0:
-            return False
-
-        for text in texts:
-
-            text = text.strip()
-            if len(text) == 0:
-                continue
-
-            pos = self.find(text)
-            if pos < 0:
-                return False
-
-        return True
-
-    def get(self, src):
-
-        if not src:
-            return None
-
-        texts = src.split('/')
-        phrases = []
-
-        for text in texts:
-
-            text = text.strip()
-            if len(text) == 0:
-                continue
-
-            pos = self.find(text)
-            if pos < 0:
-                return None
-
-            phrases.append(self.phrases[pos])
-
-        if len(phrases) == 0:
-            return None
-
-        return '/'.join(phrases)
-
-    def appendToList(self, alist, content):
-
-        text = self.get(content)
-
-        if text:
-            alist.append(text)
-        else:
-            alist.append(content)
-
-
-class Explanation:
-
-    @staticmethod
-    def get(phrase, explanation):
-
-        parts = []
-
-        flag = False
-        start = 0
-
-        for pos in range(len(explanation)):
-            word = explanation[pos]
-
-            if not flag:
-                if ord(word) >= 0x1000:
-                    flag = True
-                    if pos > start:
-                        content = explanation[start:pos].strip()
-                        phrase.appendToList(parts, content)
-
-                    start = pos
-                else:
-                    continue
-            else:
-                if ord(word) >= 0x1000:
-                    continue
-                else:
-                    flag = False
-                    if pos > start:
-                        parts.append(explanation[start:pos].strip())
-                    start = pos
-        else:
-            content = explanation[start:].strip()
-            if flag:
-                parts.append(content)
-            else:
-                phrase.appendToList(parts, content)
-
-        return ' '.join(parts)
-
-
-class SynonymPage:
-
-    def __init__(self, phrase):
-        self.phrase = phrase
-
-    def parse(self, pathname):
+    def read(self, pathname):
 
         prGreen('Parsing {} ...'.format(pathname))
 
-        lines = []
+        super().read(pathname)
 
-        with open(pathname) as fp:
-            lines = fp.read().splitlines()
+        return self.save(pathname)
 
-            if len(lines) == 0:
-                return False
-
-        lane1 = []
-        lane2 = []
-        curLane = lane1
-
-        count = 0
-
-        for line in lines:
-
-            line = line.strip()
-
-            if len(line) <= 1:
-                count += 1
-                continue
-
-            if count >= 3:
-                curLane = lane2
-
-            self.append(curLane, line)
-
-        return self.save(pathname, lane1, lane2)
-
-    def append(self, lane, line):
-
-        def appendContent(segments, content):
-            self.phrase.appendToList(segments, content)
-
-        def appendText(lane, line):
-
-            if not re.search(r'[a-zA-Z]+', line):
-                pos = len(lane) - 1
-                if pos < 0:
-                    raise Exception('Error:{}'.format(line))
-
-                lane[pos] += line
-                return
-
-            segments = line.split(' ')
-            newSegments = []
-
-            position = -1
-
-            for segment in segments:
-                if len(segment) == 0:
-                    continue
-
-                '''
-                if position >= 0:
-                    appendContent(newSegments, segment)
-                    continue
-                '''
-
-                for pos in range(len(segment)):
-                    code = segment[pos]
-
-                    if ord(code) >= 0x1000:
-
-                        # Go back and ignore some chars
-                        for index in range(pos - 1, -1, -1):
-                            if segment[index] in ['[', ']', '(', ')']:
-                                continue
-
-                            # Found an invalid and break loop
-                            index += 1
-                            break
-                        else:
-                            index = 0
-
-                        if index > 0:
-                            appendContent(newSegments, segment[:index])
-
-                        if position < 0:
-                            # Only set the value once
-                            position = len(newSegments)
-
-                        appendContent(newSegments, segment[index:])
-                        break
-                else:
-                    appendContent(newSegments, segment)
-
-            for pos in range(position - 1, -1, -1):
-
-                segment = newSegments[pos]
-                if self.phrase.matches(segment):
-                    continue
-
-                position = pos + 1
-                break
-            
-            if position <= 0:
-                string = ' '.join(newSegments)
-                lane.append(string.strip())
-                return
-
-            string = ' '.join(newSegments[:position])
-            lane.append(string.strip())
-
-            string = ' '.join(newSegments[position:])
-            string = Explanation.get(self.phrase, string)
-            lane.append(string.strip())
-
-        lineType = len(lane) % 2
-        if 0 == lineType:
-            appendText(lane, line)
-            return
-
-        string = Explanation.get(self.phrase, line)
-        lane.append(string)
-
-    def save(self, pathname, lane1, lane2):
+    def save(self, pathname):
 
         pos = pathname.rfind('.')
         prefix = pathname[:pos]
 
-        len1 = len(lane1)
-        len2 = len(lane2)
-
         errorFilename = '{}.error.csv'.format(prefix)
         succeededFilename = '{}.csv'.format(prefix)
-        if len1 == len2 and len1 % 2 == 0:
+
+        size = int(len(self.group) / 4)
+        if len(self.group) % 4 == 0:
             succeeded = True
             filename = succeededFilename
 
@@ -299,26 +55,27 @@ class SynonymPage:
 
                 index = 0
 
-                while index * 2 < len1 or index * 2 < len2:
-                    pos = index * 2
-                    index += 1
+                for index in range(size):
 
-                    values = [''] * 4
+                    firstPos = index * 2
+                    secondPos = firstPos + size * 2
 
-                    for i in range(2):
-                        pos += i
-
-                        if pos < len1:
-                            values[i] = lane1[pos]
-
-                        if pos < len2:
-                            values[2 + i] = lane2[pos]
+                    values = [self.group[firstPos],
+                              self.group[firstPos + 1],
+                              self.group[secondPos],
+                              self.group[secondPos + 1]]
 
                     writer.writerow(values)
 
                 if succeeded:
                     prGreen('Successfully saved into {}'.format(filename))
+
                 else:
+                    values = []
+                    for index in range(size * 4, len(self.group)):
+                        values.append(self.group[index])
+                    writer.writerow(values)
+
                     prRed('Failed and saved into {}'.format(filename))
 
                 return succeeded
@@ -342,7 +99,6 @@ class SynonymDictionary:
         self.dictpath = os.path.join(dirname, 'dictionary.json')
 
         self.dictionary = dict()
-        self.phrase = Phrase()
 
         self.load()
 
@@ -393,19 +149,18 @@ class SynonymDictionary:
             prRed('No file is found in {}'.format(self.dirname))
             return
 
-        phrase = Phrase()
-        page = SynonymPage(phrase)
-
         succeededCount = 0
         failedCount = 0
         skippedCount = 0
+
+        page = SynonymPage()
 
         for pathname in pathnames:
             if self.isParsed(pathname):
                 skippedCount += 1
                 continue
 
-            if page.parse(pathname):
+            if page.read(pathname):
                 self.update(pathname)
                 succeededCount += 1
             else:
