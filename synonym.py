@@ -125,6 +125,24 @@ class SynonymBook:
         self.chapters = []
         self.chapterDict = dict()
 
+    @staticmethod
+    def getChapterKey(number):
+        return 'chapter-{}'.format(number)
+
+    @staticmethod
+    def getPageKey(number):
+        return 'page-{}'.format(number)
+
+    def getPages(self, chapterNumber):
+        chapterKey = self.getChapterKey(chapterNumber)
+        return self.chapterDict[chapterKey]['pages']
+
+    def getPathname(self, chapterNumber, pageNumber):
+        chapterKey = self.getChapterKey(chapterNumber)
+        pageKey = self.getPageKey(pageNumber)
+
+        return self.chapterDict[chapterKey][pageKey]
+
     def extend(self, pathname):
 
         def getNumbers(src):
@@ -150,7 +168,7 @@ class SynonymBook:
             self.chapters.append(chapterNumber)
             self.chapters = sorted(self.chapters)
 
-        chapterKey = 'chapter-{}'.format(chapterNumber)
+        chapterKey = self.getChapterKey(chapterNumber)
 
         if chapterKey in self.chapterDict.keys():
             chapter = self.chapterDict[chapterKey]
@@ -161,7 +179,7 @@ class SynonymBook:
         chapter['pages'].append(pageNumber)
         chapter['pages'] = sorted(chapter['pages'])
 
-        pageKey = 'page-{}'.format(pageNumber)
+        pageKey = self.getPageKey(pageNumber)
         chapter[pageKey] = pathname
 
         self.chapterDict[chapterKey] = chapter
@@ -191,7 +209,7 @@ class SynonymBook:
                 prCyan('{} from {} to {}, press return to select one randomly:'.format(
                     promptPrefix, start, end))
 
-                number = stdinReadline(timeout, isPrompt=False)
+                number, _ = stdinReadline(timeout, isPrompt=False)
 
                 try:
                     if len(number) > 0:
@@ -222,13 +240,11 @@ class SynonymBook:
                 self.chapters, 'Please select a chapter', 10)
             prYellow('Chapter "{}" is selected.'.format(chapterNumber))
 
-            chapterKey = 'chapter-{}'.format(chapterNumber)
-            pageNumber = readNumber(
-                self.chapterDict[chapterKey]['pages'], 'Please select a page', 10)
+            pages = self.getPages(chapterNumber)
+            pageNumber = readNumber(pages, 'Please select a page', 10)
             prYellow('Page "{}" is selected.'.format(pageNumber))
 
-            pageKey = 'page-{}'.format(pageNumber)
-            pathname = self.chapterDict[chapterKey][pageKey]
+            pathname = self.getPathname(chapterNumber, pageNumber)
             prYellow('File "{}" is selected.'.format(pathname))
 
             chapter = SynonymChapter()
