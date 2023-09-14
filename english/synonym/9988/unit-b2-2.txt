@@ -1,7 +1,7 @@
 support vt./n.支持，帮助
 health n.健康;健康状况
 two n.二;两个，一对
-monthlyad;.每月的，每月一次的
+monthly ad;.每月的，每月一次的
 annual ad;每年的
 insurance n保险;保险契约
 personal adj.个人的，私人的
@@ -40,7 +40,8 @@ adj.不确定的，不清楚的，拿不准的
 type n.种类，类型
 listen vi. 听，倾听
 see vt./vi.看，看见，看到
-the middle of the twentiesth century 20 世纪中期
+the middle of the twentiesth century 
+20 世纪中期
 high level 高等级，高水平
 workforce n.劳动力，劳动人口
 invest vt./vi.投资

@@ -17,7 +17,7 @@ adimaintain vt.保持，维持(在某一比率或水平上)
 health expert健康方面的专家
 lose vt.(因被夺走或遭损坏而丧失，失去
 buy
-.买，购买，购得
+v.买，购买，购得
 walk v.走，走路，行走
 consist of...由......组成，包含
 包括[动词短语]
@@ -41,7 +41,7 @@ like to...
 give off...
 释放，放出，发出(气、气味气体、热量等)[动词短语 ]
 ripen
-vt.vi.(使)成熟，(使)熟
+vt./vi.(使)成熟，(使)熟
 stay
 vi. 保持，维持
 professional dietician
