@@ -31,7 +31,7 @@ class TextCreator:
     def load(self):
 
         book = SynonymBook(self.dirname)
-        if not book.load():
+        if not book.loadRaw():
             return
 
         self.chapterNumber = book.chapters[len(book.chapters) - 1] + 1
@@ -149,7 +149,7 @@ class TextCreator:
                     prCyan('Save page {} of chapter {}?'.format(
                         self.pageNumber, self.chapterNumber))
 
-                _, timeout = stdinReadline(2)
+                _, timeout = stdinReadline(1, isPrompt=False)
                 if timeout:
                     continue
 
@@ -162,7 +162,7 @@ class TextCreator:
             prCyan('Increase chapter number {} -> {}?'.format(self.chapterNumber,
                    self.chapterNumber + 1))
 
-            _, timeout = stdinReadline(3)
+            _, timeout = stdinReadline(1)
             if not timeout:
                 self.increase()
             else:

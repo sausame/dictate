@@ -184,9 +184,9 @@ class SynonymBook:
 
         self.chapterDict[chapterKey] = chapter
 
-    def load(self):
+    def load(self, suffix='.csv'):
 
-        pathnames = getPathnames(self.bookDir, '.csv')
+        pathnames = getPathnames(self.bookDir, suffix)
 
         num = len(pathnames)
         if num == 0:
@@ -197,6 +197,9 @@ class SynonymBook:
             self.extend(pathname)
 
         return True
+
+    def loadRaw(self):
+        return self.load('.txt')
 
     def study(self):
 
