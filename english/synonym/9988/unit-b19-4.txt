@@ -1,0 +1,7 @@
+feature n.特征，特色
+copy
+v 复制;复印;仿造
+
+
+characteristic n.特性，特
+duplicate v. 复制;复写;拷贝;重复
