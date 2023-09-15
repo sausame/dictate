@@ -24,6 +24,9 @@ class Phrase:
     ADJ_REGEX = r'[ \t](ad[ij:;][,\.]*)[^a-zA-Z]+'
     ADV_REGEX = r'[ \t](ad[vyu][,\.]*)[^a-zA-Z]+'
     PREP_REGEX = r'[ \t](prep[,\.]*)[^a-zA-Z]+'
+    CONJ_REGEX = r'[ \t](conj[,\.]*)[^a-zA-Z]+'
+    PRON_REGEX = r'[ \t](pron[,\.]*)[^a-zA-Z]+'
+    DEB_REGEX = r'[ \t](deb[,\.]*)[^a-zA-Z]+'
 
     PHRASE_DICT = {
         'noun': {
@@ -53,6 +56,18 @@ class Phrase:
         'prep': {
             'regex': PREP_REGEX,
             'exp': 'prep.'
+        },
+        'conj': {
+            'regex': CONJ_REGEX,
+            'exp': 'conj.'
+        },
+        'pron': {
+            'regex': PRON_REGEX,
+            'exp': 'pron.'
+        },
+        'deb': {
+            'regex': DEB_REGEX,
+            'exp': 'deb.'
         }
     }
 
