@@ -15,7 +15,7 @@ from tts import LocalTts as Tts
 from utils import remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 
-class Phrase:
+class Category:
 
     NOUN_REGEX = r'[ \t]([nm][,\.]*)[^a-zA-Z]+'
     VERB_REGEX = r'[ \t]([vuw][,\.]*)[^a-zA-Z]+'
@@ -27,8 +27,9 @@ class Phrase:
     CONJ_REGEX = r'[ \t](conj[,\.]*)[^a-zA-Z]+'
     PRON_REGEX = r'[ \t](pron[,\.]*)[^a-zA-Z]+'
     DEB_REGEX = r'[ \t](deb[,\.]*)[^a-zA-Z]+'
+    ABBR_REGEX = r'[ \t](abbr[,\.]*)[^a-zA-Z]+'
 
-    PHRASE_DICT = {
+    CATEGORY_DICT = {
         'noun': {
             'regex': NOUN_REGEX,
             'exp': 'n.'
@@ -68,6 +69,10 @@ class Phrase:
         'deb': {
             'regex': DEB_REGEX,
             'exp': 'deb.'
+        },
+        'abbr': {
+            'regex': ABBR_REGEX,
+            'exp': 'abbr.'
         }
     }
 
@@ -100,10 +105,10 @@ class Phrase:
 
         positions = []
 
-        for key in Phrase.PHRASE_DICT.keys():
-            phrase = Phrase.PHRASE_DICT[key]
+        for key in Category.CATEGORY_DICT.keys():
+            phrase = Category.CATEGORY_DICT[key]
 
-            phrasePositions = Phrase.find(string, phrase)
+            phrasePositions = Category.find(string, phrase)
             if not phrasePositions:
                 continue
 
@@ -120,10 +125,10 @@ class Phrase:
         # Add a blank in front of the line
         string = ' ' + string
 
-        for key in Phrase.PHRASE_DICT.keys():
-            phrase = Phrase.PHRASE_DICT[key]
+        for key in Category.CATEGORY_DICT.keys():
+            phrase = Category.CATEGORY_DICT[key]
 
-            positions = Phrase.find(string, phrase)
+            positions = Category.find(string, phrase)
             if not positions:
                 continue
 
@@ -141,14 +146,132 @@ class Phrase:
         return string[1:]  # remove the blank
 
 
+class Phrase:
+
+    REGEXES = [r"\([a-zA-Z0-9']+\.*\)",
+               r"[a-zA-Z0-9']+",
+               r'[ \.%$\-]+']
+
+    @staticmethod
+    def find(string):
+        lanes = Phrase.multiFindAll(Phrase.REGEXES, string)
+        return Phrase.findContinuousRange(lanes)
+
+    @staticmethod
+    def findall(regex, string):
+        positions = []
+
+        matches = re.finditer(regex, string, re.MULTILINE)
+
+        for matchNum, match in enumerate(matches, start=1):
+            positions.append((match.start(), match.end()))
+
+        return positions
+
+    @staticmethod
+    def multiFindAll(regexes, string):
+        lanes = []
+
+        for regex in regexes:
+            positions = Phrase.findall(regex, string)
+
+            if len(positions) == 0:
+                continue
+
+            lanes.append(positions)
+
+        if len(lanes) == 0:
+            return None
+
+        return lanes
+
+    @staticmethod
+    def findContinuousRange(lanes):
+
+        if not lanes:
+            return 0, 0
+
+        lane = 0
+
+        minPosition = -1
+        maxPosition = 0
+
+        for index in range(0, len(lanes)):
+            positions = lanes[index]
+            start, end = positions[0]
+
+            if minPosition < 0 or start < minPosition:
+                lane = index
+
+                minPosition = start
+                maxPosition = end
+
+        indexes = [0] * len(lanes)
+
+        isContinued = True
+
+        while isContinued:
+
+            isContinued = False
+
+            for index in range(0, len(lanes)):
+
+                if index == lane:
+                    continue
+
+                positions = lanes[index]
+                length = len(positions)
+
+                curIndex = indexes[index]
+                if curIndex == length:
+                    continue
+
+                while curIndex < length:
+                    start, end = positions[curIndex]
+
+                    if start > maxPosition or end > maxPosition:
+                        break
+
+                    curIndex += 1
+
+                indexes[index] = curIndex
+                if curIndex == length:
+                    # not found
+                    continue
+
+                start, end = positions[curIndex]
+
+                if start <= maxPosition and end > maxPosition:
+                    isContinued = True
+
+                    maxPosition = end
+                    lane = index
+
+        return minPosition, maxPosition
+
+
 class Explanation:
 
     EXCLUDE_REGEX = r"([^a-zA-Z0-9 .%$\-'])"
     INCLUDE_REGEX = r'[a-zA-Z0-9]'
 
+
     # Find the first one
     @staticmethod
     def find(string):
+
+        start, end = Phrase.find(string)
+
+        if start > 0:
+            return 0
+
+        if end == 0 or end < len(string):
+            return end
+
+        return -1
+
+    @staticmethod
+    def findold(string):
 
         matches = re.finditer(Explanation.EXCLUDE_REGEX, string, re.MULTILINE)
 
@@ -167,7 +290,6 @@ class Explanation:
 
         return -1
 
-
 class Sentence:
 
     # Find the first one
@@ -177,14 +299,14 @@ class Sentence:
         if len(src) == 0:
             return None
 
-        dest = Phrase.replaceall(src)
+        dest = Category.replaceall(src)
         sentence = {
             'exist-explanation': True,
             'changed': dest != src,
             'group': [dest]
         }
 
-        positions = Phrase.findall(dest)
+        positions = Category.findall(dest)
 
         if positions is not None:
             start, end = positions[0]
@@ -232,13 +354,15 @@ class SentenceGroup:
     def extend(self, sentence):
 
         def shouldExtendExplanation(sentence, group):
+            length = len(group)
+
+            if length == 0 or length % 2 == 1:
+                return False
+
             if not sentence['exist-explanation']:
                 return False
 
             if len(sentence['group']) > 1:
-                return False
-
-            if len(group) % 2 == 1:
                 return False
 
             return True
