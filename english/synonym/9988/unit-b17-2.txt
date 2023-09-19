@@ -22,8 +22,9 @@ tourism
 m.旅游，观光;旅游业
 
 
-hunt for.. 寻找·...··[ 动词短语CD-Rom
-abbr: (计算机的)只读光盘
+hunt for.. 寻找·...··[ 动词短语
+CD-Rom
+abbr. (计算机的)只读光盘
 sequence
 v.使按顺序排列，安排顺序
 hard ad;难的，困难的，艰难的
