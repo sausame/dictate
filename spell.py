@@ -196,7 +196,7 @@ class Examiner:
     def test(self):
         prGreen('Please input the length (default is 6):')
 
-        length = stdinReadline(2)
+        length, _ = stdinReadline(2)
         if '' == length:
             length = 6
         else:
@@ -206,7 +206,7 @@ class Examiner:
 
         prGreen('Please input the number (default is 10):')
 
-        size = stdinReadline(2)
+        size, _ = stdinReadline(2)
         if '' == size:
             size = 10
         else:
@@ -216,7 +216,7 @@ class Examiner:
 
         prGreen('Please input the type [0: number, 1: post code] (default is 0):')
 
-        charType = stdinReadline(2)
+        charType, _ = stdinReadline(5)
         if '' == charType:
             charType = 0
         else:
