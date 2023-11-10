@@ -1,14 +1,13 @@
 collect
-. 收集(数据、样本等);(使 )聚集，(使)集合，(使) 集中
+v. 收集(数据、样本等);(使 )聚集，(使)集合，(使) 集中
 interview people
 对人进行采访;对人进行提问[ 动词短语]
 analyse data
-分析数据[动词短语 
+分析数据[动词短语]
 catch up with
 追上，赶上[动词短语]
 dichcult
 ad;难的，困难的
-m
 other students
 其他学生
 opinion
@@ -19,8 +18,7 @@ maximum
 ad;.最高的，最大的，最多的
 disagreement
 n.争执，意见不合
-when g w ae
-07日012月生复
+when
 conj.在·...··时候，当·....·时候
 guard
 v.保卫，守卫，保护
@@ -28,22 +26,14 @@ spend
 vt.花(时间)做某事
 
 
-元
-R
-0
-2
-2
-2
-2
 pick up..
-拿起，提起，拾起，拾起(诗词短语]
-questionnairen.调查问卷
+拿起，提起，拾起，拾起(动词短语)
+questionnaire n.调查问卷
 lab work
 实验室(对数据进行分析究)的工作
 behind
-ad比.o.0
-落后于
-straightforwardadj.容易理解的，简单的
+adv 落后于
+straightforward adj.容易理解的，简单的
 classmate
 n.同学
 thought
@@ -55,5 +45,5 @@ dispute
 n.分歧，争端，纠纷
 while
 conj.当.·..··的时候,在·
-protectt保护
-occupiedadj.忙于
+protect vt保护
+occupied adj.忙于

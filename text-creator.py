@@ -34,7 +34,7 @@ class TextCreator:
         if not book.loadRaw():
             return
 
-        self.chapterNumber = book.chapters[len(book.chapters) - 1] + 1
+        self.chapterNumber = book.chapterNumbers[len(book.chapterNumbers) - 1] + 1
         self.pageNumber = 1
 
     def getPathname(self):

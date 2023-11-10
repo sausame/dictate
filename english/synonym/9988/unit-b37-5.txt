@@ -1,6 +1,6 @@
 urban
 adj;城市的，城镇的，都市的
-adaptv 适应于，适应不同情况( 或环境 )
+adapt v 适应于，适应不同情况( 或环境 )
 unusual
 adj. 不寻常的，不常见的，罕见的
 gradual evolution逐步的进化，逐步的演变
@@ -8,7 +8,6 @@ research
 n.研究
 study
 研究
-..neb 530%
 increase
 v. 增加;增大;增多
 due to...
@@ -16,32 +15,32 @@ due to...
 need
 n.需要
 locate
-v 查找.·...·的地点;确定··..··的位置
+v 查找...的地点;确定···的位置
 deal with..
 处理，应付[动词短语 ]
 focus on..集中(注意力):关注，把......作为关注中心[动词短语 ]
 brave
 ad;勇敢的
 afraid of..
-怕，害怕[形容词短语
+怕，害怕[形容词短语]
 
 
-citn.城市，都市;市区
+city n.城市，都市;市区
 adaptation
 n.适应，顺应
-especially interestin特别令人感兴趣的[副词+形容词]
-change fast迅速改变[动词+副词)
+especially interesting 特别令人感兴趣的[副词+形容词]
+change fast迅速改变[动词+副词]
 studies
 n.研究(注意复数)
-look at...看，查看，研究[动词短语)
-jumpn.(数量或水平) 突开，激
+look at...看，查看，研究[动词短语]
+jump n.(数量或水平) 突开，激
 reflect
 v.反映，反映出
 demand
 n.需要，需求
-fnd
+find
 v.发现，找到
-cope with...对付，应付[动词短语)
-look at...看，查看，研究[动词短语)
+cope with...对付，应付[动词短语]
+look at...看，查看，研究[动词短语]
 boldac;.大胆的，勇敢的，无的
-frightenv使害怕，使惊恐
+frighten vt使害怕，使惊恐

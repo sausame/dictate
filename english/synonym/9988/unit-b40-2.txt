@@ -1,7 +1,7 @@
 regular trails
 ( 徒步、滑雪等 ) 常规的路线
 recommend
-o 推荐，建议
+v 推荐，建议
 lead
 vt.在······前面走(或骑 ):为···.··带头;给······引路(或带路);带......(到某处 )
 all
@@ -28,13 +28,13 @@ v.等，等待
 
 
 marked trails
-(徒步的 标记好的路线
+(徒步的)标记好的路线
 not to be missed不容错过，不能错过[动司miss 的被动语态]
 leader
 n.领导，领导者
 everyone
 pron.每人，人人
-take part参加，参与[动词短语
+take part参加，参与[动词短语]
 miner
 n矿工
 mount
@@ -50,6 +50,5 @@ cooking
 n.烹饪，做饭
 food
 n.食物，食品
-stormyad;有暴风雨的
-003177818
-stayvi.停留，逗留;留下
+stormy ad;有暴风雨的
+stay vi.停留，逗留;留下

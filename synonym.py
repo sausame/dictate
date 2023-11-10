@@ -2,6 +2,7 @@
 # -*- coding:utf-8 -*-
 
 import csv
+import json
 import os
 import random
 import re
@@ -16,8 +17,43 @@ from utils import getch, getchar, getPathnames, getProperty, reprDict, prGreen, 
 
 class Synonym:
 
-    def __init__(self, tts):
+    def __init__(self, tts=None):
         self.tts = tts
+
+    def toDict(self, values, extra=None):
+
+        def buildKey(values):
+            regex = re.compile('[^a-zA-Z0-9]')
+            word1 = regex.sub('_', values[0].strip())
+            word2 = regex.sub('_', values[2].strip())
+            return '{}---{}'.format(word1, word2)
+
+        word1 = values[0].strip()
+        word2 = values[2].strip()
+
+        if word1 > word2:
+            newValues = [
+                values[2],
+                values[3],
+                values[0],
+                values[1],
+            ]
+        else:
+            newValues = values
+
+        key = buildKey(newValues)
+
+        result = {
+            'word1': newValues[0].strip(),
+            'word2': newValues[2].strip(),
+            'explanation1': newValues[1].strip(),
+            'explanation2': newValues[3].strip()
+        }
+
+        if extra:
+            result.update(extra)
+
+        return {key: result}
 
     def study(self, values):
 
@@ -52,6 +88,22 @@ class SynonymChapter:
     def __init__(self):
         self.tts = Tts()
         self.tts.setLanguage('english')
+
+    def toDict(self, pathname, extra=None):
+
+        results = dict()
+
+        with open(pathname, newline='') as csvfile:
+            reader = csv.reader(csvfile, delimiter='\t')
+
+            extra
+
+            synonym = Synonym()
+            for row in reader:
+                result = synonym.toDict(row, extra)
+                results.update(result)
+            
+        return results
 
     def study(self, pathname):
 
@@ -122,7 +174,7 @@ class SynonymBook:
 
         self.bookDir = bookDir
 
-        self.chapters = []
+        self.chapterNumbers = []
         self.chapterDict = dict()
 
     @staticmethod
@@ -164,9 +216,9 @@ class SynonymBook:
         chapterNumber = numbers[0]
         pageNumber = numbers[1]
 
-        if chapterNumber not in self.chapters:
-            self.chapters.append(chapterNumber)
-            self.chapters = sorted(self.chapters)
+        if chapterNumber not in self.chapterNumbers:
+            self.chapterNumbers.append(chapterNumber)
+            self.chapterNumbers = sorted(self.chapterNumbers)
 
         chapterKey = self.getChapterKey(chapterNumber)
 
@@ -201,6 +253,38 @@ class SynonymBook:
     def loadRaw(self):
         return self.load('.txt')
 
+    def toDict(self):
+
+        if not self.load():
+            return None
+
+        wholeResults = dict()
+        chapter = SynonymChapter()
+
+        for chapterNumber in self.chapterNumbers:
+            pages = self.getPages(chapterNumber)
+
+            for pageNumber in pages:
+                pathname = self.getPathname(chapterNumber, pageNumber)
+
+                extra = {
+                    'chapter': chapterNumber,
+                    'page': pageNumber,
+                }
+
+                results = chapter.toDict(pathname, extra)
+
+                wholeResults.update(results)
+
+        return wholeResults
+
+    def saveToFile(self, pathname):
+
+        with open(pathname, 'w+', newline='') as fp:
+            result = self.toDict()
+            fp.write(reprDict(result))
+            prGreen('Save to {}'.format(pathname))
+
     def study(self):
 
         def readNumber(array, promptPrefix, timeout):
@@ -229,52 +313,54 @@ class SynonymBook:
                 index = random.randint(0, len(array) - 1)
                 return array[index]
 
-        try:
-            os.system('clear')
+        if not self.load():
+            return
 
-            print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+        random.seed()
 
-            if not self.load():
-                return
+        chapterNumber = readNumber(
+            self.chapterNumbers, 'Please select a chapter', 10)
+        prYellow('Chapter "{}" is selected.'.format(chapterNumber))
 
-            random.seed()
+        pages = self.getPages(chapterNumber)
+        pageNumber = readNumber(pages, 'Please select a page', 10)
+        prYellow('Page "{}" is selected.'.format(pageNumber))
 
-            chapterNumber = readNumber(
-                self.chapters, 'Please select a chapter', 10)
-            prYellow('Chapter "{}" is selected.'.format(chapterNumber))
+        pathname = self.getPathname(chapterNumber, pageNumber)
+        prYellow('File "{}" is selected.'.format(pathname))
 
-            pages = self.getPages(chapterNumber)
-            pageNumber = readNumber(pages, 'Please select a page', 10)
-            prYellow('Page "{}" is selected.'.format(pageNumber))
-
-            pathname = self.getPathname(chapterNumber, pageNumber)
-            prYellow('File "{}" is selected.'.format(pathname))
-
-            chapter = SynonymChapter()
-            chapter.study(pathname)
-
-        except KeyboardInterrupt:
-            pass
-        except Exception as e:
-            prRed('Error occurs at {}'.format(
-                datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-            traceback.print_exc(file=sys.stdout)
-        finally:
-            pass
+        chapter = SynonymChapter()
+        chapter.study(pathname)
 
 
-def run(name, configFile):
+def run(name, configFile, pathname):
 
     synonymPath = getProperty(configFile, 'synonym-path')
 
-    book = SynonymBook(synonymPath)
-    book.study()
+    try:
+        book = SynonymBook(synonymPath)
+
+        if pathname:
+            book.saveToFile(pathname)
+        else:
+            os.system('clear')
+            print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
+            book.study()
+
+    except KeyboardInterrupt:
+        pass
+    except Exception as e:
+        prRed('Error occurs at {}'.format(
+            datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+        traceback.print_exc(file=sys.stdout)
+    finally:
+        pass
 
 
 def main(argv):
 
     if len(argv) < 2:
-        print('Usage:\n\t', argv[0], '[config-file]\n')
+        print('Usage:\n\t', argv[0], '[SAVE-PATH-NAME]\n')
 
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
@@ -282,11 +368,11 @@ def main(argv):
     name = os.path.basename(argv[0])[:-3]  # Remove ".py"
 
     if len(argv) > 1:
-        configFile = os.path.realpath(argv[1])
+        pathname = os.path.realpath(argv[1])
     else:
-        configFile = 'config.ini'
+        pathname = None
 
-    run(name, configFile)
+    run(name, 'config.ini', pathname)
 
 
 if __name__ == '__main__':

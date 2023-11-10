@@ -1,12 +1,11 @@
 create
-优 创造，发明，设计
+vt. 创造，发明，设计
 tallest
 ad;最高的 (tall 的最高级)
 make
 w 做，制作，制造
 build
-.建筑，建造
-10
+vt.建筑，建造
 humanoid
 n仿真机器人
 found
@@ -16,24 +15,24 @@ n.报告，演讲
 staff
 n.员工
 research sources研究资源
-usefu
+useful
 adj,有用的，有助益的
-changew.改变
+change w.改变
 evaluative
 adj.评估的，评价的
 
 
-designw.设计，设计出
-highestadj.最高的(high 的最高级)
-buildvt.建筑，建造
+design vt.设计，设计出
+highest adj.最高的(high 的最高级)
+build vt.建筑，建造
 construct
 vt.建造，构筑
-buman
+human
 n.人，人类
 set up...建立，创建[动词短语]
-presentationn.报告，演讲，陈述
+presentation n.报告，演讲，陈述
 one of the managers其中一位经理
 books and websites书和网站
 much less use than...(某物的用途) 比.....·的用途要少得多
-amendvt.修正，修订
-evaluatev评估;估价
+amend vt.修正，修订
+evaluate v评估;估价
