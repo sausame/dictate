@@ -1,48 +1,67 @@
 accurate
-adi 准确的;精准的
+adj. 准确的;精准的
 incorrect
-ad;不正确的，错误的
+adj.不正确的,错误的
 identification
 n. 认出; 识别;确认
-designer n.设计者
-consider v 考虑
+designer 
+n.设计者
+consider 
+v. 考虑
 social context
-社会背景，社会环境bo sidri
-meaning n.意义;含义
-symbolic meaning象征意义，象征含义
+社会背景,社会环境
+meaning 
+n.意义;含义
+symbolic meaning
+象征意义,象征含义
 disused
-adj废弃不用的
-beside prep.(表示位置在·....·旁边，在·....·附近
-be based on...基于.....;以··.···为依据[动词 base 的被动语态 ]
-conceptn.概念;思想design n.设计，构思
-pedestrian n.步行者，行人by a bridge (为到达某处需要 通过一座桥[介词短语
-act as... 充当;担任;起·····的作用[动词短语 ]
+adj.废弃不用的
+beside 
+prep.(表示位置在...旁边,在...附近)
+be based on ... 
+基于...;以...为依据[动词 base 的被动语态]
+concept 
+n.概念;思想
+design 
+n.设计,构思
+pedestrian 
+n.步行者,行人
+by a bridge 
+(为到达某处需要)通过一座桥[介词短语]
+act as ... 
+充当;担任;起.的作用[动词短语]
+
 
 
 inaccurate
 adj.不正确的;不精确的
 correctly
-adu正确地
+adv.正确地
 identify
 vi.发现;确定;确认
-architect n.建筑设计师
-think about...考虑·····[ 动词短语 
+architect 
+n.建筑设计师
+think about ... 
+考虑.[动词短语]
 social meaning
 社会意义
-idea n.大致概念;看法;信念
+idea 
+n.大致概念;看法;信念
 metaphor
 n.象征;隐喻
 empty
 adj.空的;未放物品的;空着的
-border szr
-vt.与·....·有共同边界;与.·..··接壤
-be) centred around...
-围绕.···;以...···为中心
-[动词 centre 的过去分词]
-idea n.构想;概念;思想
-create v.创造;创作;设计
-people n.人，人们
+border
+vt.与...有共同边界;与...接壤
+(be) centred around ... 
+围绕...;以...为中心[动词 centre 的过去分词]
+idea 
+n.构想;概念;思想
+create 
+v.创造;创作;设计
+people 
+n.人,人们
 cross over a bridge
-过一座桥[ 动词短语
-function as...
-担任;起··..··的作用[动词短语
+过一座桥[动词短语]
+function as ... 
+担任;起...的作用[动词短语]

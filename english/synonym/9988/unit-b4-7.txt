@@ -1,54 +1,67 @@
-resources n.资源，物力，财力(常用复数 )
+resources 
+n.资源,物力,财力(常用复数)
 closed-circuit TV 
 CCTY闭路电视(监控)
-ask vt要求
-date n.日期，日子
-cost n.成本;费用，花费
-all over...
-到处，遍布[介词短语 ]
+ask 
+vt.要求
+date 
+n.日期,日子
+cost 
+n.成本;费用,花费
+all over ... 
+到处,遍布[介词短语]
 alone
-adi单独的   adv 单独地，独自地
+adj.单独的 adv. 单独地,独自地
 move
-vtv.(使) 移动，(使) 行动
-show vt./vi.显示;(使)露出:(显现
+vtv.(使) 移动,(使) 行动
+show 
+vt./vi.显示;(使)露出,显现
 need
-vt./vi.需要;有.....·的必要
-grow vi.成长，生长;增大增加;发展
-fortnight n.两周，十四天
-coloured adi有颜色的，彩色的
-dangerous adi危险的
-easy adi.简单的，容易的，不费力的
+vt./vi.需要;有...的必要
+grow 
+vi.成长,生长;增大增加;发展
+fortnight 
+n.两周,十四天
+coloured 
+adj.有颜色的,彩色的
+dangerous 
+adj.危险的
+easy 
+adj.简单的,容易的,不费力的
 gather food
-找食物，采集食物[动词短语 ]
+找食物,采集食物[动词短语x]
 
 
 
-
-
-
-
-
-fundsn. 资金( 常用复数);基金;专款
+fundsn. 
+资金(常用复数);基金;专款
 video surveillance
 录像监控
-on request 一经要求[介词短语
-when adu 什么时候;何时
-price lists 价格清单
+on request 
+一经要求[介词短语]
+when 
+adv. 什么时候;何时
+price lists 
+价格清单
 throughout
-prep.遍及，遍布
+prep.遍及,遍布
 single
-adi.单个的;单一的，单独的;单身的
+adj.单个的;单一的,单独的;单身的
 hover around
 四处盘旋[动词短语]
 demonstrate
-w.显示，表露
+v.显示,表露
 importance
-n.重要，重要性
-form v.形成，产生
-two weeks 两周
-colour vt.给·...··着色
-risky ad;.危险的，有风险的
+n.重要,重要性
+form 
+v.形成,产生
+two weeks 
+两周
+colour 
+vt.给...着色
+risky 
+adj.危险的,有风险的
 elementary
-adi.初级的;基础的
+adj.初级的;基础的
 pick up food
 找食物[动词短语]

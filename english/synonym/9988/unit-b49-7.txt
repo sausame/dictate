@@ -1,46 +1,55 @@
 injury
-n.受伤，伤
+n.受伤,伤
 fexible
-ad;.灵活的;可变通的
+adj.灵活的;可变通的
 detail
-n细节
-a smart appearance(人) 外貌整洁漂亮、时
+n.细节
+a smart appearance
+(人) 外貌整洁漂亮、时
 hide
-i 躲，藏，把··.···藏起来
+vi. 躲,藏,把...藏起来
 trust
-z信任，相信
-think of the future考虑未来[动词短语]
-burv oneself in...
-(人或动物) 把自己埋在······里[动词短语]
-turn into...
+vt.信任,相信
+think of the future
+考虑未来[动词短语]
+burv oneself in ... 
+(人或动物) 把自己埋在.里[动词短语]
+turn into ... 
 变成[动词短语]
-there had been no...此前从未有过··.···
+there had been no ... 
+此前从未有过...
 huge
-ad;.巨大的，大的
-depend on...
-依靠，依赖[动词短语]
+adj.巨大的,大的
+depend on ... 
+依靠,依赖[动词短语]
 print
-vt.印，印刷;
+vt.印,印刷;
 
 
-hurtv. 使受伤
-(be) prepared to makechanges做好做出改变的准备[形容词短语]
-all the fine points所有具体的点
-dress up穿正装，盛装打扮[动词
-短语]
-no one must know...
-人们不可以知道......
-believe in...信任，相信[动词短语]
+
+hurt
+v. 使受伤
+(be) prepared to makechanges
+做好做出改变的准备[形容词短语]
+all the fine points
+所有具体的点
+dress up
+穿正装,盛装打扮[动词短语]
+no one must know ... 
+人们不可以知道...
+believe in ... 
+信任,相信[动词短语]
 think ahead
-考虑未来，未雨绸缪[动
-词短语]
-(be) hidden in...
-躲藏在...···里[动词 hide
-的被动语态]
-change into...变成[动词短语]
-the first...
-第一次，第一个
+考虑未来,未雨绸缪[动词短语]
+(be) hidden in ... 
+躲藏在...里[动词 hide的被动语态]
+change into ... 
+变成[动词短语]
+the first ... 
+第一次,第一个
 vast
-adj.巨大的，大的
-rely upon..依靠，依赖[动词短语]
-publishv.出版，印刷
+adj.巨大的,大的
+rely upon ... 
+依靠,依赖[动词短语]
+publishv.
+出版,印刷

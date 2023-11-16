@@ -1,52 +1,63 @@
-takeover n.(经营权等的)接管;收购;并购
+takeover 
+n.(经营权等的)接管;收购;并购
 offer
-n.(买方的) 报价，开价
-offer vt提供;给予
-look for.寻找[动词短语 ]
-private ad;个人的;私人的
-investor n.投资者，投资人
-close vt./vi.(工厂、商店、学校等 )永久性关闭;(使) 停业
-retail outlet 零售网点
+n.(买方的) 报价,开价
+offer 
+vt.提供;给予
+look for
+寻找[动词短语]
+private 
+adj.个人的;私人的
+investor 
+n.投资者,投资人
+close 
+vt./vi.(工厂、商店、学校等)永久性关闭;(使) 停业
+retail outlet 
+零售网点
 change
-v/i (使) 变化;(使) 改变
+v./i (使) 变化;(使) 改变
 way
-方法，方式
+方法,方式
 produce 
-vt生产，制造，出产，产出
+vt.生产,制造,出产,产出
 solution
 解决方法
-overcome problems克服问题[动词短语
-too little..
-太少·....·( 后面接不可数名词)
-old-fashioned
-adj.老式的，过时的，老派的
-
-
-
-
-
-
-
-
-buy out...
-买下......的全部股份[动词短语
-terms n.(协议、条约等的)条款条件(用复数形式 )
-issue v.发表;发布;发行
-find vt找到
-individual n.个体;个人
-capital n.资本;资金
-shut down...
-使(工厂、公司等) 关闭，歇业停业[动词短语]
-shop n.商店
-alter
-u.改变，变更，更改
-how adu 以何种方式;(用于询问方式、方法) 怎样，如何
-write wt.写;写(书、诗等);
-创作(歌曲等)
 overcome problems
-克服问题[动词短语 ]
-recover vi.恢复，恢复健康; (从弱势或困境中)好转，扭转
-the right level of...
-合适量的.....·，正常量的·..."
+克服问题[动词短语]
+too little ... 
+太少...(后面接不可数名词)
+old-fashioned
+adj.老式的,过时的,老派的
+
+
+
+buy out ... 
+买下...的全部股份[动词短语]
+terms 
+n.(协议、条约等的)条款条件(用复数形式)
+issue 
+v.发表;发布;发行
+find 
+vt.找到
+individual 
+n.个体;个人
+capital 
+n.资本;资金
+shut down ... 
+使(工厂、公司等) 关闭,歇业停业[动词短语]
+shop 
+n.商店
+alter
+v.改变,变更,更改
+how 
+adv. 以何种方式;(用于询问方式、方法) 怎样,如何
+write 
+vt.写;写(书、诗等);创作(歌曲等)
+overcome problems
+克服问题[动词短语]
+recover 
+vi.恢复,恢复健康; (从弱势或困境中)好转,扭转
+the right level of ... 
+合适量的...,正常量的..."
 outdated
-adj.过时的，旧式的，落伍的
+adj.过时的,旧式的,落伍的

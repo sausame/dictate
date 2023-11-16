@@ -1,51 +1,55 @@
 inspire
-vt.激励，唤起，赋予灵感;激发(想法)
+vt.激励,唤起,赋予灵感;激发(想法)
 hard
-ad.难的，困难的，费力的
+ad.难的,困难的,费力的
 unlikely
-ad;不太可能的
+adj.不太可能的
 home
-n.家，住宅
+n.家,住宅
 round
-prep.围绕，环绕
+prep.围绕,环绕
 large
-adi.大的，巨大的
+adj.大的,巨大的
 under
-prep.在......下面
+prep.在...下面
 structure
-n. 结构，构造;结构体，(尤指 )大型建筑物
+n. 结构,构造;结构体,(尤指)大型建筑物
 make
-制造，制作
+制造,制作
 architectural
-adj.建筑的，建筑学的
+adj.建筑的,建筑学的
 carry
-v,运送;输送，传输
+v.运送;输送,传输
 communication
-n.交流，沟通
+n.交流,沟通
 co-ordinate
 n.坐标(常用复数co-ordinates)
 
 
-the basis for...(理论、思想、文学、艺术方面)是··...·的创作基础是·....·的创意来源
-effort n.气力;精力;努力
-expect vt.期待，期望，预料到，预计
+
+the basis for ... 
+(理论、思想、文学、艺术方面)是...的创作基础是...的创意来源
+effort 
+n.气力;精力;努力
+expect 
+vt.期待,期望,预料到,预计
 house
-n.房屋，住宅
+n.房屋,住宅
 around
-prep.围绕，环绕
+prep.围绕,环绕
 half tonne
 adj.半吨重的
 below
-prep.在......下面
+prep.在...下面
 building
-n.建筑物，房屋
+n.建筑物,房屋
 create
 vt.创造;发明;设计
 construction
-n.建造;构筑，建设;建筑
+n.建造;构筑,建设;建筑
 ferry
-vt(尤指定期)渡运;运送
+vt.(尤指定期)渡运;运送
 communicate
-vi.交流，沟通
+vi.交流,沟通
 position
 n.位置

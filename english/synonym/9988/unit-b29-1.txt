@@ -1,40 +1,51 @@
-seat. (房间、车辆)可坐......人，容纳......人
-returnable adj(金钱、文件等可退还的，可归还的
+seat. 
+(房间、车辆)可坐...人,容纳...人
+returnable 
+adj.(金钱、文件等可退还的,可归还的)
 payment
-n.付款额;支付，付款
-require vt 要求，命令，规定
-costn.成本;费用，花费
+n.付款额;支付,付款
+require 
+vt. 要求,命令,规定
+cost 
+n.成本;费用,花费
 additional charge
 额外的收费
 in advance
-事先，提前[介词短语 ]
+事先,提前[介词短语]
 arrange
-w安排
-touch vt.触摸:接触;碰到
+v.安排
+touch 
+vt.触摸:接触;碰到
 contact
-w.联系，联络
+v.联系,联络
 after
-prep.(表示时间)在.....·以后
-know v.知道，知悉，了解
+prep.(表示时间)在...以后
+know 
+v.知道,知悉,了解
+
 
 
 seating
-n.座位数;座位安排(或设置
+n.座位数;座位安排(或设置)
 refundable
-adi.(钱)可归还的，可退还的
+adj.(钱)可归还的,可退还的
 pay
-vt. 支付，付款
-imnsist vt. 坚持主张，坚持要求
-charge n.收费
+vt. 支付,付款
+imnsist 
+vt. 坚持主张,坚持要求
+charge 
+n.收费
 pay extra
 支付额外的费用[动词短语]
-before your event在你的活动开始之前[个词短语 ]
-make the arrangements for...
-为......做安排，针对......做出安
-排[动词短语 ]
-fiddle vi摆弄，拨弄
-let ... know 告诉(某人),通知(某
-[动词短语 ]
+before your event
+在你的活动开始之前[个词短语]
+make the arrangements for ... 
+为...做安排,针对...做出安排[动词短语]
+fiddle 
+vi.摆弄,拨弄
+let ... know 
+告诉(某人),通知(某[动词短语])
 over
-adi.结束的;完了的
-inform v通知，告知
+adj.结束的;完了的
+inform 
+v.通知,告知

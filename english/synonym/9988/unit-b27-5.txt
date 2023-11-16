@@ -1,38 +1,51 @@
 communicate
-传达，传递;表达
+传达,传递;表达
 clear
-ad; 清楚的，明白的;清晰的
-passionately ad: 热情地;狂热地
-inspire v.激励;鼓舞;启发
+adj. 清楚的,明白的;清晰的
+passionately 
+adj. 热情地;狂热地
+inspire 
+v.激励;鼓舞;启发
 create
-"创造;创建;发明，设计
-expectation n.期望;预期
+"创造;创建;发明,设计
+expectation 
+n.期望;预期
 clear
-ad.清楚的，明白的;清晰的
-result n. 结果;后果
-prevention n 预防，防止
-国国食
-job n. 工作
+ad.清楚的,明白的;清晰的
+result 
+n. 结果;后果
+prevention 
+n. 预防,防止国国食
+job 
+n. 工作
 good
-ad.好的;高品质的，高水准的
+ad.好的;高品质的,高水准的
 affect
-以影响，对....产生作用面
+以影响,对...产生作用面
+
 
 
 convey
-vt. 传达;表达，传递
-definitive ad;明确的;确定的
+vt. 传达;表达,传递
+definitive 
+adj.明确的;确定的
 passionate
 adj. 热情的;狂热的
-encourage w.鼓励;鼓舞
+encourage 
+v.鼓励;鼓舞
 develop
 v.研制(新产品)
-expect v.期待，期望，要求
+expect 
+v.期待,期望,要求
 exactly
-adv 确切地;精准地
-consequence n.结果，后果
-avoid vt.避免
-work vi.工作;干活
-appropriate ad;适当的，恰当的;合适的;相称的
+adv. 确切地;精准地
+consequence 
+n.结果,后果
+avoid 
+vt.避免
+work 
+vi.工作;干活
+appropriate 
+adj.适当的,恰当的;合适的;相称的
 infuence
 v.影响;左右;产生作用

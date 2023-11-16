@@ -1,40 +1,59 @@
-last month 上个月
-seating n就座，座位数
+last month 
+上个月
+seating 
+n.就座,座位数
 expand
-比扩大，扩充
+比扩大,扩充
 on
-prep.关于，有关
+prep.关于,有关
 local
-adi当地的;本地的
+adj.当地的;本地的
 new
-adi.新的;新鲜的，新型的
-thing n.物，东西;事，事情
+adj.新的;新鲜的,新型的
+thing 
+n.物,东西;事,事情
 real
-adj.现实的，真实的，实际的
+adj.现实的,真实的,实际的
 necessary
-adi.必要的，必需的
-check n检查
-imcrease vi.增加，增大，增强
-increase vi.增加，增大，增强
-excited adj.兴奋的，激动的
+adj.必要的,必需的
+check 
+n.检查
+imcrease 
+vi.增加,增大,增强
+increase 
+vi.增加,增大,增强
+excited 
+adj.兴奋的,激动的
 good value for money
 物有所值
 
 
-a month ago一个月前
-seat n.座，座位
-larger ad;.更大的，更宽大的更大规的;(数量上)更多的(形容词 large 的比较级]
-(be) devoted to... 致力于...... 心于.....·[ 动词devote 的过去词
-the town and surrounding region(某)镇和镇周边地区
+
+a month ago
+一个月前
+seat 
+n.座,座位
+larger 
+adj.更大的,更宽大的更大规的;(数量上)更多的(形容词 large 的比较级)
+(be) devoted to ... 
+致力于...心于...[动词devote 的过去词]
+the town and surrounding region
+(某)镇和镇周边地区
 ntroduce
-vt.引进，传人;采用
-stuff n.物品，东西
-take place 发生
-[动短语]
+vt.引进,传人;采用
+stuff 
+n.物品,东西
+take place 
+发生[动短语]
 need
-w.i.需要;有必要，必须，得
-check-up n.检查;查明，核对
-rise v. 上升，上涨;升高;增加
-growth n.增长，增大
-thrill n.兴奋，激动，恐怖
-cheap adi.便宜的，廉价的
+vi.需要;有必要,必须,得
+check-up 
+n.检查;查明,核对
+rise 
+v. 上升,上涨;升高;增加
+growth 
+n.增长,增大
+thrill 
+n.兴奋,激动,恐怖
+cheap 
+adj.便宜的,廉价的

@@ -1,44 +1,55 @@
 age
-n
-stay 停留，留下;暂住
+n.
+stay 
+停留,留下;暂住
 during the week
-周一到周五[介词短语
+周一到周五[介词短语]
 currently
-ady 现在;当前，目前
-address n.地址;住
+adv. 现在;当前,目前
+address 
+n.地址;住
 interested
 ad感兴趣的
-want to... 想要(做某事)希望(做某事)[动词短语 ]
-outside n.外面:外部;外表
+want to ... 
+想要(做某事)希望(做某事)[动词短语]
+outside 
+n.外面:外部;外表
 seating
-n.座位数:座位安排(或设置
+n.座位数:座位安排(或设置)
 a different use
 不同的用途
-room n.房间;屋子，室
+room 
+n.房间;屋子,室
 currently
-adv 现在;当前;目前
+adv. 现在;当前;目前
 currentl
-adv 现在;当前;目前
+adv. 现在;当前;目前
+
 
 
 how old
-( 用于提问 )多大年纪;几岁
-live vi.住，居住
+(用于提问)多大年纪;几岁
+live 
+vi.住,居住
 from Monday to Friday
 从周一到周五[介词短语]
 at the moment
-此刻，现在，目前[介词短语]
-place n住所;寓所
-keen adi.热衷于(某事物)的，喜
-爱(某人或某事)的
-be interested in...
-对.....·感兴趣[形容词短语 ]
-exterior n.外部，外面:外观
+此刻,现在,目前[介词短语]
+place 
+n.住所;寓所
+keen 
+adj.热衷于(某事物)的,喜爱(某人或某事)的
+be interested in ... 
+对...感兴趣[形容词短语]
+exterior 
+n.外部,外面:外观
 seat
 n.座位;座椅
 other purposes
-其他的用途，不同的作用
-storeroom n藏室
-has already started (某事)已经开始了[动词 start 的现在完成时]
+其他的用途,不同的作用
+storeroom 
+n.藏室
+has already started 
+(某事)已经开始了[动词 start 的现在完成时]
 now
-adv 现在，目前，此刻
+adv. 现在,目前,此刻

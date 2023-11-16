@@ -1,60 +1,70 @@
 contact
-vt. 联系，联络
+vt. 联系,联络
 new
-ad.新的;新接触的，不熟悉的
-stress n.压力
-time n.时间，规定时间
+ad.新的;新接触的,不熟悉的
+stress 
+n.压力
+time 
+n.时间,规定时间
 social network
-社交网络，社交圈子
-support n.帮助，支持，支援
-cause vt.导致，引起
+社交网络,社交圈子
+support 
+n.帮助,支持,支援
+cause 
+vt.导致,引起
 disruption
-n.中断，扰乱;混乱
-fail vt/vi失败，不及格
-diet n日常饮食，日常食物
+n.中断,扰乱;混乱
+fail 
+vt./vi失败,不及格
+diet 
+n.日常饮食,日常食物
 financial diffculties
 经济上的困难
 buy
-v.买，购买
+v.买,购买
 equipment
-n.设备，装备
-effective adj有效的，能产生预期效果的;起作用的
-method n.方法
+n.设备,装备
+effective 
+adj.有效的,能产生预期效果的;起作用的
+method 
+n.方法
 disadvantage
 n.不利条件;劣势;不便之处
-respond vi.回复，回答，回应
-做出反应
+respond 
+vi.回复,回答,回应做出反应
 
 
 
-
-
-
-
-
-
-chase up...
-敦促;追着....··索要[动词短语]
+chase up ... 
+敦促;追着...索要[动词短语]
 unfamiliar
-ad;.不熟悉的，陌生的
-pressure n.压力
-deadline n.最后期限，截止时间
+adj.不熟悉的,陌生的
+pressure 
+n.压力
+deadline 
+n.最后期限,截止时间
 social contacts
 社交联系人
-help n.帮助，帮忙
-trigger v.引发，导致
+help 
+n.帮助,帮忙
+trigger 
+v.引发,导致
 interrupt
-v.中止;中断，使暂时停止
-failure n.失败;不及格
-food n.食物;食品
+v.中止;中断,使暂时停止
+failure 
+n.失败;不及格
+food 
+n.食物;食品
 money problems
 经济上的困难
-pay v(为获得帮助或服务)付钱给;付，支付
+pay 
+v.(为获得帮助或服务)付钱给;付,支付
 instrument
-n.器械，器具;仪器，仪表
+n.器械,器具;仪器,仪表
 not too bad
 还不错
-way n方法;方式
+way 
+n.方法;方式
 drawback
 n.缺点;缺陷;不利条件
 response

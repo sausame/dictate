@@ -1,44 +1,63 @@
 shift
-n.轮班;当班时间，轮班职工
-each week 每周
-including prep.包含，包括
-provide v.供给，提供，给予
-weekly ad;一周一次的，每周的
-dress n.衣服
+n.轮班;当班时间,轮班职工
+each week 
+每周
+including 
+prep.包含,包括
+provide 
+v.供给,提供,给予
+weekly 
+adj.一周一次的,每周的
+dress 
+n.衣服
 require
-v 需要;要求;想要
+v. 需要;要求;想要
 matot
-improvement
-n.改进，改善，改良
-community groups 社区团体
+improvementn.改进,改善,改良
+community groups 
+社区团体
 concerned
-adj. 挂虑的，担心的，不安的
-pedestrian n.步行者，行人
+adj. 挂虑的,担心的,不安的
+pedestrian 
+n.步行者,行人
 safety
 n.安全
 bury
-v. 埋;掩埋;把···.·.埋在下面
-expense n.开销，花销
-wider adj.更宽的;更宽阔的[形容词 wide 的比较级
+v. 埋;掩埋;把...埋在下面
+expense 
+n.开销,花销
+wider 
+adj.更宽的;更宽阔的[形容词]wide 的比较级
+
 
 
 hours of work
-( 具体的 工作时间
-every week 每周
-include v.包含，包括
-no charge 免费，不收费
-a week 每周
-clothes n.衣服，衣物
-ask v.问，询问;需要;要求，请求
+(具体的)工作时间
+every week 
+每周
+include 
+v.包含,包括
+no charge 
+免费,不收费
+a week 
+每周
+clothes 
+n.衣服,衣物
+ask 
+v.问,询问;需要;要求,请求
 improve
 vt.改进;改善;提高
-local groups 当地团体
+local groups 
+当地团体
 worried
-adj;. 担心的;发愁的;焦虑的
-walk vi.走，步行;散步
+adj.;. 担心的;发愁的;焦虑的
+walk 
+vi.走,步行;散步
 accident
-n.交通事故，车祸;意外事故
-underground adj.地下的adv 地下，在地下
-cost n.成本;费用，花费
-widen vt./vi.(使)变宽;
-(把.....·)加宽
+n.交通事故,车祸;意外事故
+underground 
+adj.地下的adv 地下,在地下
+cost 
+n.成本;费用,花费
+widen 
+vt./vi.(使)变宽;(把...)加宽

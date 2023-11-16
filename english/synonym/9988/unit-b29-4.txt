@@ -1,35 +1,51 @@
 new
-ad;新的;新鲜的;新型的
-near prep.在··..··附近
+adj.新的;新鲜的;新型的
+near 
+prep.在...附近
 list
-vt. 把.·..··编列成表:把.....·列
-人单子
+vt. 把...编列成表:把...列人单子
 population size
 人口规模:(动物的)种群大
 aim
-n.目标，目的
-make w 生产，制造
-increase the number of...
-增加··....的数量[动词短语 ]
+n.目标,目的
+make 
+v. 生产,制造
+increase the number of ... 
+增加...的数量[动词短语]
 ocean
-n.海洋，海
-e.g.abbr <拉丁语>举例来说，例如(全称为 exempligratia，口语中可直接读成 forexample )
+n.海洋,海
+e.g. 
+abbr. <拉丁语>举例来说,例如(全称为 exempligratia,口语中可直接读成 for example)
 establish
 vt.建立;设立;创办
-reduce v减少;缩小;降低
-purpose n.目的;意图
+reduce 
+v.减少;缩小;降低
+purpose 
+n.目的;意图
 
 
-.had never been seen befor某某时间点之从见过[动词 see 的被动语态]
-around prep.在.....·附近
-create a list of..
-创建一份·....·的清单，制作份......的列表[动词短语 ]
-how many members of one species...( 用于提问)某一(动物物种有多少只(头、尾等 ) .......
-want to... 想要( 做某事 ),希望(做某事)[动词短语]
-produce v生产，出产，制造more adi.更名的......[many 和 much 的比较级marine adi海的;海生的;海产的;海运的，海事的
-such as...
-诸如·....·;例如·....·
+
+had never been seen before
+某某时间点之从见过[动词 see 的被动语态]
+around 
+prep.在...附近
+create a list of ... 
+创建一份...的清单,制作份...的列表[动词短语]
+how many members of one species ... 
+(用于提问)某一(动物)物种有多少只(头、尾等)...
+want to ... 
+想要(做某事),希望(做某事)[动词短语]
+produce 
+v.生产,出产,制造
+more 
+adj.更名的...[many 和 much 的比较级]
+marine 
+adj.海的;海生的;海产的;海运的,海事的
+such as ... 
+诸如...;例如...
 create
 .v.创建;创设
-lower vt降低;减低
-for prep.为，为了
+lower 
+vt.降低;减低
+for 
+prep.为,为了

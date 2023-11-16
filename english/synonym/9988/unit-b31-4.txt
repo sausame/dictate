@@ -1,43 +1,67 @@
-develop v.研制(新产品)
-develop v.研制(新产品)
-customer n.顾客
-check vt.检查;检验;核对
+develop 
+v.研制(新产品)
+develop 
+v.研制(新产品)
+customer 
+n.顾客
+check 
+vt.检查;检验;核对
 use
-vt.用，使用;耗费
+vt.用,使用;耗费
 communication
 n.沟通;传达;交流;交往
 communication
 n.沟通;传达;交流;交往
 develop
-vt研制(新产品 )
+vt.研制(新产品)
 information
-n.信息，资讯，情报;(计算机程序储存和使用的)数据，资料
-different parts of the hospital医院内的不同位置
-while conj.(表示两件事同时发生)当··..··的时候，在···.··时
-travel vi.旅行
-travel vi. 旅行
-record vt.记载，记录
-select vt. 选择
-take part in..
-参加··...·[动词短语 ]
+n.信息,资讯,情报;(计算机程序储存和使用的)数据,资料
+different parts of the hospital
+医院内的不同位置
+while 
+conj.(表示两件事同时发生)当...的时候,在...时
+travel 
+vi.旅行
+travel 
+vi. 旅行
+record 
+vt.记载,记录
+select 
+vt. 选择
+take part in ... 
+参加...[动词短语]
 
 
-new products 新产品
-design v.设计; 构思
-people n.人，人们
-know v.知道，知悉，了解
+
+new products 
+新产品
+design 
+v.设计; 构思
+people 
+n.人,人们
+know 
+v.知道,知悉,了解
 spend
 vt.花(钱、时间); 用尽
-communicate vi.交流 (思想资讯等 ) ;通话
-exchange information 交换资
-讯，互通信息[动词短语]
-come up with... 想出,提出(计划、想法等)[ 动词短语]
-computer records电脑记录
-no matter where they were无论他 /她们(指患者)在哪
-during prep.在·..···的时候:在·.·..··期间
-airline trips 搭机旅行
-hight n.航班;搭机旅行;飞机的航程
-track vt.跟踪，追踪
-choose vt.选择
+communicate 
+vi.交流 (思想资讯等) ;通话
+exchange information 
+交换资讯,互通信息[动词短语]
+come up with ... 
+想出,提出(计划、想法等)[动词短语]
+computer records
+电脑记录
+no matter where they were
+无论他 /她们(指患者)在哪
+during 
+prep.在...的时候:在...期间
+airline trips 
+搭机旅行
+hight 
+n.航班;搭机旅行;飞机的航程
+track 
+vt.跟踪,追踪
+choose 
+vt.选择
 activity
-n.活动; (团体为达到某种目的而采取的)活动，行动
+n.活动; (团体为达到某种目的而采取的)活动,行动

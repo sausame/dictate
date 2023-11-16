@@ -1,45 +1,63 @@
 confirm
-以证实，确定，确认
-annual adj.每年的;一年次的;全年的，年度的
-dimension n.(数学和科学中的)维(度); (长、宽、高等的)量度，尺寸，大小
-hide n兽皮
-look after...照料; 照顾;照管[动词短语
-proftable ad;.盈利的，有利润的;赚钱的
-outlay n.花费;花钱，费用
-keep  保持[系动词
-warm adi暖和的，温暖的
+以证实,确定,确认
+annual 
+adj.每年的;一年次的;全年的,年度的
+dimension 
+n.(数学和科学中的)维(度); (长、宽、高等的)量度,尺寸,大小
+hide 
+n.兽皮
+look after ... 
+照料; 照顾;照管[动词短语]
+proftable 
+adj.盈利的,有利润的;赚钱的
+outlay 
+n.花费;花钱,费用
+keep 
+保持[系动词]
+warm 
+adj.暖和的,温暖的
 disadvantage
-n.不利，劣势;短处
-disadvantage n.不利，劣势;短处
-useful adi.有用的;有益的有帮助的
+n.不利,劣势;短处
+disadvantage 
+n.不利,劣势;短处
+useful 
+adj.有用的;有益的有帮助的
 surprised
-ad;.惊讶的;惊奇的
-difficult adi.困难的，难做的,不容易的
-rewrite vt.重写，改写
+adj.惊讶的;惊奇的
+difficult 
+adj.困难的,难做的,不容易的
+rewrite 
+vt.重写,改写
 
 
 
-
-confirmation n.证实，确认
+confirmation 
+n.证实,确认
 annum
 n.年
 size
-n.大小，尺寸，规模
-leather n.皮，皮革
-attention n.注意，留心;照料
-照顾，关怀
+n.大小,尺寸,规模
+leather 
+n.皮,皮革
+attention 
+n.注意,留心;照料照顾,关怀
 profit margin
 利润率;利润幅度
-costn.成本，费用，花费
-maintain 保持，维持
-heat n.热，热度
+costn.
+成本,费用,花费
+maintain 
+保持,维持
+heat 
+n.热,热度
 downside
 n.负面;阴暗面;缺点
 weaker side
 弱点;弱的一面
 use
-v.用，使用，应用，运用
+v.用,使用,应用,运用
 amazing
-adi.令人惊奇的;惊人的
-easy adj.容易的，轻松的
-redo w.重新做，返工
+adj.令人惊奇的;惊人的
+easy 
+adj.容易的,轻松的
+redo 
+v.重新做,返工

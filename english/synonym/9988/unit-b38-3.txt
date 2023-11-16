@@ -1,42 +1,55 @@
 range
-n.( 同类事物的)一系列，连串
+n.(同类事物的)一系列,连串
 field
-n.领域，学科领城
-concentrate on...专心于......，全神贯注，集中(心思 )[动词短语 ]
-examplen. 例子，实例
+n.领域,学科领城
+concentrate on ... 
+专心于...,全神贯注,集中(心思)[动词短语]
+examplen. 
+例子,实例
 omit
-v. 省略，省去
+v. 省略,省去
 summarise
-v. 总结，概述
-end rather abruptly(演讲、发言等) 结束地相当突元[动词+副词 ]
-round off...使··..··圆满结束，煞尾，收尾[动词短语 ]
-not enough... 不够
-language n.语言;言语
+v. 总结,概述
+end rather abruptly
+(演讲、发言等) 结束地相当突元[动词+副词]
+round off ... 
+使...圆满结束,煞尾,收尾[动词短语]
+not enough ... 
+不够
+language 
+n.语言;言语
 simple
-adj.简单的，简明的
-specific to the field(语言措辞选择上) 是针对这·领域的特定(词汇)[形容词短语]
-in the future将来，未来[介词短语]
+adj.简单的,简明的
+specific to the field
+(语言措辞选择上) 是针对这.领域的特定(词汇)[形容词短语]
+in the future
+将来,未来[介词短语]
 
 
-numerous adj.众多的，许多的
-area n.领域;方面
-focus on...
-集中(注意力); 关注，作为关注中心[动词短语
-particular adj.特定的，特制的，具体
-leave out...省略，省去[动词短语]
+
+numerous 
+adj.众多的,许多的
+area 
+n.领域;方面
+focus on ... 
+集中(注意力); 关注,作为关注中心[动词短语]
+particular 
+adj.特定的,特制的,具体
+leave out ... 
+省略,省去[动词短语]
 tie
-vt.系;扣;捆;将.....打越
+vt.系;扣;捆;将...打越
 ack a conclusion
 (演讲、发言等) 少了收尾的分[动词短语]
 conclusion
-n.结束，末尾
-very little...
-几乎没有......[ 后面接不可数
-词]
+n.结束,末尾
+very little ... 
+几乎没有...[后面接不可数词]
 words
 (说的) 话
 technical
-ad;.(语言上)专业的,专门的,专用的
+adj.(语言上)专业的,专门的,专用的
 technical
 ad.(语言上)专业的,专门的,专用的
-later on以后，后来
+later on
+以后,后来

@@ -1,28 +1,39 @@
 form
-n.方式;(存在的)形态，形式
+n.方式;(存在的)形态,形式
 almost
-adu 几乎，差不多
-the move towards...
-( 指大喜好方面 )转而开始更青睐(某产品 )
-consumption n.吃;喝，饮用;消费
-drop vi. 下降，减少
-improvement n.改进，改善
-industrial adj.工业的，产业的
+adv. 几乎,差不多
+the move towards ... 
+(指大喜好方面)转而开始更青睐(某产品)
+consumption 
+n.吃;喝,饮用;消费
+drop 
+vi. 下降,减少
+improvement 
+n.改进,改善
+industrial 
+adj.工业的,产业的
 worker
 n.工人;雇员
 help
-n.帮助，帮忙;有帮助，有用
+n.帮助,帮忙;有帮助,有用
 
 
-means n.方法;手段;工具
-nearly adv. 几乎，差不多
-become popular(某风尚、产品等)变得受迎[动词短语]
-drink vt.喝，饮用
+
+means 
+n.方法;手段;工具
+nearly 
+adv. 几乎,差不多
+become popular
+(某风尚、产品等)变得受迎[动词短语]
+drink 
+vt.喝,饮用
 fall
-vi.下降，减少
-cheaper and more efficient比以更宜且更高效[形容词比较级]
+vi.下降,减少
+cheaper and more efficient
+比以更宜且更高效[形容词比较级]
 industry
-n.工业，行业
-working people劳动人民，工作人口
+n.工业,行业
+working people
+劳动人民,工作人口
 stimulant
 n.刺激物;励物

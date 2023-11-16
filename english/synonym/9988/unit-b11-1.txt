@@ -1,39 +1,55 @@
-current ad;现在的
-work n.工作，从业;工作单位工作地点
-occupation n.职业
-security n.安全;防卫;保安措施，安全工作
-supply vt.供应，供给
-rent vt. 租，租用
+current 
+adj.现在的
+work 
+n.工作,从业;工作单位工作地点
+occupation 
+n.职业
+security 
+n.安全;防卫;保安措施,安全工作
+supply 
+vt.供应,供给
+rent 
+vt. 租,租用
 unsure
-adi.不确定的，拿不准的
+adj.不确定的,拿不准的
 unsure
-adi.不确定的;拿不准的
-successful adi.(人)成功的:获得成功的;受欢迎的
-author n.作者;作家
+adj.不确定的;拿不准的
+successful 
+adj.(人)成功的:获得成功的;受欢迎的
+author 
+n.作者;作家
 suffer
-vi. 遭受，经受(疼痛); 感到(痛苦);( 因疾病或处于其他不利境地而)受苦，受难，受折磨
-view wt看待;看
-building n.建筑物，楼
+vi. 遭受,经受(疼痛); 感到(痛苦);(因疾病或处于其他不利境地而)受苦,受难,受折磨
+view 
+vt.看待;看
+building 
+n.建筑物,楼
 
 
 
-
-
-present adj.现在的;目前的
-ofiice n.办公室;(尤指政府的)部，局，厅
-profession n.职
-check vt.检查;审查;核实;检查，查看(以确保一切正常 )
-send v.寄;发送，送出
-let...out 把······租出去[动词短
-语]瓶动
+present 
+adj.现在的;目前的
+ofiice 
+n.办公室;(尤指政府的)部,局,厅
+profession 
+n.职
+check 
+vt.检查;审查;核实;检查,查看(以确保一切正常)
+send 
+v.寄;发送,送出
+let ... out 
+把.租出去[动词短语]瓶动
 make up one's mind
-下决心;打定主意[动词短语 ]
+下决心;打定主意[动词短语]
 hesitation
 n.犹豫;疑虑;踌躇
 famous
-adj.著名的，有名的
-writer n.作者;作家
+adj.著名的,有名的
+writer 
+n.作者;作家
 devasfated
-adi.极为震惊难过的;非常伤心的
-regard v,认为;把······看作
-house n.房屋，房子
+adj.极为震惊难过的;非常伤心的
+regard 
+v.认为;把.看作
+house 
+n.房屋,房子

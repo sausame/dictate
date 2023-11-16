@@ -1,30 +1,47 @@
-comprehensive adj; 综合的，综合性的，全面
-clear adi确定的;无可置疑的;明白无误的;明显的
-voluntary ad:自愿的;志愿的;主动的;自发的
-surprise v 使惊，使惊奇
-introduction n.介绍;引言;采用，进
+comprehensive 
+adj.; 综合的,综合性的,全面
+clear 
+adj.确定的;无可置疑的;明白无误的;明显的
+voluntary 
+adj.自愿的;志愿的;主动的;自发的
+surprise 
+v. 使惊,使惊奇
+introduction 
+n.介绍;引言;采用,进
 little
-ad:(修饰不可数名词)微小几乎没有
-research n.研究，调查，探索
-widespread adj; 普遍的，广泛的
-n.使用，用，应用，运用
+adj.(修饰不可数名词)微小几乎没有
+research 
+n.研究,调查,探索
+widespread 
+adj.; 普遍的,广泛的n.使用,用,应用,运用
 unpopularity
-n.不受欢迎，不得人心
+n.不受欢迎,不得人心
 regular
-adj.定期的; 有规律的; 经常的，频繁的
-n.贸易，买卖
+adj.定期的; 有规律的; 经常的,频繁的n.贸易,买卖
+full story
+整个事实,事情的全部
 
 
-full story整个事实，事情的全部
+
 conclusive
 adj.无可置疑的;确实的;决定性的;结论性的
-compulsory adj.强制性的;强迫的;必须的
-ridiculous adj;. 荒诞可笑的，荒谬的，荒
-(be) brought in被引进，被引入[动词bring的动语态]
-enough adj.充足的，充分的
-consultation n.查阅，参看;征询意见
-universally adv 普遍地, 全体地，人人;到处
-adopt v.采用，采纳，采取
-opposed adj.反对的，不赞成的
-frequently adv 经常性地，频繁地
-trader n商人
+compulsory 
+adj.强制性的;强迫的;必须的
+ridiculous 
+adj.;. 荒诞可笑的,荒谬的,荒
+(be) brought in
+被引进,被引入[动词bring的动语态]
+enough 
+adj.充足的,充分的
+consultation 
+n.查阅,参看;征询意见
+universally 
+adv. 普遍地, 全体地,人人;到处
+adopt 
+v.采用,采纳,采取
+opposed 
+adj.反对的,不赞成的
+frequently 
+adv. 经常性地,频繁地
+trader 
+n.商人

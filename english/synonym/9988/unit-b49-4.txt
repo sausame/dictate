@@ -3,39 +3,53 @@ make changes
 garden
 花园
 artist
-n艺术家
+n.艺术家
 writer
 作家
 costume
 (某国或某一历史时期或适合某种活动的) 服装
 new
-adi.新的;新引进的
+adj.新的;新引进的
 mini
 <前> (同类中) 小型的
 eat
 吃
 drink
-喝，饮用
+喝,饮用
 farming
-n.务农;畜牧;养殖，农场经营
-equipment n.设备
+n.务农;畜牧;养殖,农场经营
+equipment 
+n.设备
 trip
-(通常指短途的) 旅行，行程
-animal n.动物
+(通常指短途的) 旅行,行程
+animal 
+n.动物
 
 
-leave their mark(指房屋主人对房子)留下了自己的痕迹[动词短]
-flower bed花坛
-painter n.画家
-poet m诗人
+
+leave their mark
+(指房屋主人对房子)留下了自己的痕迹[动词短]
+flower bed
+花坛
+painter 
+n.画家
+poet 
+n.诗人
 (be) dressed up as.
-(通过穿其服装)装扮成·....·[动词 dress 的被动语态]
+(通过穿其服装)装扮成...[动词 dress 的被动语态]
 latest
-adi最新的，最近的，最先进的
-child-sized adj.(座椅等)儿童尺寸的
-lunch and cake午餐和蛋糕
-tea and coffec茶和咖啡
-agricultural ad;农业的
-tool n工
-tour n.参观;游历，观光
-cattle and sheep 牛和羊
+adj.最新的,最近的,最先进的
+child-sized 
+adj.(座椅等)儿童尺寸的
+lunch and cake
+午餐和蛋糕
+tea and coffec
+茶和咖啡
+agricultural 
+adj.农业的
+tool 
+n.工
+tour 
+n.参观;游历,观光
+cattle and sheep 
+牛和羊

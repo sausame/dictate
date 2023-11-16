@@ -1,40 +1,55 @@
-depend on ...
-依赖、依靠[动词短语)
-main priority中先要的事
+depend on ... 
+依赖、依靠[动词短语]
+main priority
+中先要的事
 ensure
 以保
-work n.  劳动工作;
+work 
+n. 劳动工作
 organise
-安排，组织，筹划
-do 做;履行;执行
-most of...
-大多数......
+安排,组织,筹划
+do 
+做;履行;执行
+most of ... 
+大多数...
 suitable
-adi;适宜的，合适的
+adj.;适宜的,合适的
 land
 n.土地, 地
-marketing n.促销，推销;营销
+marketing 
+n.促销,推销;营销
 diffcult
-ad.困难的，费力的，艰难的
-lack of...
-缺小......
+ad.困难的,费力的,艰难的
+lack of ... 
+缺小...
 method
-n方法
+n.方法
 
 
-use w.消耗，用掉，用完
-focus primarily on...(时间、精力等) 主要集中在··.···上[动词短语]
-providew. 提供，供给
-activit n.行动，活动
+
+use 
+v.消耗,用掉,用完
+focus primarily on ... 
+(时间、精力等) 主要集中在...上[动词短语]
+providew. 
+提供,供给
+activit 
+n.行动,活动
 plan
-w.计划，规划，精心安排
-carrv out..执行，实施[动词短语]
-in general普遍地，总的来说
+v.计划,规划,精心安排
+carrv out ... 
+执行,实施[动词短语]
+in general
+普遍地,总的来说
 appropriate
-adi.适当的，恰当的，合适的
+adj.适当的,恰当的,合适的
 field
-n.田，地
-market v.促销:推销:销
-problem n.(须解决的) 问题，困难
-do not have access to..无法获取·..··，无法使用·...·[动词结构]
-technique n.技术，技能
+n.田,地
+market 
+v.促销:推销:销
+problem 
+n.(须解决的) 问题,困难
+do not have access to ... 
+无法获取...,无法使用...[动词结构]
+technique 
+n.技术,技能

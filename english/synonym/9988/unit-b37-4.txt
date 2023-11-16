@@ -1,41 +1,55 @@
 size
-大小，尺寸，规模
+大小,尺寸,规模
 record
 以(用文字、照片或电脑)记录,记载
 depth
-深，深度
+深,深度
 container
-n容器
+n.容器
 height
 n.高度
 record
-(用文字、照片或电脑) 记录，记载
-change n.改变，变化
-huge adi.(体积、数量、规模、程度上)巨大的，极大的
-previous adv 之前，先前，以前
-animan动物
+(用文字、照片或电脑) 记录,记载
+change 
+n.改变,变化
+huge 
+adj.(体积、数量、规模、程度上)巨大的,极大的
+previous 
+adv. 之前,先前,以前
+animan
+动物
 suitable
-adj.合适的，适宜的;适当的
-general adaptability总的适应性
+adj.合适的,适宜的;适当的
+general adaptability
+总的适应性
 similar
 adj.相似的
 
 
-dimensions n.(长、宽、高等的) 尺寸;大小
+
+dimensions 
+n.(长、宽、高等的) 尺寸;大小
 record
-n.( 文字或影像的 )记录，记裁
-deepadi深的;有.....·深的
-plant pot花盆
+n.(文字或影像的)记录,记裁
+deepadi
+深的;有...深的
+plant pot
+花盆
 how tall
-( 用于发问)多高
-write down... 写下来，记下来[动词短语 ]
-upheaval n.激变;动荡;剧变
+(用于发问)多高
+write down ... 
+写下来,记下来[动词短语]
+upheaval 
+n.激变;动荡;剧变
 massive
-adi.巨大的;庞大的;厚重的;强大的
-used to ... 过去时常( 而现在不再)某事[动词短语 ]
-species n.(动植物的)物种
-adapt to ... 适应于，适应不同情况(或环境)[动词短语 ]
+adj.巨大的;庞大的;厚重的;强大的
+used to ... 
+过去时常(而现在不再)某事[动词短语]
+species 
+n.(动植物的)物种
+adapt to ... 
+适应于,适应不同情况(或环境)[动词短语]
 adaptable
-adi.有适应能力的，能适应的，适应性强的
+adj.有适应能力的,能适应的,适应性强的
 like
-prep.像,像......样
+prep.像,像...样

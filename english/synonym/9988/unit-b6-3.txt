@@ -1,23 +1,33 @@
-stage n.(活动、过程或时期的 )阶段，部分
-try to...尽力( 做某事 )[ 动词短语
-more than...
-( 数量上) 超过·....
-classify vt.分类，归类
+stage 
+n.(活动、过程或时期的)阶段,部分
+try to ... 
+尽力(做某事)[动词短语]
+more than ... 
+(数量上)超过...
+classify 
+vt.分类,归类
 international
-adi.国际的，国际上的
+adj.国际的,国际上的
 accommodation
-n.住处，住所，住宿oa 9gong
-work area 工作区，工作区城
-solve vt 解决(问题等)
-adjustable ad;.(位置或大小)可调整的，可调节的
-approximately adu 大概，大约
-daily ady/adi.每日(的),每天(的)
+n.住处,住所,住宿oa 9gong
+work area 
+工作区,工作区城
+solve 
+vt. 解决(问题等)
+adjustable 
+adj.(位置或大小)可调整的,可调节的
+approximately 
+adv. 大概,大约
+daily 
+adv./adi.每日(的),每天(的)
 important
 adj.重要的
 measure
 v. 测量;度量;衡量
-measure v测量;度量;衡量
-cause v.导致，引发
+measure 
+v.测量;度量;衡量
+cause 
+v.导致,引发
 human activity
 人类活动
 opening
@@ -25,28 +35,36 @@ n.(职位的)空缺
 
 
 
-
-
 step
 n.阶段;等级;进程
-effort n.努力
-over prep.在·...··(数量上)以上超过.....·，
-category n.种类，类别
+effort 
+n.努力
+over 
+prep.在...(数量上)以上超过...
+category 
+n.种类,类别
 many different countries
 很多国家
 living space
-居住空间，居住的地方
-working space 工作区域
-solution n.解决方法，解决方案
-extendable adi可延伸的;可延展的，可延长的
-about adu 大约;左右
-a day 每天;一天
+居住空间,居住的地方
+working space 
+工作区域
+solution 
+n.解决方法,解决方案
+extendable 
+adj.可延伸的;可延展的,可延长的
+about 
+adv. 大约;左右
+a day 
+每天;一天
 crucial
-adi.至关重要的;关键性的
+adj.至关重要的;关键性的
 survey
-n民意调查 v.测量;勘测，测绘
-index n.指数
-effect n.影响;效果，结果
+n.民意调查 v.测量;勘测,测绘
+index 
+n.指数
+effect 
+n.影响;效果,结果
 agriculture and industry
 农业和工业
 vacancy

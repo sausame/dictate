@@ -1,51 +1,67 @@
 consume
-vt. 吃完，喝光;消耗，耗尽
+vt. 吃完,喝光;消耗,耗尽
 eat
 喝比吃,
 investigate
-v 调查，研究
-mental adi.精神的，心理的;
-智力的，脑力的;内心的，在
-脑中进行的
-learn vt学习，学会
+v. 调查,研究
+mental 
+adj.精神的,心理的;智力的,脑力的;内心的,在脑中进行的
+learn 
+vt.学习,学会
 find
 v.发现
-efifect n.影响，作用;结果
+efifect 
+n.影响,作用;结果
 lab-based
-adi基于实验室的
-more adi更多的;更高程度的
-fnding n发现;(调查或研究的) 结果
-migrate vi.迁移，移居;(候鸟等) 定期迁徙，(鱼)游
-human n. 人
-learn v,学习，学会
-problem n.问题，疑难问题
+adj.基于实验室的
+more 
+adj.更多的;更高程度的
+fnding 
+n.发现;(调查或研究的) 结果
+migrate 
+vi.迁移,移居;(候鸟等) 定期迁徙,(鱼)游
+human 
+n. 人
+learn 
+v.学习,学会
+problem 
+n.问题,疑难问题
 power
-n.力，力量;电力
+n.力,力量;电力
 affect
-vt.影响，对......产生作用
+vt.影响,对...产生作用
+
 
 
 ingest
-此.咽下，喝下;摄人;吸收
-feed on... 以......为食物
-[动词短语 ]
+此.咽下,喝下;摄人;吸收
+feed on ... 
+以...为食物[动词短语]
 research
-n.(学术)研究，调查，探究
+n.(学术)研究,调查,探究
 brain
-n.脑，脑袋;智力，头脑
-acquire vt.学到，取得，获得
-fnding n.发现，(调查或研究的
-结果
-impact n.影响，作用
-in laboratories 在实验室
-[介词短语 ]
-higher level 更高水平
+n.脑,脑袋;智力,头脑
+acquire 
+vt.学到,取得,获得
+fnding 
+n.发现,(调查或研究的结果)
+impact 
+n.影响,作用
+in laboratories 
+在实验室[介词短语]
+higher level 
+更高水平
 result
 n.结果
-migratory ad.迁移的;有迁徒习惯的;润游的
-hunter n.猎人，猎手
-acquisition n.获得，取得;学会
-delay n.延误，耽搁，延迟
-energy n.力气，力量;能，能量能源
+migratory ad.
+迁移的;有迁徒习惯的;润游的
+hunter 
+n.猎人,猎手
+acquisition 
+n.获得,取得;学会
+delay 
+n.延误,耽搁,延迟
+energy 
+n.力气,力量;能,能量能源
 increase
-v.增大，增加，增强
+v.增大,增加,增强

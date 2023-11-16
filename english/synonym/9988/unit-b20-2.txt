@@ -1,46 +1,63 @@
-footpath n.人行道，人行小径
+footpath 
+n.人行道,人行小径
 coloured
-ad;彩色的;有颜色的
+adj.彩色的;有颜色的
 sign
-n.招牌;标牌;指示牌，告示牌;
+n.招牌;标牌;指示牌,告示牌;
 artwork
-n.艺术品，艺术作品
-fnance v 给··.·...提供资金;资助
+n.艺术品,艺术作品
+fnance 
+v. 给...提供资金;资助
 money
-n.钱，金钱;款项
-employer n.雇主，雇佣者
+n.钱,金钱;款项
+employer 
+n.雇主,雇佣者
 former
 adj. 前任的;先前的;昔日的;旧时的;曾经的
 provide funding
-提供资金[动词短语
-family n.家人;家庭;家族
+提供资金[动词短语]
+family 
+n.家人;家庭;家族
 help
-vt. 帮助，帮忙
+vt. 帮助,帮忙
 leave
-v.离开;脱离，退出
-studies n.学习，学业; 研究(注
+v.离开;脱离,退出
+studies 
+n.学习,学业; 研究(注意复数)
 challenge
 vt.挑战
-sufhciently
-adv 充分地;十分，相当
+sufficiently
+adv. 充分地;十分,相当
 
 
-pavement n.人行道
-be painted red 被涂成红色[动词 paint 的被动语态
-signagen.(总称)标志，标识; 标牌(指路标、广告牌 )
+
+pavement 
+n.人行道
+be painted red 
+被涂成红色[动词paint的被动语态]
+signagen.
+(总称)标志,标识; 标牌(指路标、广告牌)
 painting
-n.画，画作;绘画
-moneyn.钱，金钱;款项
-funding n.(政府或机构提供的)资金，款项，拨款
-boss n.老板;上司
-used to...
-过去时常( 做·....·),过去曾(而现在不再 )做··...·[ 动词短语
+n.画,画作;绘画
+moneyn.
+钱,金钱;款项
+funding 
+n.(政府或机构提供的)资金,款项,拨款
+boss 
+n.老板;上司
+used to ... 
+过去时常(做...),过去曾(而现在不再)做...[动词短语]
 sponsor
-vt. 资，赞助
-parents 父母
-take pity on... 同情(某人),怜悯(某人)[动词短语]
-join v 加人(组织或机构); 成为··...的一员;参加，参加活动
-work n.工作;劳动;干活,活儿;作业，功课
-stretch vt使竭尽所能;使全力以赴;使拿出全部本领
+vt. 资,赞助
+parents 
+父母
+take pity on ... 
+同情(某人),怜悯(某人)[动词短语]
+join 
+v. 加人(组织或机构); 成为...的一员;参加,参加活动
+work 
+n.工作;劳动;干活,活儿;作业,功课
+stretch 
+vt.使竭尽所能;使全力以赴;使拿出全部本领
 enough
-adv 充足地;十分;很
+adv. 充足地;十分;很

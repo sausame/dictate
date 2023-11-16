@@ -1,51 +1,71 @@
-variation n变化，变动;差别，差异
+variation 
+n.变化,变动;差别,差异
 realise
-认识到，意识到，了解
-issue n.问题;争论，争议
-disturbance n.扰乱;打扰
+认识到,意识到,了解
+issue 
+n.问题;争论,争议
+disturbance 
+n.扰乱;打扰
 increase
 n.增加;增大;增多
-amount n.数量，量
-effect n.影响，作用;结果
-noise n噪声
+amount 
+n.数量,量
+effect 
+n.影响,作用;结果
+noise 
+n.噪声
 pleasant
-adj.令人愉快的，舒适的
+adj.令人愉快的,舒适的
 pleasant
-adj.令人愉快的，舒适的
+adj.令人愉快的,舒适的
 consider
-vt 认为，把··...·视为
+vt. 认为,把...视为
 urban
-ad;城市的;居住在城市的
-people n.人，人们
+adj.城市的;居住在城市的
+people 
+n.人,人们
 allow
-vt.允许，准许
-much adj许多的，大量的
-get vt.获得，得到
+vt.允许,准许
+much 
+adj.许多的,大量的
+get 
+vt.获得,得到
 regard
-vt. 把·....·看作，认为
+vt. 把...看作,认为
+
 
 
 vary
-vi变化;呈多样性，相异
+vi.变化;呈多样性,相异
 awareness
-n.察觉，觉悟;意识
-matter n.事情;问题;事件
-interrupt vt.打断;中断;阳碍
-rise n.(数量、程度等的 )增加.上上升
-level n.水平;程度;等级
-suffer vi. 受损害，受损失，变糟
-sound n.声音，响声
+n.察觉,觉悟;意识
+matter 
+n.事情;问题;事件
+interrupt 
+vt.打断;中断;阳碍
+rise 
+n.(数量、程度等的)增加.上上升
+level 
+n.水平;程度;等级
+suffer 
+vi. 受损害,受损失,变糟
+sound 
+n.声音,响声
 nice
-adj.好的，美好的，宜人的
+adj.好的,美好的,宜人的
 relaxing
-adj令人轻松的，轻松偷快的
-think of...as... 认为......是.....
-[ 动短语]
+adj.令人轻松的,轻松偷快的
+think of ... as ... 
+认为...是...[动短语]
 city
-n.城市，都市，市
-we pron.我们;人们
-need to be able to... 必须能够.....[ 动词短语 ]
-little ad;少的，不多的
-receive v.收到，接到，得到
+n.城市,都市,市
+we 
+pron.我们;人们
+need to be able to ... 
+必须能够...[动词短语]
+little 
+adj.少的,不多的
+receive 
+v.收到,接到,得到
 see
-v. 把.....·看作，认为
+v. 把...看作,认为

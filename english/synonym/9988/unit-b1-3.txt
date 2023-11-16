@@ -1,40 +1,55 @@
 signposted
 adj.设有路标的
-refundable adj. 可退还的
+refundable 
+adj. 可退还的
 reasonable
-adi.合理的，有道理的
-costn.成本，费用，花费
+adj.合理的,有道理的
+costn.
+成本,费用,花费
 move
-vt./vi. (使) 移动，(使)活动
-product n.产品，制品
-first adi最早的，最初的
+vt./vi. (使) 移动,(使)活动
+product 
+n.产品,制品
+first 
+adj.最早的,最初的
 allow
-vt.允许，容许，准许
+vt.允许,容许,准许
 support
-vt.资助，供养，赡养
-supply vt供给;供应;提供
-draw v.提取(现金等)
+vt.资助,供养,赡养
+supply 
+vt.供给;供应;提供
+draw 
+v.提取(现金等)
 pay interest
-支付利息[动词短语 ]
-make up...
-组成，构成[动词短语 ]
+支付利息[动词短语]
+make up ... 
+组成,构成[动词短语]
 
 
 
-
-
-sign n.招牌;标牌，指示牌告示牌，标志
-refund n.退款;返还金额
-common sense常识;直觉判断力
-tariffn.收费费率，关税
-movement n.活动;运行;移动
-article n.物品，物件
-beginning n.开始，开头，起点 
-eligible for.. 符合.....条件的:有......资格的[形容词短语]
+sign 
+n.招牌;标牌,指示牌告示牌,标志
+refund 
+n.退款;返还金额
+common sense
+常识;直觉判断力
+tariffn.
+收费费率,关税
+movement 
+n.活动;运行;移动
+article 
+n.物品,物件
+beginning 
+n.开始,开头,起点 
+eligible for ... 
+符合...条件的:有...资格的[形容词短语]
 fund
-vt.资助;为··.···提供资金
-give v.提供，给予
-withdraw vt.提，取(款)
-incur charges引发收费，产生费用( 动词短语
+vt.资助;为...提供资金
+give 
+v.提供,给予
+withdraw 
+vt.提,取(款)
+incur charges
+引发收费,产生费用(动词短语)
 constitute
-v.构成，组成
+v.构成,组成

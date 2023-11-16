@@ -1,33 +1,47 @@
 antique
-adj 古物的;古器的;古董的;古玩的 n古物，古玩，古董
-current ad;现在的，当前的
-address n.地址，住址
+adj. 古物的;古器的;古董的;古玩的 n.古物,古玩,古董
+current 
+adj.现在的,当前的
+address 
+n.地址,住址
 item
-n一件商品(或物品)
-approximately adv 大约，大概，左右
-time n.时间;时刻，时间点
+n.一件商品(或物品)
+approximately 
+adv. 大约,大概,左右
+time 
+n.时间;时刻,时间点
 place
-n.地方，地点
+n.地方,地点
 slim
-ad;.(尤指人) 苗条的，纤细的
+adj.(尤指人) 苗条的,纤细的
 allocate
-n.分配;分派;拨给，划拨
+n.分配;分派;拨给,划拨
 complete
 v.完成;完工;结束
 task
 n.任务;(尤指不情愿或很难做的) 工作;(苦) 差事
 
 
-old ad;.老的;年老的;古老的
-present adj.现在的，当前的
-where adv 在哪儿
-thing n.物，东西
-about adu 大约，大概，左右
-when adv.什么时候，何时
-where adv 在哪儿;去哪儿
+
+old 
+adj.老的;年老的;古老的
+present 
+adj.现在的,当前的
+where 
+adv. 在哪儿
+thing 
+n.物,东西
+about 
+adv. 大约,大概,左右
+when 
+adv.什么时候,何时
+where 
+adv. 在哪儿;去哪儿
 thin
-adj.(身体)瘦的，不肥的
-give v.提供;给予
-do v.做;履行;执行
+adj.(身体)瘦的,不肥的
+give 
+v.提供;给予
+do 
+v.做;履行;执行
 work
-n.工作，活儿;劳动
+n.工作,活儿;劳动

@@ -1,38 +1,63 @@
-photo n 照片
-surround v.围绕，环绕;包围
-ship n船
+photo 
+n. 照片
+surround 
+v.围绕,环绕;包围
+ship 
+n.船
 by
-prep.在··...·旁边，接近
-not included in the basic price基本价格中不包含( 某服务或品
-provide v. 提供，供给
-some det.pron.一些，有些，若干
-hire v.租，租用
-near prep.在......附近
-food n.食物，食品
-drink n.饮料
-accommodation n住宿，住处
+prep.在...旁边,接近
+not included in the basic price
+基本价格中不包含(某服务或品)
+provide 
+v. 提供,供给
+some det.pron.
+一些,有些,若干
+hire 
+v.租,租用
+near 
+prep.在...附近
+food 
+n.食物,食品
+drink 
+n.饮料
+accommodation 
+n.住宿,住处
 total
-adj.总计的，总括的，全体的
-like v./vi. 喜欢;愿意; 希望
+adj.总计的,总括的,全体的
+like 
+v./vi. 喜欢;愿意; 希望
 variety
 n.多样性;变化;种种
 
 
-picture n.照片
-all around...在······的四周
-boat n.船
+
+picture 
+n.照片
+all around ... 
+在.的四周
+boat 
+n.船
 along
-prep.沿着，顺着，靠近·....的边
-extra cost 额外的费用
-give vt给
-a bit 一点儿; 有一点儿
-rent vt. 租，租赁
-by prep.在······旁边，接近
-snack n.快餐;小吃
-water n.水
-stay v.暂住
+prep.沿着,顺着,靠近...的边
+extra cost 
+额外的费用
+give 
+vt.给
+a bit 
+一点儿; 有一点儿
+rent 
+vt. 租,租赁
+by 
+prep.在.旁边,接近
+snack 
+n.快餐;小吃
+water 
+n.水
+stay 
+v.暂住
 altogether
-adv 全部，合计
-enjoy v. 欣赏，享受; 喜爱
-so many... 如此多的···..
-[ 形容词短语
+adv. 全部,合计
+enjoy 
+v. 欣赏,享受; 喜爱
+so many ... 
+如此多的...[形容词短语]

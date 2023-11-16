@@ -1,25 +1,39 @@
 injury
-n.受伤，伤
-(be) added to...被加到··..··里[动词add 的被动语]
-cookingn烹饪，做饭
-heat(使) 变热，(使) 加热;变暖
+n.受伤,伤
+(be) added to ... 
+被加到...里[动词add 的被动语]
+cookingn
+烹饪,做饭
+heat
+(使) 变热,(使) 加热;变暖
 sap
-n.(植物运送养分的)汁，液
-large quantities of...大量的··.···
-produce u.生产;出产，制造
-be  removed被移除，被去除[动词 re-move 的被动语态]
-look vi.看起来
+n.(植物运送养分的)汁,液
+large quantities of ... 
+大量的...
+produce 
+v.生产;出产,制造
+be removed
+被移除,被去除[动词remove的被动语态]
+look 
+vi.看起来
 
 
-damage m.损害，伤害:损坏，危
-(be) poured onto...(液体等)被倒在··...·上面[动词 pour的被动语态]
-baking n.烘焙，烘烤
+
+damage 
+n.损害,伤害:损坏,危
+(be) poured onto ... 
+(液体等)被倒在...上面[动词 pour的被动语态]
+baking 
+n.烘焙,烘烤
 boil
-(使)沸腾，煮沸，烧开
-liquid n.液体
-a lot of...
-大量······，许多......
+(使)沸腾,煮沸,烧开
+liquid 
+n.液体
+a lot of ... 
+大量.,许多...
 create
-v,创造，创建，创作:发明
-(be) filtered out被过滤掉[动词 flter 的被动语态]
-appearance n.外表，外观，外貌，样
+v.创造,创建,创作:发明
+(be) filtered out
+被过滤掉[动词 flter 的被动语态]
+appearance 
+n.外表,外观,外貌,样

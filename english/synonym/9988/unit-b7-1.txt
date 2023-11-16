@@ -1,43 +1,51 @@
 make
 n.(汽车、收音机等的)牌子
 prefer
-vt.vi 更喜欢;偏好
-contact number 联系电话
+vt ... vi. 更喜欢;偏好
+contact number 
+联系电话
 maximum
-adj.最大值的，最大量的
+adj.最大值的,最大量的
 good links
 良好的关系
 local
-adj.当地的，本地的
-receive vt.收到，接到
+adj.当地的,本地的
+receive 
+vt.收到,接到
 processing
-n.处理，处理方法，加工
+n.处理,处理方法,加工
 slow down
-(使) 下来[动词短语
+(使)下来[动词短语]
 delay
-n.耽搁，耽误，延迟，延误
-send v,寄;发送;送出
-touch n.(与......) 联络:( 与··....) 联系;触摸，碰
-
-
+n.耽搁,耽误,延迟,延误
+send 
+v.寄;发送;送出
+touch 
+n.(与...) 联络:(与...) 联系;触摸,碰
 
 
 
 brand
-n.商标，牌子
-go for..非常喜欢;选择，选[动词短语]
-phone number 电话号码
-less than...
-(数量上) 少于......
+n.商标,牌子
+go for ... 
+非常喜欢;选择,选[动词短语]
+phone number 
+电话号码
+less than ... 
+(数量上) 少于...
 lose relationships
 紧密的关系
 in the area
-当地的，来自当地[介词短语
-send vt.寄;发送;送出
+当地的,来自当地[介词短语]
+send 
+vt.寄;发送;送出
 process
-n.加工，处理，过程，进程
+n.加工,处理,过程,进程
 quickly
-adv 迅速地，马上，立刻
-hoid-up n.耽误，耽搁;造成耽搁的事物
-reply v.回信;回答，回复
-contact n.联系，联络
+adv. 迅速地,马上,立刻
+hoid-up 
+n.耽误,耽搁;造成耽搁的事物
+reply 
+v.回信;回答,回复
+contact 
+n.联系,联络

@@ -1,50 +1,67 @@
-share vt. 分享，分担; 共有,共同使用
+share 
+vt. 分享,分担; 共有,共同使用
 explore
-v. 勘测，勘探，在.....·探险
-local ad;. 当地的，本地的
-effect n. 结果;影响;效果
-dynamicsn相互作用;动态(用
-population n(某一国家或地区的) 全体人民;人口
+v. 勘测,勘探,在...探险
+local 
+adj. 当地的,本地的
+effect 
+n. 结果;影响;效果
+dynamicsn
+相互作用;动态(用)
+population 
+n.(某一国家或地区的) 全体人民;人口
 lifestyle
-n生活方式
-urban ad;城市的，都市的
+n.生活方式
+urban 
+adj.城市的,都市的
 cartography
 n.制图学;地图绘制
 understand
-钱 a心结你们
-vt./vi.懂，理解，明白
-associated adj.(与·..... )相关的，相联系的
-fnd v.发现，找到
-form n.方式，做法;形式
+钱 a心结你们vt./vi.懂,理解,明白
+associated 
+adj.(与...)相关的,相联系的
+find 
+v.发现,找到
+form 
+n.方式,做法;形式
 census
 n.人查
 use
-v. 用，使用，运用
-data n.数据;资料，材料
+v. 用,使用,运用
+data 
+n.数据;资料,材料
+
 
 
 hire
-vi.租，租借
+vi.租,租借
 visit
-v.参观，拜访
-there adv 在那儿，在那里
-affect v.影响，对···.·产生作用
-relationship n.关系;(事物之间的关系，关联，联系
+v.参观,拜访
+there 
+adv. 在那儿,在那里
+affect 
+v.影响,对...产生作用
+relationship 
+n.关系;(事物之间的)关系,关联,联系
 people
-n.人，人们; 人民
+n.人,人们; 人民
 the ways in which we choose to live
-我们选择的生活方式
-[名 + 定语从 ]
-city n.城市
+我们选择的生活方式[名 + 定语从]
+city 
+n.城市
 map-making
 n.图作
 know
-v.知道，熟悉;了解
-relate to... 涉及.....,关系到·.-..·，
-与·.·..·有关[动词短语 ]
-collect v. 收集，采集
-means n.手段，方法;工具
-population n.(某一国家或地区的全体人民;人口
-with the help of..
-借助于......，利用·..···[ 介词短语
-information n.信息，资讯，情报
+v.知道,熟悉;了解
+relate to ... 
+涉及...,关系到...,与...有关[动词短语]
+collect 
+v. 收集,采集
+means 
+n.手段,方法;工具
+population 
+n.(某一国家或地区的)全体人民;人口
+with the help of ... 
+借助于...,利用...[介词短语]
+information 
+n.信息,资讯,情报

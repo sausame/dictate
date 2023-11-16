@@ -1,34 +1,47 @@
-rheac
+per head
 每人
-ad;屋顶的，屋顶上的rooftop
-ad;靠近......的，离......near
-很近的
+rooftop
+adj.屋顶的,屋顶上的
+near
+adj.靠近...的,离...很近的
 activity
-n.行动，
+n.行动,
 meal
-n.(一顿)餐，餐食
+n.(一顿)餐,餐食
 decorate
-以.装饰，装潢
+以.装饰,装潢
 childcare
-n.儿童保育，儿童看护
-employment prospects就业前景
-past times过去的时光，从前
+n.儿童保育,儿童看护
+employment prospects
+就业前景
+past times
+过去的时光,从前
 remember
-w.记住，记忆，记起
-physicaladj.身体的;肉体的，躯体的
+v.记住,记忆,记起
+physical
+adj.身体的;肉体的,躯体的
 
 
-per person每人
-on the roof在屋顶上[介词短语 ]
-not very far from...离·...··不远[形容词短语 
-dov.做，履行，执行;行动，采取
-行动
+
+per person
+每人
+on the roof
+在屋顶上[介词短语]
+not very far from ... 
+离...不远[形容词短语]
+dov.
+做,履行,执行;行动,采取行动
 cooking
-n. 烹饪，做饭
-painting or wallpapering(给墙 ) 刷油漆或铺贴墙纸[动名词+动名词 ]
-babysitting替人临时照看小孩[动名词]
-apply for jobs申请工作，求职[动词短语]
+n. 烹饪,做饭
+painting or wallpapering
+(给墙) 刷油漆或铺贴墙纸[动名词+动名词]
+babysitting
+替人临时照看小孩[动名词]
+apply for jobs
+申请工作,求职[动词短语]
 back to their youth
 (在脑海中)回到他(她)们年轻的时候
-dementian.(尤指老年性) 痴呆
-walku 走路，行走
+dementia
+n.(尤指老年性) 痴呆
+walk 
+vi. 走路,行走

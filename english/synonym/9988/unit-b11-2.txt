@@ -1,53 +1,63 @@
 typical
-adj.典型的，有代表性的
-region n.地区;地带，行政区域
-work n.(艺术家、作家、作曲家等的) 作品;著作
+adj.典型的,有代表性的
+region 
+n.地区;地带,行政区域
+work 
+n.(艺术家、作家、作曲家等的) 作品;著作
 escape
-vi.逃离，逃脱
-walk through...
-步行穿过·....·[ 动词短语 ]
-over prep.(穿)过，(跨)过,(越) 过(障碍、边界等)
+vi.逃离,逃脱
+walk through ... 
+步行穿过...[动词短语]
+over 
+prep.(穿)过,(跨)过,(越) 过(障碍、边界等)
 wooded
-adj树木覆盖的，林木茂盛的
-the way back 回来的路
-go up to...
-向上走抵达··....[ 动词短语]
+adj.树木覆盖的,林木茂盛的
+the way back 
+回来的路
+go up to ... 
+向上走抵达...[动词短语]
 investigate
-vt.调查，研究
-collect vt 收集;采集
-come from...
-来自··....[ 动词短语 ]
-above prep.(数字)在··..··之上，超过
-animal n.动物
+vt.调查,研究
+collect 
+vt. 收集;采集
+come from ... 
+来自...[动词短语]
+above 
+prep.(数字)在...之上,超过
+animal 
+n.动物
 animal
 n.动物
 
 
 
-
-
 pure example
 纯粹的例子
-part n.部分;零件;地区
+part 
+n.部分;零件;地区
 writing
-n.文字作品，文章
+n.文字作品,文章
 haven
-n.安全处所，庇护所，避难所
-cross v.(公路、铁路或桥)穿
-过，越过
-cross vt.(公路、铁路或桥 )穿
-过，越过
+n.安全处所,庇护所,避难所
+cross 
+v.(公路、铁路或桥)穿过,越过
+cross 
+vt.(公路、铁路或桥)穿过,越过
 woodland
 n.林地;林区
-return v. 返回，回到(出发地)
-climb up to...
-向上攀登至··....[ 动词短语 ]
-look at...
-看;检查，仔细检查[动词短语 ]
-get w. 获得，得到
+return 
+v. 返回,回到(出发地)
+climb up to ... 
+向上攀登至...[动词短语]
+look at ... 
+看;检查,仔细检查[动词短语]
+get 
+v. 获得,得到
 origin
-n.起源，由来
+n.起源,由来
 exceed
 v.超过;超出
-cattle herd 牛群
-sheep n.羊，绵羊(复数形式也为 sheep )
+cattle herd 
+牛群
+sheep 
+n.羊,绵羊(复数形式也为sheep)

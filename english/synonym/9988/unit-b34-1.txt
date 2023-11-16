@@ -1,42 +1,63 @@
-start vi.开始;出发
-make a speech 演讲，致辞[动词短语]
+start 
+vi.开始;出发
+make a speech 
+演讲,致辞[动词短语]
 performance
-n.演出，演奏，表演
-evening n.傍晚，晚上
+n.演出,演奏,表演
+evening 
+n.傍晚,晚上
 across
-prep.在·...··那边
+prep.在...那边
 performance
-n.演出，演奏，表演
-dance n.跳舞，舞蹈
+n.演出,演奏,表演
+dance 
+n.跳舞,舞蹈
 venue
 n.(事件、行动等的) 发生地
-every day 每天
-have vt.有，拥有，持有
-per night 每晚[介词短语
-pay v.付，付款，支付
-the region 这个地区，该地区
-for the first time 首次，第一次[介词短语]
-celebrate vt.庆祝
+every day 
+每天
+have 
+vt.有,拥有,持有
+per night 
+每晚[介词短语]
+pay 
+v.付,付款,支付
+the region 
+这个地区,该地区
+for the first time 
+首次,第一次[介词短语]
+celebrate 
+vt.庆祝
 
 
-begin vi. 开始
+
+begin 
+vi. 开始
 speak
-vi. 说话，讲话;发表演说
+vi. 说话,讲话;发表演说
 perform
-vi. 表演，演奏，演出
-as the sun sets 太阳落山的时候
-on the opposite side of ...
-在.....的另外一边[介词短语]
+vi. 表演,演奏,演出
+as the sun sets 
+太阳落山的时候
+on the opposite side of ... 
+在...的另外一边[介词短语]
 demonstration
-n.示范，演示
-dancing n.跳舞
+n.示范,演示
+dancing 
+n.跳舞
 where
-adv(用作疑问副词)在哪儿
-every afternoon 每天下午
-display vt.展出;显示;显露
-a night 每晚;一晚
-rate n.费用，价格
-local ad;.当地的，本地的
+adv.(用作疑问副词)在哪儿
+every afternoon 
+每天下午
+display 
+vt.展出;显示;显露
+a night 
+每晚;一晚
+rate 
+n.费用,价格
+local 
+adj.当地的,本地的
 premiere
-n.初次上演，首映
-mark v.标志;纪念，庆祝
+n.初次上演,首映
+mark 
+v.标志;纪念,庆祝

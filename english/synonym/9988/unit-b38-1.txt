@@ -1,41 +1,51 @@
 include
-v.(价格中)包含，包括
-kilometres per hour每小时......千米(速度单位 )[缩写为“kph”]
+v.(价格中)包含,包括
+kilometres per hour
+每小时...千米(速度单位)[缩写为kph]
 meet
-v.(约定在某处)相会，碰头
+v.(约定在某处)相会,碰头
 entrance
-n入口
+n.入口
 not always
-并不总(是)，不都(是)
+并不总(是),不都(是)
 employee
-n.雇员，员工
+n.雇员,员工
 almost
-adv 几乎，差不多
+adv. 几乎,差不多
 all
-adj. 所有的，全部的
+adj. 所有的,全部的
 improve
-v.提高，改善，改进
+v.提高,改善,改进
 satisfaction
-n.满意，满足
+n.满意,满足
 communication
-n.交流，沟通
+n.交流,沟通
 application
 n.申请
 
 
-providev.提供
-kilometres an hour每小时......千米(速度单位)
-meeting point汇合点，集合处
+
+provide 
+v.提供
+kilometres an hour
+每小时...千米(速度单位)
+meeting point
+汇合点,集合处
 pate
-n.门，大门
+n.门,大门
 sometimes
-adv 有时
+adv. 有时
 staff
 n.员工
-nearlyadv 几乎，差不多
-everyonepron.每人，每个人，所有人
-more...
-更......
-motivate激发，激发.....的vt.激励，极性
-speak to...和......谈话，和......交流[动短]
-applicantn.申请人，申请者
+nearlyadv 
+几乎,差不多
+everyonepron.
+每人,每个人,所有人
+more ... 
+更...
+motivate
+激发,激发...的vt.激励,极性
+speak to ... 
+和...谈话,和...交流[动短]
+applicantn.
+申请人,申请者

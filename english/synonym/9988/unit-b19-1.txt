@@ -1,41 +1,47 @@
 number
-n;总
+n.;总
 maximum
-adj;最大值的，最大量的
+adj.;最大值的,最大量的
 monthly
-adj每月的，每月一次的
+adj.每月的,每月一次的
 maximum
-adj最大值的，最大量的
+adj.最大值的,最大量的
 length
-n(时间)长度
+n.(时间)长度
 at the moment
-此刻，现在，目前[介词短语 ]
-well-known (well known) adj.众所周知的;著名的;出名的
-consist of...由······组成,包含包括[动词短语]
-manage v管理;经营
+此刻,现在,目前[介词短语]
+well-known 
+(well known) adj.众所周知的;著名的;出名的
+consist of ... 
+由.组成,包含包括[动词短语]
+manage 
+v.管理;经营
 improve
 vt./vi. 提高;(使)变得更熟练
-learn about...
-了解;学习;学习有关......知识[动语 ]
+learn about ... 
+了解;学习;学习有关...知识[动语]
+
 
 
 how many
-( 用于提问 )多少;多少个
-upper limit上限，上限值
+(用于提问)多少;多少个
+upper limit
+上限,上限值
 a month
 每月
-up to...( 数量方面)最多·....;
-不超过······[ 介词短语 ]
+up to ... 
+(数量方面)最多...;不超过.[介词短语]
 how long
-(用于提问 )多久，多长时间
+(用于提问)多久,多长时间
 existing
-adj目前的;现存的
+adj.目前的;现存的
 famous
-NNO
-adj;.著名的，出名的
+NNOadj.;.著名的,出名的
 house
-v. 把······储藏在房内
-run v.办;经营;管理
-more proficiency (语言能力方面)更精通，更熟练
-find out more about...
-进一步了解·.....，了解更多有关·.····的资讯[动词短语 ]
+v. 把.储藏在房内
+run 
+v.办;经营;管理
+more proficiency 
+(语言能力方面)更精通,更熟练
+find out more about ... 
+进一步了解...,了解更多有关...的资讯[动词短语]

@@ -1,50 +1,59 @@
-start at...(数字方面)从······开始，最低为··....[ 动词短语 ]
-current ad;现在的，当前的
-hold vt持有
+start at ... 
+(数字方面)从.开始,最低为...[动词短语]
+current 
+adj.现在的,当前的
+hold 
+vt.持有
 photocopier
 n.复印机
 voluntary
-ad;.志愿的，自发的，自愿的
-tourist n 游客
-reach vt.到达，抵达
+adj.志愿的,自发的,自愿的
+tourist 
+n. 游客
+reach 
+vt.到达,抵达
 easy
-adj;.容易的，不费力的
+adj.;.容易的,不费力的
 from the area
-当地的，来自当地[介词短语
-charge vt.向.··.··收费，要价;把....··记在.....·的账上
+当地的,来自当地[介词短语]
+charge 
+vt.向...收费,要价;把...记在...的账上
 enough
-adi.足够的，充足的
+adj.足够的,充足的
 regularly
-adv 有规律地，按时，定期地
-transform vt转换，改变，改造
-overhead n.管理费用
+adv. 有规律地,按时,定期地
+transform 
+vt.转换,改变,改造
+overhead 
+n.管理费用
 
 
 
-
-
-
-
-
-
-minimum adi.最小的，最低的，最低限度的
-present adj.现在的，目前的
-have vt.有，拥有
+minimum 
+adj.最小的,最低的,最低限度的
+present 
+adj.现在的,目前的
+have 
+vt.有,拥有
 photocopying facilities
 复印的设备
 volunteer
-n.志愿者;义务工作者，义工
-travelling n. 旅行
-get to 到达··.....[动词短语 ]
+n.志愿者;义务工作者,义工
+travelling 
+n. 旅行
+get to 
+到达...[动词短语]
 without much trouble
-轻松地，容易地[介词短语]
+轻松地,容易地[介词短语]
 local
-adi.当地的，本地的
+adj.当地的,本地的
 price
-n.价格，价钱
+n.价格,价钱
 constant suppl
 持续稳定的供应
 every six months
 (频率方面) 每六个月
-develop vi.发展，成长
-money n.钱;款项
+develop 
+vi.发展,成长
+money 
+n.钱;款项

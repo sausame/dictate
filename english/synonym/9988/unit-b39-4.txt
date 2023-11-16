@@ -1,40 +1,55 @@
 large
-adj.大的，巨大的
-consist of...
-包括,由·....· 所组成[ 动词短语
-mainly adv 主要;大部分地，大多数地
+adj.大的,巨大的
+consist of ... 
+包括,由...所组成[动词短语]
+mainly 
+adv. 主要;大部分地,大多数地
 diet
-n日，食
-several years几年，好几年
+n.日,食
+several years
+几年,好几年
 improve
-v.提高，改善
-little adj.(修饰不可数名词)微小几乎没有
-provide v. 供给，提供，给予
+v.提高,改善
+little 
+adj.(修饰不可数名词)微小几乎没有
+provide 
+v. 供给,提供,给予
 attach
 v.缚上;系上;贴上
 information
-n.信息;情报，情报，数据，资
+n.信息;情报,情报,数据,资
 number
-n.数量，数目
+n.数量,数目
 appear
-n.好像，似乎，看来
+n.好像,似乎,看来
 reduce
-vt. 减少，减轻，减小
+vt. 减少,减轻,减小
 
 
-big adj.大的
-include vt.包含，包括
-mostly adv 大多，多半、主要地
-eat vt.吃
-year after year年复一年(地); 年年;长年累月
+
+big 
+adj.大的
+include 
+vt.包含,包括
+mostly 
+adv. 大多,多半、主要地
+eat 
+vt.吃
+year after year
+年复一年(地); 年年;长年累月
 much better
 变得好了很多[形容词good 的比较级]
 hardly
-adv 几乎不，几乎没有
-give vt.给，给予;提供
-fix vt固定，安装
-data n数据
-how many...
-( 用于提问 )多少.....
-seem vi. 好像，好似，看来
-prevent v避免，防止，阻止，妨碍
+adv. 几乎不,几乎没有
+give 
+vt.给,给予;提供
+fix 
+vt.固定,安装
+data 
+n.数据
+how many ... 
+(用于提问)多少...
+seem 
+vi. 好像,好似,看来
+prevent 
+v.避免,防止,阻止,妨碍

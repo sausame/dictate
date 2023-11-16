@@ -1,39 +1,71 @@
 dry
-ad:干的;干燥的
-soil n. 土，土壤
-very ad 非常，很
+adj.干的;干燥的
+soil 
+n. 土,土壤
+very 
+adv.非常,很
 enter
-比进人
+进入
 turn
-c使变成，使成为
-move vi 移动;迁徙
-substance n物质，物品;东西invent v发明;创造
-lost adj丧失的，不复存在的
-lost adi 丧失的，不复存在的
-lost ad;.丧失的，不复存在的
-fertile adi.( 土地)肥沃的,富饶的丰产的
+c使变成,使成为
+move 
+vi. 移动;迁徙
+substance 
+n.物质,物品;东西
+invent 
+v.发明;创造
+lost 
+adj.丧失的,不复存在的
+lost 
+adj. 丧失的,不复存在的
+lost 
+adj.丧失的,不复存在的
+fertile 
+adj.(土地)肥沃的,富饶的丰产的
 remain
-b102338y 保持，仍是[系动词]
-use v用，使用
-e.g.abbr: <拉丁语>举例来说,例如(全称为 exempli gratia，口语中可直接读成 for example
-year-round ad;整年的;全年的big adj.大的，巨大的
+保持,仍是[系动词]
+use 
+v.用,使用
+e.g. 
+abbr.: <拉丁语>举例来说,例如(全称为 exempli gratia,口语中可直接读成 for example)
+year-round 
+adj.整年的;全年的
+big 
+adj.大的,巨大的
+
 
 
 retain some water
-留住一些水;保存一定的水
-[ 动词短语 ]
-ground n.地面;土壤;extremely adv 非常，极
-move into... 进人.......入··....[ 动词短语]
-transform vt.转换;改变将.....·改成......
-transfer vi搬迁;转
-product n.产品;产物
-invention n.发明;创造
-loss n.丧失;失去
-release vt.释放，放出
-strip v.夺去，剥夺
+留住一些水;保存一定的水[动词短语]
+ground 
+n.地面;土壤;
+extremely 
+adv. 非常,极
+move into ... 
+进人...入...[动词短语]
+transform 
+vt.转换;改变将...改成...
+transfer 
+vi.搬迁;转
+product 
+n.产品;产物
+invention 
+n.发明;创造
+loss 
+n.丧失;失去
+release 
+vt.释放,放出
+strip 
+v.夺去,剥夺
 fertility
 n.(土地的) 肥沃
 keep
-vt.使......保持在(某一状态through prep.以，用，凭借include
-wt.包含，包括
-all year round 全年，一整年large adi.大的;大规模的
+vt.使...保持在(某一状态)
+through 
+prep.以,用,凭借
+include 
+vt.包含,包括
+all year round 
+全年,一整年
+large 
+adj.大的;大规模的

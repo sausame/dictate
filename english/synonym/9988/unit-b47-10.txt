@@ -1,45 +1,59 @@
 travel
 游历旅行
 return to
-...[动词短语)
+回到...[动词短语]
 type
-类，类型
+类,类型
 purchase
 以购买
 standard
-普通的，常规的;标准
-cost n成本，费用
-how much...
+普通的,常规的;标准
+cost 
+n.成本,费用
+how much ... 
 多少(信息、钱等)
 provide
-以.提供，供给
+以.提供,供给
 lack of
-缺少，缺乏
+缺少,缺乏
 seat
 n.座位
 payment
-n.支付，付款;付款额
-supervise w.监督;指导
-damage以.损坏，破坏，毁坏
+n.支付,付款;付款额
+supervise 
+v.监督;指导
+damage
+以.损坏,破坏,毁坏
 closed
-adj.(商店等) 关门的，不营业的
+adj.(商店等) 关门的,不营业的
 
 
-visit n.访问，参观
-travel back to...回到··....[动词短语]
+
+visit 
+n.访问,参观
+travel back to ... 
+回到...[动词短语]
 kind
-n.种类，类型
+n.种类,类型
 buy
-vt.买，购买
-norma ad;.正常的，通常的，平常
+vt.买,购买
+norma 
+adj.正常的,通常的,平常
 price
-n价格
-the amount of.........的 (数)量
-give v.给，给予
-not enough.........不够多
-sit down坐下[动词短语]
-fee n.费用，收费
-keep an eye on..照看;留心，注意[动词短语]
-destroy v. 毁坏,
+n.价格
+the amount of ... 
+(...)的(数)量
+give 
+v.给,给予
+not enough ... 
+不够多
+sit down
+坐下[动词短语]
+fee 
+n.费用,收费
+keep an eye on ... 
+照看;留心,注意[动词短语]
+destroy 
+v. 毁坏
 open
-adi.(商店等) 开门的，营业的
+adj.(商店等) 开门的,营业的

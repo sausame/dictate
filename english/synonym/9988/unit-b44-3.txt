@@ -1,48 +1,59 @@
-culture n文化
-invent vt. 发明
+culture 
+n.文化
+invent 
+vt. 发明
 ceremony
 典礼;仪式
 friendly
-adj友好的，友善的
+adj.友好的,友善的
 interpret
-以理解，解释，阐释
+以理解,解释,阐释
 use
-v. 用，使用;利用;运用
-be made up of..由.....·组成，由··...· 构成[动词make的被动语态]
+v. 用,使用;利用;运用
+be made up of ... 
+由...组成,由...构成[动词make的被动语态]
 connected
-ad.有关联的，连在一起的
-接通的
+ad.有关联的,连在一起的接通的
 explain
-w.解释;说明，阐明
+v.解释;说明,阐明
 weather phenomena
 各种天气现象
 recognise
-vt.正式承认，认可，接受
+vt.正式承认,认可,接受
 value
-n.价值;意义;有用性，重要
+n.价值;意义;有用性,重要
 show
-vt. 证明，表明
+vt. 证明,表明
 identify
-v.认出，识别;确定，发现
+v.认出,识别;确定,发现
+
 
 
 civilisation
-n.文明，文化
+n.文明,文化
 develop
-v.研发，研制
+v.研发,研制
 rite
-n.宗教仪式，礼节;惯例
-kindly ad;.仁慈的;和蔼的，友好的
-draw conclusions fom... 从.....·中得出结论[动词短语]
-(be) based on... 基于......[动词 base 的被动语]
-divide(使)分开;(使)分组
-associated adi.有关联的;相关的
-account for...说明( 原因、理由等)在数量比例上)占[动词短语]
-rain, clouds, wind and storms雨、云、风和暴风雨
+n.宗教仪式,礼节;惯例
+kindly 
+adj.仁慈的;和蔼的,友好的
+draw conclusions fom ... 
+从...中得出结论[动词短语]
+(be) based on ... 
+基于...[动词 base 的被动语]
+divide
+(使)分开;(使)分组
+associated 
+adj.有关联的;相关的
+account for ... 
+说明(原因、理由等);(在数量,比例上)占[动词短语]
+rain, clouds, wind and storms
+雨、云、风和暴风雨
 see
-v.知道，明白;懂得
-need n.必须，需要
+v.知道,明白;懂得
+need 
+n.必须,需要
 prove
 v.证明
 discover
-v.(尤指首次 )发现，找到
+v.(尤指首次)发现,找到

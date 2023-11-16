@@ -1,44 +1,67 @@
 expensive
-adj.贵的，昂贵的
-single n.单程票
-long wait 较长的等待(时间)
-return n.<英>往返票
-no noise禁止发出噪音
-booking n.预订
+adj.贵的,昂贵的
+single 
+n.单程票
+long wait 
+较长的等待(时间)
+return 
+n.<英>往返票
+no noise
+禁止发出噪音
+booking 
+n.预订
 time
-n.时间，时刻，时候
-gift n. 礼物
+n.时间,时刻,时候
+gift 
+n. 礼物
 request
-v. 要求，请求，请求给予
-workplace n工作场所
-behaviour n行为
-due to...
-因为，由于[介词短语]
-diversity n.多样性
+v. 要求,请求,请求给予
+workplace 
+n.工作场所
+behaviour 
+n.行为
+due to ... 
+因为,由于[介词短语]
+diversity 
+n.多样性
 advantage
-n.优点;优势，好处，益处
-develop wt.使....··成长，使.....·发达;发展
-cause n.原因，起因
+n.优点;优势,好处,益处
+develop 
+vt.使...成长,使...发达;发展
+cause 
+n.原因,起因
 
 
-beyond my budget超出了我的预算[介词短语 ]
-one way 单程
-quite a wait 颇长的等待( 时间 )
-round-trip adi往返的
-quiet ad;安静的
-reservation n.预
-when ad (用作疑问副词)什
-么时候，何时
-present n.礼物
+
+beyond my budget
+超出了我的预算[介词短语]
+one way 
+单程
+quite a wait 
+颇长的等待(时间)
+round-trip 
+adj.往返的
+quiet 
+adj.安静的
+reservation 
+n.预
+when ad 
+(用作疑问副词)什么时候,何时
+present 
+n.礼物
 ask
-vt./v. 要求，请求
-company n.公司
-behave v.表现，行为举止
-come down to...
-可归结为···...[ 动词短语
-variation n.变化;差异
+vt./v. 要求,请求
+company 
+n.公司
+behave 
+v.表现,行为举止
+come down to ... 
+可归结为...[动词短语]
+variation 
+n.变化;差异
 positive
-adi.积极的，建设性的
+adj.积极的,建设性的
 encourage
-vt.鼓励;促进，助长;激发
-root n.根源，来源;根由
+vt.鼓励;促进,助长;激发
+root 
+n.根源,来源;根由

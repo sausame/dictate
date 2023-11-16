@@ -1,42 +1,51 @@
-available adi.可用的，在手边的;可利用的
+available 
+adj.可用的,在手边的;可利用的
 soon
-adu 不久，很快地
-cost n.成本;费用
-book vt.预订，预约
-entrance n.人
-separate adi.分开的，单独的
+adv. 不久,很快地
+cost 
+n.成本;费用
+book 
+vt.预订,预约
+entrance 
+n.人
+separate 
+adj.分开的,单独的
 closed
-adj.关闭的，不营业的
+adj.关闭的,不营业的
 be reduced in number
-数量减少了[动词reduce 的过去分词 ]
+数量减少了[动词reduce的过去分词]
 double
-vt. 使加倍，是··..··的两倍
+vt. 使加倍,是...的两倍
 replace
-vt.替换，取代，代替
+vt.替换,取代,代替
 large
 adj.大的;大规模的
 class
-n.(一节)课，上课;班级
+n.(一节)课,上课;班级
 
 
 
-
-
-
-havew.有，拥有
-by the end of the year年底之前[介词短语]
-fee n.费，费用
-organise v.组织，安排
-access n.通道，人口，门路
-own ad;自己的
+havew.
+有,拥有
+by the end of the year
+年底之前[介词短语]
+fee 
+n.费,费用
+organise 
+v.组织,安排
+access 
+n.通道,人口,门路
+own 
+adj.自己的
 reopen
-vt.重新开业，重新开张
+vt.重新开业,重新开张
 fewer
-adj.数量减少了的，数量没有以前多的[ few 的比较级]
+adj.数量减少了的,数量没有以前多的[few的比较级]
 twice
-adv 两次;两倍
+adv. 两次;两倍
 new
 adj.新的;新建的;新任的
-be increased in size 尺寸(或规等)变大了[动词 increase 的被动语]
+be increased in size 
+尺寸(或规等)变大了[动词increase的被动语]
 training session
 培训时间;训练时间

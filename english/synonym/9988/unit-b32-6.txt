@@ -1,28 +1,39 @@
-(be) made from..由·.·制成(用于看不出原材料时)[动make 的被动语态]
+(be) made from ... 
+由...制成(用于看不出原材料时)[动make 的被动语态]
 agriculture
-n农业
-always adv 一直;始终
+n.农业
+always 
+adv. 一直;始终
 increase
 以增大;增加;增强
-by using...
-通过使用······
+by using ... 
+通过使用.
 give
-以给，给予
-produce n产品，农产品
+以给,给予
+produce 
+n.产品,农产品
 produce
-n.产品，农产品
-storage n.储藏，存储
+n.产品,农产品
+storage 
+n.储藏,存储
 
 
-be created from...用.....·制成;基于.....·创作而成[动词 create 的被动语态 ]
+
+be created from ... 
+用...制成;基于...创作而成[动词 create 的被动语态]
 agricultural
-ad;.农业的;农用的
-all year round 全年，一整年
-build up...使积聚，使逐渐增加[动词短语 ]
-by cultivating...通过种植··....[介词短语 ]
+adj.农业的;农用的
+all year round 
+全年,一整年
+build up ... 
+使积聚,使逐渐增加[动词短语]
+by cultivating ... 
+通过种植...[介词短语]
 receive
-vt.收到，得到，接到
-corn or beef 玉米或牛肉
+vt.收到,得到,接到
+corn or beef 
+玉米或牛肉
 produce
-w.生产，制造;出产，产出
-store vt.储藏，储存;存放
+v.生产,制造;出产,产出
+store 
+vt.储藏,储存;存放

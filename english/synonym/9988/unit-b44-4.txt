@@ -1,6 +1,11 @@
-movement n动;移动
-datn.数据、信息
+movement 
+n.动;移动
+data 
+n. 数据、信息
 
 
-travel vi行进
-record n.记录，记载
+
+travel 
+vi.行进
+record 
+n.记录,记载

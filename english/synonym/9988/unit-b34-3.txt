@@ -1,46 +1,63 @@
 complete
-adj.完整的，全部的，完全的
-at work 在工作中
-[介词短语]
+adj.完整的,全部的,完全的
+at work 
+在工作中[介词短语]
 result
 n.结果
 prove
-t.证明，证实;表现，显示
+vt.证明,证实;表现,显示
 difference
-n.区别，差异
-be concerned about..
-关心....··，担忧......[形容词短语 ]
-stress n.压力
+n.区别,差异
+be concerned about ... 
+关心...,担忧...[形容词短语]
+stress 
+n.压力
 cause
-v导致
+v.导致
 like
 喜欢
-confict n.冲突，分歧
+confict 
+n.冲突,分歧
 people
-n.人，人们
-structure n.结构，构造，组织
-minimise vt使....··减到最小将....··减少到最低程度
-gain vt得到，获得，赢得
+n.人,人们
+structure 
+n.结构,构造,组织
+minimise 
+vt.使...减到最小将...减少到最低程度
+gain 
+vt.得到,获得,赢得
 arise
-v.产生，出现，形成
+v.产生,出现,形成
 
 
-imn full 全部地，全面地[介词短语]
-in the workplace 在I作场[介词短语]
-be caused by... 由......导到[动词 cause 的被动语态]
+
+in full 
+全部地,全面地[介词短语]
+in the workplace 
+在I作场[介词短语]
+be caused by ... 
+由...导到[动词 cause 的被动语态]
 show
-vt.证明，表明，显示
-incompatible ad;.不相容的，盾的，不能和谐共处的
+vt.证明,表明,显示
+incompatible 
+adj.不相容的,盾的,不能和谐共处的
 be more interested in.
-对.....·更感兴趣
-[形容词短语 ]
-stressful adj.压力大的
-result in... 导致·...· 结果是....
-[动词短语 ]
-respond badly to... 对......做出很恶劣的反应[动词短语]
-agree vi.意见一致;同意，赞同
-colleagues, managers and boardmembers 同事、经理及董事会成员
-business model 商业模式
-preventv.防止，预防;阻止
-earn v赚得，挣得，赢得
-come about 发生，产生[动词短语]
+对...更感兴趣[形容词短语]
+stressful 
+adj.压力大的
+result in ... 
+导致...结果是...[动词短语]
+respond badly to ... 
+对...做出很恶劣的反应[动词短语]
+agree 
+vi.意见一致;同意,赞同
+colleagues, managers and boardmembers 
+同事、经理及董事会成员
+business model 
+商业模式
+prevent 
+v.防止,预防;阻止
+earn 
+v.赚得,挣得,赢得
+come about 
+发生,产生[动词短语]

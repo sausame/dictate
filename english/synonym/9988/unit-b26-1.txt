@@ -1,39 +1,59 @@
-occupation n职业
-visit n.参观;访问
-go to the dentist去看牙医[动词短语 ]
+occupation 
+n.职业
+visit 
+n.参观;访问
+go to the dentist
+去看牙医[动词短语]
 parking places
 停车的地方
-bicycle n自行车
-opportunity n.机会
-local people 当地人，当地居民
+bicycle 
+n.自行车
+opportunity 
+n.机会
+local people 
+当地人,当地居民
 unusual
-adi;不寻常的，不常见的;罕见的
-newspaper n.报纸
-door n.门;门口，出人口
+adj.;不寻常的,不常见的;罕见的
+newspaper 
+n.报纸
+door 
+n.门;门口,出人口
 statue
-n. 塑，雕像
+n. 塑,雕像
 size
-n.大小，尺寸;规模
+n.大小,尺寸;规模
 time
 n.时间;规定时间
 local
-adj.本地的，当地的
+adj.本地的,当地的
 
 
-job m工作
-come vi.来，来到
+
+job 
+n.工作
+come 
+vi.来,来到
 see the dentist
-看牙医[动词短语 ]
-leave your bikes 把你的自行车停在(某处 )[动词短语]
-bike n.自行车
-offer v.提供;给予
-the public 公众，民众
+看牙医[动词短语]
+leave your bikes 
+把你的自行车停在(某处)[动词短语]
+bike 
+n.自行车
+offer 
+v.提供;给予
+the public 
+公众,民众
 the only one of its kind in the world
 (某物)世界上独一无
-press n.报纸，报刊
-entrance n.人口，进口
+press 
+n.报纸,报刊
+entrance 
+n.人口,进口
 sculpture
 n.雕刻作品;雕像;雕塑品
-capacity n.(设备的)容量;(容器的 )容积，容量
-date n.日子，日期;在(某个)日期，在(某个)时间
-native ad;.(动植物)当地土生的，原产地的
+capacity 
+n.(设备的)容量;(容器的)容积,容量
+date 
+n.日子,日期;在(某个)日期,在(某个)时间
+native 
+adj.(动植物)当地土生的,原产地的

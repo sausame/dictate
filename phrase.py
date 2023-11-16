@@ -1,10 +1,7 @@
 #!/usr/bin/env python
 # -*- coding:utf-8 -*-
 
-import csv
-import json
 import os
-import random
 import re
 import sys
 import time
@@ -14,6 +11,194 @@ from datetime import datetime
 from tts import LocalTts as Tts
 from utils import remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
+
+class BaseExpression:
+
+    REPLACE_EXPRESSION_DICT = {
+        'en-multiple-dot': {
+            'regex': r'[a-zA-Z0-9\']+([ \t]*\.\.[.]*[ \t]*)',
+            'exp': ' ... ',
+            'conflict': 'multiple-dot', # TODO: not good
+        },
+        'multiple-dot': {
+            'regex': r'([ \t]*\.\.[.]*[ \t]*)',
+            'exp': '...',
+            'conflict': 'en-multiple-dot', # TODO: not good
+        },
+    }
+
+    EXPRESSION_DICT = {
+        'single-dot': {
+            'regex': r'([·]+)',
+            'exp': '.'
+        },
+        'comma': {
+            'regex': r'([，]+)',
+            'exp': ','
+        },
+        'blank': {
+            'regex': r'([ ]+)',
+            'exp': ' '
+        },
+        'parenthesis': {
+            'regex': r'\(([^\)]+)$',
+            'exp': '({})',
+            'strip': True,
+        },
+        'parenthesis-2': {
+            'regex': r'\(([^\)]+)\)',
+            'exp': '({})',
+            'strip': True,
+        },
+        'square-brackets': {
+            'regex': r'\[([^\]]+)$',
+            'exp': '[{}]',
+            'strip': True,
+        },
+        'square-brackets-2': {
+            'regex': r'\[([^\]]+)\]',
+            'exp': '[{}]',
+            'strip': True,
+        },
+    }
+
+    # Return a list of positions
+    @staticmethod
+    def find(string, regex):
+
+        positions = []
+
+        matches = re.finditer(regex, string, re.MULTILINE)
+
+        for matchNum, match in enumerate(matches, start=1):
+
+            for groupNum in range(0, len(match.groups())):
+                groupNum = groupNum + 1
+                position = (match.start(groupNum), match.end(groupNum))
+                positions.append(position)
+
+        if len(positions) == 0:
+            return None
+
+        return positions
+
+    @staticmethod
+    def findall(string, expressionDict):
+        # Add a blank in front of the line
+        string = ' ' + string
+
+        allPositions = []
+
+        for key in expressionDict.keys():
+            expression = expressionDict[key]
+
+            positions = BaseExpression.find(string, expression['regex'])
+            if not positions:
+                continue
+
+            for start, end in positions:
+                allPositions.append((start - 1, end - 1))
+
+        if len(allPositions) == 0:
+            return None
+
+        return sorted(allPositions)
+
+    @staticmethod
+    def replaceall(string, expressionDict):
+
+        dest = string
+
+        conflicts = dict()
+
+        for key in expressionDict.keys():
+            expression = expressionDict[key]
+
+            positions = BaseExpression.find(dest, expression['regex'])
+            if not positions:
+                continue
+
+            if 'conflict' in expression.keys() and expression['conflict'] in conflicts.keys():
+                continue
+
+            conflicts[key] = positions
+
+            lastEnd = 0
+            temp = ''
+
+            for start, end in positions:
+                temp += dest[lastEnd:start] + expression['exp']
+                lastEnd = end
+            else:
+                temp += dest[lastEnd:]
+
+            dest = temp
+
+        return dest
+
+    @staticmethod
+    def refine(string, expression):
+
+        regex = expression['regex']
+        exp = expression['exp']
+
+        dest = None
+        lastEnd = 0
+
+        matches = re.finditer(regex, string, re.MULTILINE)
+        for matchNum, match in enumerate(matches, start=1):
+            groupNum = len(match.groups()) 
+
+            if groupNum == 0:
+                continue
+
+            if groupNum > 1:
+                raise TypeError('No implement for {} groups'.format(groupNum))
+
+            if not dest:
+                dest = ''
+            
+            content = match.group(1)
+            if 'strip' in expression.keys():
+                content = content.strip()
+
+            content = exp.format(content)
+
+            dest += string[lastEnd:match.start()] + content
+            lastEnd = match.end()
+
+        if dest:
+            dest += string[lastEnd:]
+            return dest
+
+        return string
+
+    @staticmethod
+    def refineall(string, expressionDict):
+
+        dest = string
+
+        conflicts = dict()
+
+        for key in expressionDict.keys():
+            expression = expressionDict[key]
+
+            if 'conflict' in expression.keys() and expression['conflict'] in conflicts.keys():
+                continue
+
+            conflicts[key] = True
+
+            dest = BaseExpression.refine(dest, expression)
+
+        return dest
+
+    @staticmethod
+    def replaceallWithBaseExpression(string):
+
+        dest = BaseExpression.replaceall(string, BaseExpression.REPLACE_EXPRESSION_DICT)
+        dest = BaseExpression.refineall(dest, BaseExpression.EXPRESSION_DICT)
+
+        return dest
 
 class Category:
 
@@ -28,6 +213,9 @@ class Category:
     PRON_REGEX = r'[ \t](pron[,\.]*)[^a-zA-Z]+'
     DEB_REGEX = r'[ \t](deb[,\.]*)[^a-zA-Z]+'
     ABBR_REGEX = r'[ \t](abbr[,\.]*)[^a-zA-Z]+'
+    AUX_REGEX = r'[ \t](aux[,\.]*)[^a-zA-Z]+'
+    NUM_REGEX = r'[ \t](num[,\.]*)[^a-zA-Z]+'
+    ART_REGEX = r'[ \t](art[,\.]+)[^a-zA-Z]+'
 
     CATEGORY_DICT = {
         'noun': {
@@ -73,84 +261,43 @@ class Category:
         'abbr': {
             'regex': ABBR_REGEX,
             'exp': 'abbr.'
-        }
+        },
+        'aux': {
+            'regex': AUX_REGEX,
+            'exp': 'aux.'
+        },
+        'num': {
+            'regex': NUM_REGEX,
+            'exp': 'num.'
+        },
+        'art': {
+            'regex': ART_REGEX,
+            'exp': 'art.'
+        },
     }
-
-    # Return a list of positions
-    @staticmethod
-    def find(string, phrase):
-
-        positions = []
-
-        regex = phrase['regex']
-
-        matches = re.finditer(regex, string, re.MULTILINE)
-
-        for matchNum, match in enumerate(matches, start=1):
-
-            for groupNum in range(0, len(match.groups())):
-                groupNum = groupNum + 1
-                position = (match.start(groupNum), match.end(groupNum))
-                positions.append(position)
-
-        if len(positions) == 0:
-            return None
-
-        return positions
 
     @staticmethod
     def findall(string):
-        # Add a blank in front of the line
-        string = ' ' + string
-
-        positions = []
-
-        for key in Category.CATEGORY_DICT.keys():
-            phrase = Category.CATEGORY_DICT[key]
-
-            phrasePositions = Category.find(string, phrase)
-            if not phrasePositions:
-                continue
-
-            for start, end in phrasePositions:
-                positions.append((start - 1, end - 1))
-
-        if len(positions) == 0:
-            return None
-
-        return sorted(positions)
+        return BaseExpression.findall(string, Category.CATEGORY_DICT)
 
     @staticmethod
     def replaceall(string):
-        # Add a blank in front of the line
-        string = ' ' + string
 
-        for key in Category.CATEGORY_DICT.keys():
-            phrase = Category.CATEGORY_DICT[key]
+        # Add blanks in front of and end of the line
+        dest = ' ' + string + ' '
+        dest = BaseExpression.replaceall(dest, Category.CATEGORY_DICT)
+        dest = dest[1:-1]  # remove the blanks
 
-            positions = Category.find(string, phrase)
-            if not positions:
-                continue
+        dest = BaseExpression.replaceallWithBaseExpression(dest)
 
-            lastEnd = 0
-            temp = ''
-
-            for start, end in positions:
-                temp += string[lastEnd:start] + phrase['exp']
-                lastEnd = end
-            else:
-                temp += string[lastEnd:]
-
-            string = temp
-
-        return string[1:]  # remove the blank
+        return dest
 
 
 class Phrase:
 
     REGEXES = [r"\([a-zA-Z0-9']+\.*\)",
                r"[a-zA-Z0-9']+",
-               r'[ \.%$\-]+']
+               r'[ ,\.%$\-]+']
 
     @staticmethod
     def find(string):

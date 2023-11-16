@@ -1,46 +1,71 @@
 small
-adj. 小的，小型的
-sea creature 海洋生物
-plant n.植物
+adj. 小的,小型的
+sea creature 
+海洋生物
+plant 
+n.植物
 identify
-v发现;确定;确认
-basisn基础;根据
-lead to...
-导致，导致······后果[ 动词短语]
-higherad;更高的[ high 的比较级 ]
+v.发现;确定;确认
+basisn
+基础;根据
+lead to ... 
+导致,导致...后果[动词短语]
+higher
+adj.更高的[high的比较级]
 affect
-v影响
+v.影响
 activity
 n.动
 especially
-adv 特别，尤其，格外
-image n.图像;影像
-similar to... 与.....·相似，
-类似[形容词短语 ]
-unusualad;.不寻常的;不常见
-的;罕见的
-area n.地区，区域
-appear vi.出现;显露
-inland ad;内地的，内陆的
-symbolise v.象征，标志
+adv. 特别,尤其,格外
+image 
+n.图像;影像
+similar to ... 
+与...相似,类似[形容词短语]
+unusualad
+;.不寻常的;不常见的;罕见的
+area 
+n.地区,区域
+appear 
+vi.出现;显露
+inland 
+adj.内地的,内陆的
+symbolise 
+v.象征,标志
 
 
-miniature n.缩样;缩图;小型物 adj.小型的，微型的
-fish n.鱼;鱼类
-vegetable n.蔬菜
-locate v.确定·····的地点 (或范围》;探出，找出
-base vt 把······建立在某种基础上
-bring about..
-引起，导致[动词短语 ]
-rise vi 上升; 升起; 上涨; 升高增加
+
+miniature 
+n.缩样;缩图;小型物 adj.小型的,微型的
+fish 
+n.鱼;鱼类
+vegetable 
+n.蔬菜
+locate 
+v.确定.的地点 (或范围);探出,找出
+base 
+vt. 把.建立在某种基础上
+bring about ... 
+引起,导致[动词短语]
+rise 
+vi. 上升; 升起; 上涨; 升高增加
 disruption
-n.中断;扰乱;毁坏;瓦解patterns of life
-生活模式，生活方式
-in particular 特别地;尤其尤其是[介词短语]
-painting n.画，画作;绘画
+n.中断;扰乱;毁坏;瓦解
+patterns of life
+生活模式,生活方式
+in particular 
+特别地;尤其尤其是[介词短语]
+painting 
+n.画,画作;绘画
 match
-vt. 与.....·相称，与......相配unfamiliar ad;.不熟悉的;不常见的;陌生的;未见过的
-region n.地区，地带
-sight n.看见，目睹
-shore n.海岸;湖滨
-symbol n.象征，标志
+vt. 与...相称,与...相配
+unfamiliar 
+adj.不熟悉的;不常见的;陌生的;未见过的
+region 
+n.地区,地带
+sight 
+n.看见,目睹
+shore 
+n.海岸;湖滨
+symbol 
+n.象征,标志

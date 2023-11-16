@@ -3,6 +3,7 @@
 
 # Utils
 import binascii
+import hashlib
 import json
 import os
 import platform
@@ -122,6 +123,24 @@ def getPathnames(dirpath, suffix=None):
 
     return pathnames
 
+def getMd5(content):
+
+    md5_hash = hashlib.md5()  
+    md5_hash.update(content.encode('utf-8'))  
+
+    return md5_hash.hexdigest()  
+
+def getFileMd5(path):
+
+    if not os.path.exists(path):
+        return None
+
+    with open(path) as fp:
+        content = fp.read()
+        return getMd5(content)
+
+    return None
+
 def getch(timeout=-1, isPrompt=True):
 
     if isPrompt:
@@ -190,7 +209,7 @@ def toVisibleAscll(src):
     dest = ''
 
     for char in src:
-        if char < unichr(32): continue
+        if char < chr(32): continue
         dest += char
 
     return dest

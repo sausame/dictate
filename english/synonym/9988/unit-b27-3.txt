@@ -1,39 +1,59 @@
 boredom
-无趣;厌烦，厌倦m聊
-repetition重复出现，重复m.反复发生，
+无趣;厌烦,厌倦
+repetition
+重复出现,重复m.反复发生,
 work
-w工作;劳动;干活
-lcarn v.学，学习;获悉，得知clear
-ad;清楚的，明白的;清晰的
-research material 研究用的资料
+v.工作;劳动;干活
+learn 
+v.学,学习;获悉,得知
+clearadj.
+清楚的,明白的;清晰的
+research material 
+研究用的资料
 change
-吃变，改变，变化
-support vt帮助;支持，援助equipment n.设备，装备failure
-n.(机器的)故障，失灵
-abroadady 在海外，在国外;去国外，去海外
+吃变,改变,变化
+support 
+vt.帮助;支持,援助
+equipment 
+n.设备,装备
+failure 
+n.(机器的)故障,失灵
+abroad
+adv. 在海外,在国外;去国外,去海外
 ability
 n.能力
-focus n中心，集中点;重点
-send in...
-上交....，是交....[ 动词短语 ]
+focus 
+n.中心,集中点;重点
+send in ... 
+上交...,是交...[动词短语]
+
 
 
 boring
-adj.无趣的，无聊的
-the same thing over and over同样的东西(或事情)反复出现(或发生)
+adj.无趣的,无聊的
+the same thing over and over
+同样的东西(或事情)反复出现(或发生)
 function
-v.发挥功能，起作用，行使职责fnd v.发觉，认识到
+v.发挥功能,起作用,行使职责
+find 
+v.发觉,认识到
 understand
-vt.理解，明白
-article n.文章，论文
-shift vi.(意见、情况、政策)有所变动，稍做改变，发生些许变化
-useful adj.有用的，有帮助的
-spotlight n.聚光灯
-stick vi.卡住;被困住(过去式和过去分词均为 stuck)
+vt.理解,明白
+article 
+n.文章,论文
+shift 
+vi.(意见、情况、政策)有所变动,稍做改变,发生些许变化
+useful 
+adj.有用的,有帮助的
+spotlight 
+n.聚光灯
+stick 
+vi.卡住;被困住(过去式和过去分词均为 stuck)
 in another country
 在另一个国家[介词短语]
 good marks
-(课程的 )好成绩，高分
-emphasise v.强调，着重
-e-mal
-vt.给·...··发电子邮件
+(课程的)好成绩,高分
+emphasise 
+v.强调,着重
+e-mail
+vt.给...发电子邮件

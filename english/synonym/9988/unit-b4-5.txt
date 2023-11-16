@@ -1,53 +1,71 @@
-present ad;.现在的;当前的
-prefer vt./vi更喜欢，偏好
-part n.部分
-theatre n.剧院，剧场;戏剧表演，舞台表演
-tent n.帐篷
+present 
+adj.现在的;当前的
+prefer 
+vt./vi更喜欢,偏好
+part 
+n.部分
+theatre 
+n.剧院,剧场;戏剧表演,舞台表演
+tent 
+n.帐篷
 acrobat
 n.杂技演员
-highlight n最重要的事情最精彩的部分
-dancer n.跳舞者;舞蹈演员
-magician n魔术师，变戏法的人
-highlightn.最重要的事情;最精彩的部分
-puppet n.木偶
+highlight 
+n.最重要的事情最精彩的部分
+dancer 
+n.跳舞者;舞蹈演员
+magician 
+n.魔术师,变戏法的人
+highlightn.
+最重要的事情;最精彩的部分
+puppet 
+n.木偶
 want information
-想获得信息[动词短语 ]
+想获得信息[动词短语]
 go back
-回去，回来，回到(动词短语
-clarity n.(书、论点等的)清楚，清晰，清晰易懂
-analytically adu 分析地
-confdence n.信心
+回去,回来,回到(动词短语)
+clarity 
+n.(书、论点等的)清楚,清晰,清晰易懂
+analytically 
+adv. 分析地
+confdence 
+n.信心
 interest
 n.兴趣
 
 
 
-
-
-
-
-now n./adv 现在
-like vt./vi. 喜欢，喜爱
-proportion n部分;比例
+now 
+n./adv 现在
+like 
+vt./vi. 喜欢,喜爱
+proportion 
+n.部分;比例
 theatrical
-adj.戏剧的，戏剧性的;剧场的
-marquee n.大帐篷 马告
+adj.戏剧的,戏剧性的;剧场的
+marquee 
+n.大帐篷 马告
 acrobatic
-adj.杂技的，杂技般的，杂技演员的
+adj.杂技的,杂技般的,杂技演员的
 the best part
-最棒的部分，最精彩的部分
-dance n./vi. 跳舞
-magic n.魔法;戏法，魔力
+最棒的部分,最精彩的部分
+dance 
+n./vi. 跳舞
+magic 
+n.魔法;戏法,魔力
 outstanding
-ad;.杰出的，出众的，优秀的;重
-要的;显著的，突出的
-puppetry n木偶，木偶戏
+adj.杰出的,出众的,优秀的;重要的;显著的,突出的
+puppetry 
+n.木偶,木偶戏
 enquire
-vi. 咨询，打听，询问
+vi. 咨询,打听,询问
 return
-vt/vi. 返回，回到(出发地); 回来
+vt./vi. 返回,回到(出发地); 回来
 clearly
-adu 易懂地，明白地;清楚地
-analyse wt分析
-confidently adv 有信心地
-enthusiastic ad;非常感兴趣的热心的;热情的
+adv. 易懂地,明白地;清楚地
+analyse 
+vt.分析
+confidently 
+adv. 有信心地
+enthusiastic 
+adj.非常感兴趣的热心的;热情的

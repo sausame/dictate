@@ -1,52 +1,75 @@
-include v 包含，包括
+include 
+v. 包含,包括
 affect
-v 影响;对·....·发生作用
+v. 影响;对...发生作用
 live
-.住，居住;生活
-preserve vt保存;保护
+.住,居住;生活
+preserve 
+vt.保存;保护
 endangered
 adj.濒临绝种的
 species
-n.(动植物的)物种，种
+n.(动植物的)物种,种
 simple
-adj.简单的，简易的，简明的
-equipment n.设备，装备
-accurate adj准确的;精准的
+adj.简单的,简易的,简明的
+equipment 
+n.设备,装备
+accurate 
+adj.准确的;精准的
 the wrong scale
 (绘制地图时)比例错误
-photograph n.照片
+photograph 
+n.照片
 check
 v.检查;检验;核对
-high temperature 高温
-lack of water缺水
-small adj.小的;小型的
-generalisationn. 普遍化;概括，归纳
-observation n.观察;观测
-count vi.数，计数
+high temperature 
+高温
+lack of water
+缺水
+small 
+adj.小的;小型的
+generalisationn. 
+普遍化;概括,归纳
+observation 
+n.观察;观测
+count 
+vi.数,计数
 
 
-have vt.有，拥有
+
+have 
+vt.有,拥有
 cause
-v. 导致，使......发生，引起
-habitat n.(动物的 )栖息地:物的产地
-protect vt. 保护
-in danger of... 处于...危险之中有···.·.·危险[介词短语 ]
+v. 导致,使...发生,引起
+habitat 
+n.(动物的)栖息地:物的产地
+protect 
+vt. 保护
+in danger of ... 
+处于...危险之中有...危险[介词短语]
 organism
 n.生物;有机体
 straightforward
-adj.简单的，易懂的，易做的
-device n.设备;仪器;装备
-precise adj.精准的;准确的
+adj.简单的,易懂的,易做的
+device 
+n.设备;仪器;装备
+precise 
+adj.精准的;准确的
 all to scale
 整个地图 按真实比例(制的)
-picture n. 照片
+picture 
+n. 照片
 make amendments
-做出修改，做出修正[动词短语]
-hot ad;热的
+做出修改,做出修正[动词短语]
+hot 
+adj.热的
 dry out
-渐渐失去水分而变干[ 动词短语]
-big ad;大的;巨大的
+渐渐失去水分而变干[动词短语]
+big 
+adj.大的;巨大的
 general conclusions
 一般性的结论
-observer n.观测;观察者
-number n.数量，总量
+observer 
+n.观测;观察者
+number 
+n.数量,总量

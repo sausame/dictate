@@ -13,20 +13,42 @@ import traceback
 from datetime import datetime
 from phrase import SentenceGroup
 from tts import LocalTts as Tts
-from utils import remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+from utils import getMd5, getFileMd5, remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
 
 class SynonymPage(SentenceGroup):
 
-    def read(self, pathname):
+    def read(self, pathname, info=None):
 
         prGreen('Parsing {} ...'.format(pathname))
 
         super().read(pathname)
 
-        return self.save(pathname)
+        return self.save(pathname, info)
 
-    def save(self, pathname):
+    def refine(self, pathname, info):
+
+        content = ''
+        size = len(self.group)
+        mid = int(size / 2) - 1
+        for index in range(size):
+            content += self.group[index] + '\n'
+
+            if index == mid:
+                content += '\n\n\n'
+
+        if info and info['md5code'] == getMd5(content):
+            return False
+
+        with open(pathname, 'w+', newline='') as fp:
+            fp.write(content)
+            prGreen('Refined {}'.format(pathname))
+
+            return True
+
+        return False
+
+    def saveAsSynonym(self, pathname):
 
         pos = pathname.rfind('.')
         prefix = pathname[:pos]
@@ -65,7 +87,13 @@ class SynonymPage(SentenceGroup):
                               self.group[secondPos],
                               self.group[secondPos + 1]]
 
-                    writer.writerow(values)
+                    # writer.writerow(values)
+
+                    writer.writerow(['{:^40}'.format(self.group[firstPos]),
+                                     self.group[firstPos + 1]])
+                    writer.writerow(['{:^40}'.format(self.group[secondPos]),
+                                     self.group[secondPos + 1]])
+                    # writer.writerow(['', ''])
 
                 if succeeded:
                     prGreen('Successfully saved into {}'.format(filename))
@@ -75,6 +103,8 @@ class SynonymPage(SentenceGroup):
                     for index in range(size * 4, len(self.group)):
                         values.append(self.group[index])
                     writer.writerow(values)
+
+                    print(len(self.group), reprDict(self.group))
 
                     prRed('Failed and saved into {}'.format(filename))
 
@@ -88,6 +118,10 @@ class SynonymPage(SentenceGroup):
             traceback.print_exc(file=sys.stdout)
 
         return False
+
+    def save(self, pathname, info):
+        self.refine(pathname, info)
+        return self.saveAsSynonym(pathname)
 
 
 class SynonymDictionary:
@@ -121,14 +155,23 @@ class SynonymDictionary:
     def getkey(self, pathname):
         return pathname.replace('/', '-').replace('\\', '-').replace('.', '-')
 
-    def isParsed(self, pathname):
-
+    def getInfo(self, pathname):
         key = self.getkey(pathname)
         if key not in self.dictionary.keys():
+            return None
+
+        return self.dictionary[key]
+
+    def isParsed(self, pathname):
+
+        info = self.getInfo(pathname)
+        if not info:
             return False
 
-        value = int(os.path.getmtime(pathname))
-        if value != self.dictionary[key]:
+        if info['timestamp'] != int(os.path.getmtime(pathname)):
+            return False
+
+        if info['md5code'] != getFileMd5(pathname):
             return False
 
         csvPathname = '{}.csv'.format(pathname[:-4])
@@ -136,9 +179,14 @@ class SynonymDictionary:
 
     def update(self, pathname):
         key = self.getkey(pathname)
-        value = int(os.path.getmtime(pathname))
 
-        self.dictionary[key] = value
+        md5code = getFileMd5(pathname)
+        timestamp = int(os.path.getmtime(pathname))
+
+        self.dictionary[key] = {
+            'timestamp': timestamp,
+            'md5code': md5code,
+        }
 
     def parse(self):
 
@@ -160,7 +208,9 @@ class SynonymDictionary:
                 skippedCount += 1
                 continue
 
-            if page.read(pathname):
+            info = self.getInfo(pathname)
+
+            if page.read(pathname, info):
                 self.update(pathname)
                 succeededCount += 1
             else:
@@ -170,15 +220,19 @@ class SynonymDictionary:
             succeededCount, failedCount, skippedCount))
 
 
-def run(name, configFile):
+def run(name, configFile, pathname=None):
 
     try:
         prGreen('Now: {}'.format(datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
 
         synonymPath = getProperty(configFile, 'synonym-path')
 
-        dictionary = SynonymDictionary(synonymPath)
-        dictionary.parse()
+        if pathname:
+            page = SynonymPage()
+            page.read(pathname)
+        else:
+            dictionary = SynonymDictionary(synonymPath)
+            dictionary.parse()
 
     except KeyboardInterrupt:
         pass
@@ -193,19 +247,18 @@ def run(name, configFile):
 def main(argv):
 
     if len(argv) < 2:
-        print('Usage:\n\t', argv[0], '[config-file]\n')
+        print('Usage:\n\t', argv[0], '[PATH-NAME]\n')
 
     os.environ['TZ'] = 'Asia/Shanghai'
     time.tzset()
 
     name = os.path.basename(argv[0])[:-3]  # Remove ".py"
+    pathname = None
 
     if len(argv) > 1:
-        configFile = os.path.realpath(argv[1])
-    else:
-        configFile = 'config.ini'
+        pathname = os.path.realpath(argv[1])
 
-    run(name, configFile)
+    run(name, 'config.ini', pathname)
 
 
 if __name__ == '__main__':

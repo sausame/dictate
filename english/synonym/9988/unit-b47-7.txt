@@ -1,52 +1,63 @@
-keep 饲养
-suggest说 建议
-dad.干的，干燥的
+keep 
+饲养
+suggest
+说 建议
+dry
+adj.干的,干燥的
 increase
- 大;增加;增强
+大;增加;增强
 improve
-%改进，改善
+改进,改善
 particularly
-adx 特别，尤其
+adx 特别,尤其
 enough time
 (预)足够的时间
 produce
-以.生产，制造
+以.生产,制造
 aa
-go to...去·....·[动词短语)
+go to ... 去......[动词短语]
 management
-n管理
-attention to..
-注重·.....(细节等)
+n.管理
+attention to ... 
+注重...(细节等)
 minimum
-n.最小，最少，最低
+n.最小,最少,最低
 computer skills
 计算机技能
 communication
 n.交流
-cope with..
-对付，应付[动词短语]
+cope with ... 
+对付,应付[动词短语]
+
 
 
 breed
 v.(以育种为目的)饲养
 suggestion
-m.建议
-aridadj.干燥的，干旱的
-improvementn.改进，改善
-benefitw.使受益，对·.....有帮助
-especialladv 特别，尤其，格外
-realistic timelines现实的时间安排
+n.建议
+arid
+adj.干燥的,干旱的
+improvement
+n.改进,改善
+benefit
+v.使受益,对...有帮助
+especiall
+adv. 特别,尤其,格外
+realistic timelines
+现实的时间安排
 make
-vt.制造，制作
+vt.制造,制作
 attend
 vt.参加
 manage
 vt.管理经营
-take care with...
-在处理(或操纵).·.··· 时格外小心[动词短语]
+take care with ... 
+在处理(或操纵)...时格外小心[动词短语]
 at least
-至少[介词短语)
-be) computer literate能够操作电脑的
+至少[介词短语]
+(be) computer literate
+能够操作电脑的
 communicate
-n交流
-deal with...处理，应付[动词短语]
+n.交流
+deal with ... 
+处理,应付[动词短语]

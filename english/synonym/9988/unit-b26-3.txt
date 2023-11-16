@@ -1,53 +1,75 @@
-country n.国，国家
-boat n.船
+country 
+n.国,国家
+boat 
+n.船
 journey
-n.旅程，行程
+n.旅程,行程
 personal
-adj.个人的，私人的
+adj.个人的,私人的
 demonstrate
-.显示，表露
-test v.检验;试验;测试
-theory n.理论;学说
+.显示,表露
+test 
+v.检验;试验;测试
+theory 
+n.理论;学说
 setback
-n挫折;失败;倒退
-construction n.(房屋、工厂
-道路、桥梁等的)建筑，建造
-method n.方法，办法
+n.挫折;失败;倒退
+construction 
+n.(房屋、工厂道路、桥梁等的)建筑,建造
+method 
+n.方法,办法
 why
-adv(用于间句)为什么;为何
-build v.建造，造;建立
-statue n.雕塑，雕像
-infuencen.影响;作用
+adv.(用于间句)为什么;为何
+build 
+v.建造,造;建立
+statue 
+n.雕塑,雕像
+infuencen.
+影响;作用
 opinion
 n.看法;观点;见解
 origin
-n.起源，由来
-style n.文体;文风;语调
+n.起源,由来
+style 
+n.文体;文风;语调
 out of date
-过时的[形容词短语 ]
+过时的[形容词短语]
 
 
-inhabited land 有人居住的土
-ship n.船
+
+inhabited land 
+有人居住的土
+ship 
+n.船
 voyage
-n.航海，航行;旅程，远行
-private adj.个人的;私人的:
-私有的，私立的
-show vt.显示;(使)露出;(使显现
-try out... 试验;测验[动词短语
-idea n.主意;思想
+n.航海,航行;旅程,远行
+private 
+adj.个人的;私人的:私有的,私立的
+show 
+vt.显示;(使)露出;(使显现)
+try out ... 
+试验;测验[动词短语]
+idea 
+n.主意;思想
 stop
- 停止，中止，阻止，阻挡
+ 停止,中止,阻止,阻挡
 build
-v.建筑，建造
-technique n.技巧;方法;工艺
+v.建筑,建造
+technique 
+n.技巧;方法;工艺
 purpose
 n.目的;意义;用途
-make vt.做;制造，建造
-carving n.雕刻;雕刻品
-impression n.产生影响;起作用
-to my mind 依我之见;我认为;依我看[介词短语 ]
-originate from... 来自·....，源于....·，起源于.....
-tone n.腔调;语气
+make 
+vt.做;制造,建造
+carving 
+n.雕刻;雕刻品
+impression 
+n.产生影响;起作用
+to my mind 
+依我之见;我认为;依我看[介词短语]
+originate from ... 
+来自...,源于...,起源于...
+tone 
+n.腔调;语气
 old-fashioned
-adj.旧式的，过时的
+adj.旧式的,过时的

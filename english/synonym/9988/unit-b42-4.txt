@@ -1,13 +1,15 @@
 farming
-务农;畜牧，养殖
+务农;畜牧,养殖
 food
-加物，食品
-produce生产，出产
-locally ad:本地在本地
+加物,食品
+produce
+生产,出产
+locally 
+adj.本地在本地
 transport
-n交通工具，运输工具
-hand in..
-上交，提交[动词短语)
+n.交通工具,运输工具
+hand in ... 
+上交,提交[动词短语]
 accuracy
 n.精确(性);准确(性)
 check
@@ -17,31 +19,41 @@ ad.更多的
 wind energy
 风能
 animal
-n动
-especiall adv 特别，尤其
-concerned about..担忧，担心，关切[形容词短语]
-in terms of..
-就.·....而言[介词短语]
+n.动
+especiall 
+adv. 特别,尤其
+concerned about ... 
+担忧,担心,关切[形容词短语]
+in terms of ... 
+就...而言[介词短语]
 
 
-sheer n.羊，绵羊
-fruits, vegetables, cheese andmeat水果、蔬菜、奶酪和肉
+
+sheer 
+n.羊,绵羊
+fruits, vegetables, cheese and meat
+水果、蔬菜、奶酪和肉
 grow
-vt.(通常指为了出售而)培，种植
+vt.(通常指为了出售而)培,种植
 within a few miles of the
-town距离镇上几英里范围之内[个词短语 ]
-way of travelling around(从一地到另外一地)行进
-的方式
-submit v.上交，提交
+town距离镇上几英里范围之内[个词短语]
+way of travelling around
+(从一地到另外一地)行进的方式
+submit 
+v.上交,提交
 accurate
-adj.精确的，准确的
-make sure...
-确保，确定[动词短语]
+adj.精确的,准确的
+make sure ... 
+确保,确定[动词短语]
 extra
-adj.额外的，外加的
-wind farm风力发电场
+adj.额外的,外加的
+wind farm
+风力发电场
 species
-n(动物的)物种
-in particular尤其，特别[介词短语]
-sympathy n.同情(心)，理解
-when it comes to...当谈到，当涉及
+n.(动物的)物种
+in particular
+尤其,特别[介词短语]
+sympathy 
+n.同情(心),理解
+when it comes to ... 
+当谈到,当涉及

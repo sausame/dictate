@@ -1,47 +1,51 @@
 address
-n地址
+n.地址
 unable
-adi,不能·...··的，无法....··的
+adj.不能...的,无法...的
 pain
-n.痛，疼痛
+n.痛,疼痛
 advice
 n.建议
 regular
-adi.定期的;有规律的，经常的
+adj.定期的;有规律的,经常的
 journey
-n.旅行，行程
+n.旅行,行程
 farm
-n农场，牧场
+n.农场,牧场
 nowadays
-n.lady.现在，当今
+adv.现在,当今
 seafood
-n.海产食品，海鲜
+n.海产食品,海鲜
 vineyard
-m.葡萄园;葡萄酒厂
+n.葡萄园;葡萄酒厂
 take place
-发生，举行[动词短语 ]
+发生,举行[动词短语]
 wet
 adj.湿的;下雨的
 
 
+
 where
-adv/conj.哪，在哪
+adv./conj.哪,在哪
 can't
 不能
 hurt
-vi.疼痛，感到疼痛
+vi.疼痛,感到疼痛
 suggest
 建议
-everv dav每天，天天
+everv dav
+每天,天天
 voyage
 n.旅行;航行
-butter, meat and wool
+butter and meat and wool
 黄油、肉和羊毛
 today
-n./adv.今天，现在，现今
-lobsters and fish龙虾和鱼
+n./adv.今天,现在,现今
+lobsters and fish
+龙虾和鱼
 grape
-n葡萄
+n.葡萄
 hold
 v.举办(活动等)
-rain ad;下雨的
+rain 
+adj.下雨的

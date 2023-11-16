@@ -1,51 +1,71 @@
 stock
 n.存货;库存品
 society
-n
-old adi.旧的，老的
+n.
+old 
+adj.旧的,老的
 old
-adi.旧的，老的
-difiicult ad;.难的，困难的
-in the future 未来
-[介词短语 ]
-no longer contain...
-不再包含·....，不再含有·.....
-[ 动词短语 ]
-law n法律
-required adi
-(按规定)必需的，需要的
+adj.旧的,老的
+difiicult 
+adj.难的,困难的
+in the future 
+未来[介词短语]
+no longer contain ... 
+不再包含...,不再含有...[动词短语]
+law 
+n.法律
+required 
+adj.(按规定)必需的,需要的
 amous
-adj.著名的，知名的
-person n.
-result in...导致·.....,结果是......
-[动词短语 ]
-senior managers 高级经理
-result vi.发生，产生
-deal with... 应付，处理
-[ 动词短语 ]
-team n.队，队伍，组
-build v.建筑，造
+adj.著名的,知名的
+person 
+n.
+result in ... 
+导致...,结果是...[动词短语]
+senior managers 
+高级经理
+result 
+vi.发生,产生
+deal with ... 
+应付,处理[动词短语]
+team 
+n.队,队伍,组
+build 
+v.建筑,造
 
 
-put in an order 下单订货[ 动词知语 ]
-external developments外界的发展变化
-up-to-date adj.最新的
-latest adj.最新的
-[ late 的最高级 ]
-hard adj.难的，苦难的
-in the next few years #  年间;几年后[介词短语]
+
+put in an order 
+下单订货[动词知语]
+external developments
+外界的发展变化
+up-to-date 
+adj.最新的
+latest 
+adj.最新的[late 的最高级]
+hard 
+adj.难的,苦难的
+in the next few years 
+几年间;几年后[介词短语]
 disappear
 vi. 消失
-rule n.规则，规定
-need to have... 得有·......必得有·.....[ 动词短语]
+rule 
+n.规则,规定
+need to have ... 
+得有...必得有...[动词短语]
 well-known
-adi.出名的，众所周知的
-politician n.政治家，政客
+adj.出名的,众所周知的
+politician 
+n.政治家,政客
 cause
 vt.导致
-business leaders 商业领袖
-arise v.产生，出现，形成
+business leaders 
+商业领袖
+arise 
+v.产生,出现,形成
 manage
-v.管理，处理;经营
-group n.集体，团体;群,组
-construct v.建造，构建
+v.管理,处理;经营
+group 
+n.集体,团体;群,组
+construct 
+v.建造,构建

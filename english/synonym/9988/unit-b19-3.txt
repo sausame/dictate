@@ -1,50 +1,63 @@
 straightforward
-adj:简单的，易懂的，易做的
-repetitionYODew
+adj.:简单的,易懂的,易做的
+repetition
 n.重复;反复;重说;重做
 context
-n(事情的)来龙脉，背
+n.(事情的)来龙脉,背
 consult
-v 找·..·.·商量;请教
+v. 找...商量;请教
 certain
-ad; 某个;特定的
+adj. 某个;特定的
 incomplete
-adj. 不完全的，
-不完整的
+adj. 不完全的,不完整的
 incomplete
-ad;不完全的，不完整的
-explain v 解释，说明，阐明ideal adj.理想的
+adj.不完全的,不完整的
+explain 
+v. 解释,说明,阐明
+ideal 
+adj.理想的
 several
-adj.几个(的)，数个(的)
-comparisonn.比较;对照
-change n.变化，改变;变更
+adj.几个(的),数个(的)
+comparisonn.
+比较;对照
+change 
+n.变化,改变;变更
 change
-v. 使改变，使变化;更改
-impose vt.把·...··强加于，加(负担)于......
+v. 使改变,使变化;更改
+impose 
+vt.把...强加于,加(负担)于...
 rigorous
-adj.严格的，严厉的;苛刻的
+adj.严格的,严厉的;苛刻的
+
 
 
 simple
-adj 简单的，简易的，简明的
-repeat vt.重复;重复做(动作); 重说
-settingn.环境;背景
+adj. 简单的,简易的,简明的
+repeat 
+vt.重复;重复做(动作); 重说
+setting
+n.环境;背景
 pick their brains
-<口>请教他(她 )们,请他( 她 )们发表观点[动词短语 ]
+<口>请教他(她)们,请他(她)们发表观点[动词短语]
 particular
 adj.特殊的;特定的;特别的
 whole
-adj.全部的，全体的，所有的complete adj.完整的，全部的完全的，彻底的
-describe vt描写，描绘;叙述
-perfect ad;.完美的;理想的
+adj.全部的,全体的,所有的
+complete 
+adj.完整的,全部的完全的,彻底的
+describe 
+vt.描写,描绘;叙述
+perfect 
+adj.完美的;理想的
 various
 adj.好几个的;许多的
 comparable
-ad;可比较的;比得上的
-modification n.修改，改变
-adjust vt. 调节,调整; 改变··..·
-以适应
+adj.可比较的;比得上的
+modification 
+n.修改,改变
+adjust 
+vt. 调节,调整; 改变...以适应
 exert
-vt 运用;行使;施加
+vt. 运用;行使;施加
 strict
-ad;严格的，严厉的
+adj.严格的,严厉的

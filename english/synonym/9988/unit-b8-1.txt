@@ -1,43 +1,55 @@
-intend vt 打
-permit n. 许可准许，许可证
+intend 
+vt. 打
+permit 
+n. 许可准许,许可证
 location
-n.地点;位置，场所
+n.地点;位置,场所
 specia
-adj.特别的，特殊的
+adj.特别的,特殊的
 own facilities
 自己独享的(洗)设施
-final ad;最后的，最终的
+final 
+adj.最后的,最终的
 receive
-v;接到
+v.;接到
 affect
-vt影响
-drop n.(数量上)下降
-grow vi.增加，增长
+vt.影响
+drop 
+n.(数量上)下降
+grow 
+vi.增加,增长
 delay
-n.耽搁，延误，延迟
-cause n.原因，起因
+n.耽搁,延误,延迟
+cause 
+n.原因,起因
 good
-adi.好的;高品质的，高水准的
+adj.好的;高品质的,高水准的
 
 
 
-
-
-
-
-plan v.打算，计划
-visa n签证
-area n.地区;区域;途的) 地方，场地
+plan 
+v.打算,计划
+visa 
+n.签证
+area 
+n.地区;区域;(途的)地方,场地
 particular
-adj.特殊的，特别的，独特的
-en suite ad;(卧室)带有独立卫生间的; adu(指房间等)构成独立单元
-last ad;最后的，最末的
+adj.特殊的,特别的,独特的
+en suite 
+adj.(卧室)带有独立卫生间的; adv.(指房间等)构成独立单元
+last 
+adj.最后的,最末的
 presentation
-n.颁发，颁奖，颁奖仪式，颁奖典礼
-suffer from...患(某种病);受某种病痛 )折磨，因.·····而受苦因······而受损[动词短语 ]
-fall vi.(数量)下降
-increase v,增加，增大，增多
-stall vt使(进程)暂停，暂时阻止;把·...··拖住
-reason n原因
+n.颁发,颁奖,颁奖仪式,颁奖典礼
+suffer from ... 
+患(某种病);(受某种病痛)折磨,因...而受苦,因...而受损[动词短语]
+fall 
+vi.(数量)下降
+increase 
+v.增加,增大,增多
+stall 
+vt.使(进程)暂停,暂时阻止;把...拖住
+reason 
+n.原因
 poor
-ad;.劣质的;糟糕的
+adj.劣质的;糟糕的

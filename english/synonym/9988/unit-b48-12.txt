@@ -3,18 +3,29 @@ rapid
 use
 使用
 find
-发现，找到
-eat 吃
-arrval到来，来临到达:
-farming n务农;畜牧;养殖;农场经
-destroy 毁坏，摧毁，毁灭
+发现,找到
+eat 
+吃
+arrval
+到来,来临到达:
+farming 
+n.务农;畜牧;养殖;农场经
+destroy 
+毁坏,摧毁,毁灭
+
 
 
 fast
-adj.快的，迅速的，敏捷的
-employ v.使用，利用
-locate vt.确定·....的位置，现·....·的位置
-consume v.(尤指大量地)吃，喂
-introduction n.采用，引进，引入
-agriculture n.农业;农艺，农学
-be cut down(森林)被砍伐[动词cut的被动语态]
+adj.快的,迅速的,敏捷的
+employ 
+v.使用,利用
+locate 
+vt.确定...的位置,现...的位置
+consume 
+v.(尤指大量地)吃,喂
+introduction 
+n.采用,引进,引入
+agriculture 
+n.农业;农艺,农学
+be cut down
+(森林)被砍伐[动词cut的被动语态]

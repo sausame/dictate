@@ -1,46 +1,79 @@
-analysis n.分析，解析
-pattern n.格局;规律;模式
-visual n视觉材料(指用于展示或说明的图画、表格、影片等
-bestad最好的，最佳的
-give v 给，给予
-people n. 人，人们
-get to... 抵达......,到达···...[动词短语 
+analysis 
+n.分析,解析
+pattern 
+n.格局;规律;模式
+visual 
+n.视觉材料(指用于展示或说明的图画、表格、影片等)
+bestad
+最好的,最佳的
+give 
+v. 给,给予
+people 
+n. 人,人们
+get to ... 
+抵达...,到达...[动词短语]
 interest
-n 兴趣
-little n.没有多少
-publicity n.宣传，宣扬;(公众的)注意，名声
-poor adj.劣质的，糟糕的
-poor adi.劣质的，糟糕的
-restriction n.限制，约束，限定
-skilled adi有技能的，熟练的
-working age工作年龄
-path n.小径，小路
-keep to... 遵守......,坚持...."”不离开......[ 动词短语 ]
-effect n.影响，作用，结果
-water n.水;(江、湖、海等)大片的水，水体
+n. 兴趣
+little 
+n.没有多少
+publicity 
+n.宣传,宣扬;(公众的)注意,名声
+poor 
+adj.劣质的,糟糕的
+poor 
+adj.劣质的,糟糕的
+restriction 
+n.限制,约束,限定
+skilled 
+adj.有技能的,熟练的
+working age
+工作年龄
+path 
+n.小径,小路
+keep to ... 
+遵守...,坚持...,不离开...[动词短语]
+effect 
+n.影响,作用,结果
+water 
+n.水;(江、湖、海等)大片的水,水体
 
 
-analyse vt.分析，解析
-trends or regularities 趋势和规律
-graphs, or tables, or charts形、表格或图表
-as clear as possible 尽可能清晰的[形容词短语 ]
-present vt.提出，提交，呈现
-tourist n.旅游者，观光者
+
+analyse 
+vt.分析,解析
+trends or regularities 
+趋势和规律
+graphs or tables or charts
+形、表格或图表
+as clear as possible 
+尽可能清晰的[形容词短语]
+present 
+vt.提出,提交,呈现
+tourist 
+n.旅游者,观光者
 access
 n.接近;进人
 fascinating
-adi. 迷人的，有极大吸引力的
-plenty n.丰富，充足，大量
+adj. 迷人的,有极大吸引力的
+plenty 
+n.丰富,充足,大量
 website
 n.网站
-dry adj;枯乏味的
-boring adi无聊的，乏味的
-special permission 特别的许可
-skill n.技术，技能，技艺
-children and those who've retired 儿童及退休人士
-marked ways 有标识的路
-stick to... 坚持....·;紧随.......
-紧跟···.··[动词短语 ]
-affect vt.影响，对·...··产生作用
+dry 
+adj.;枯乏味的
+boring 
+adj.无聊的,乏味的
+special permission 
+特别的许可
+skill 
+n.技术,技能,技艺
+children and those who've retired 
+儿童及退休人士
+marked ways 
+有标识的路
+stick to ... 
+坚持...;紧随...紧跟...[动词短语]
+affect 
+vt.影响,对...产生作用
 lakes and rivers
 湖泊和河流

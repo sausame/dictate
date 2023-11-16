@@ -1,23 +1,31 @@
 eradicate
-v.连根拔除，根除;消灭
+v.连根拔除,根除;消灭
 new
-adi.新的;新鲜的，新型的
+adj.新的;新鲜的,新型的
 production
-n.生产，制造;制作
-analyse w分析
-speed up...
-加快······的速度[动词短语 ]
+n.生产,制造;制作
+analyse 
+v.分析
+speed up ... 
+加快.的速度[动词短语]
 medical
-ad;.医学的;医术的，医疗的
-increase w.增加，增大，增多
+adj.医学的;医术的,医疗的
+increase 
+v.增加,增大,增多
 
 
-eradication n.根除，消灭
-introduction n.引进;传人;采用
+
+eradication 
+n.根除,消灭
+introduction 
+n.引进;传人;采用
 produce
-w.生产，制造;出产，产出
-analysis n.分析
-in minutes rather than days( 某过程 ) 用时数分钟，而不是数天[介词短语 ]
+v.生产,制造;出产,产出
+analysis 
+n.分析
+in minutes rather than days
+(某过程) 用时数分钟,而不是数天[介词短语]
 medicine
 n.医学;医术
-lengthen vt.使加长，使延长
+lengthen 
+vt.使加长,使延长

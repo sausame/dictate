@@ -1,40 +1,59 @@
 agent
-n.代理商;代理人，中介人
-origin n.起源;由来
-arrival n.到达，抵达
-replace v. 替换，代替，取代
-purpose n.意义，用途
+n.代理商;代理人,中介人
+origin 
+n.起源;由来
+arrival 
+n.到达,抵达
+replace 
+v. 替换,代替,取代
+purpose 
+n.意义,用途
 education
-n教
-plan n.平面图，示意图
+n.教
+plan 
+n.平面图,示意图
 closed
 adj.关闭的;不营业的
 experimental
 adj.实验的;试验的
-how adv 以何种方式;(用于询问方式、方法)怎样，如何
-walking n.步行，散步
-hen n.母鸡
-save v.拯救，挽救;救助;节约，节省
-unusual adj不寻常的;不常见的;罕见的
+how 
+adv. 以何种方式;(用于询问方式、方法)怎样,如何
+walking 
+n.步行,散步
+hen 
+n.母鸡
+save 
+v.拯救,挽救;救助;节约,节省
+unusual 
+adj.不寻常的;不常见的;罕见的
 
 
-company n. 公司
-from prep.(表示来源)来自·.·..·
-arrive vi. 到达，抵达
-new ad;.新的;新建的;新任的
-remit n.职责，职权范围
-educational adj.教育的;与教育
-相关的;有教育意义的
-map n.地图
-be out of bounds to...
-禁止··..··入内
+
+company 
+n. 公司
+from 
+prep.(表示来源)来自...
+arrive 
+vi. 到达,抵达
+new 
+adj.新的;新建的;新任的
+remit 
+n.职责,职权范围
+educational 
+adj.教育的;与教育相关的;有教育意义的
+map 
+n.地图
+be out of bounds to ... 
+禁止...入内
 experiment
 n.实验;试验
 means
-n.手段，方法
-on foot 步行[介词短语]
-poultry n.家禽
+n.手段,方法
+on foot 
+步行[介词短语]
+poultry 
+n.家禽
 preserve
-v.保护;保存，维护
+v.保护;保存,维护
 rare
 adj. 稀有的;罕见的;珍奇的

@@ -1,40 +1,59 @@
 skill
-技巧，技艺，技能
+技巧,技艺,技能
 focus
 (活动、注意力等的)中心
-resident n居民
-complain就埋怨，抱怨;投诉
-follow vt听从，遵循，遵从
+resident 
+n.居民
+complain
+就埋怨,抱怨;投诉
+follow 
+vt.听从,遵循,遵从
 support
-n帮助;支持;支援，援助
-newadj. 新的;刚出现的，新做的;新建的
+n.帮助;支持;支援,援助
+newadj. 
+新的;刚出现的,新做的;新建的
 investigate
-vt./vi. 调查，审查;研究
-why ady 为什么，为何
-maymodal verb.可能
-later on以后，后来
-advantagen.有利条件，有利因素，优势
-the time available(用于做某事的 可用时间)
+vt./vi. 调查,审查;研究
+why 
+adv. 为什么,为何
+maymodal verb.
+可能
+later on
+以后,后来
+advantagen.
+有利条件,有利因素,优势
+the time available
+(用于做某事的 可用时间)
 inside
-prep.在.....里面,在·.....内部(内侧）
+prep.在...里面,在...内部(内侧)
 
 
-how to use...如何使用(某工具或设备)
-specialise in...专门研究，专攻; 专门从事[ 动词短语]
+
+how to use ... 
+如何使用(某工具或设备)
+specialise in ... 
+专门研究,专攻; 专门从事[动词短语]
 people
-n.人，人们
+n.人,人们
 complaint
-n.埋怨，抱怨，投诉
-obeyvt./vi. 服从，听从，遵守，遵循
-help n.帮助，援助
-another adj.另一个的;不同的;别的
-look at...看;查看，研究[动词短语]
-reason n.原因
+n.埋怨,抱怨,投诉
+obeyvt.
+/vi. 服从,听从,遵守,遵循
+help 
+n.帮助,援助
+another 
+adj.另一个的;不同的;别的
+look at ... 
+看;查看,研究[动词短语]
+reason 
+n.原因
 might
-modal verb.也许，有可能会
-in the third year在( 随后 )大学三年级的时候[介词短语 ]
-good ad;.好的;有利的，有益的
-need quite a bit longer所需时间要长不少[动词短语]
-多在······内
+modal verb.也许,有可能会
+in the third year
+在(随后)大学三年级的时候[介词短语]
+good 
+adj.好的;有利的,有益的
+need quite a bit longer
+所需时间要长不少[动词短语]多在.内
 in
-prep.在···.··里面，
+prep.在...里面,
