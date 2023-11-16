@@ -1,7 +1,7 @@
 make
 n.(汽车、收音机等的)牌子
 prefer
-vt ... vi. 更喜欢;偏好
+vt./vi. 更喜欢;偏好
 contact number 
 联系电话
 maximum

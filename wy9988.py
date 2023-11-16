@@ -87,13 +87,15 @@ class SynonymPage(SentenceGroup):
                               self.group[secondPos],
                               self.group[secondPos + 1]]
 
-                    # writer.writerow(values)
+                    writer.writerow(values)
 
+                    '''
                     writer.writerow(['{:^40}'.format(self.group[firstPos]),
                                      self.group[firstPos + 1]])
                     writer.writerow(['{:^40}'.format(self.group[secondPos]),
                                      self.group[secondPos + 1]])
                     # writer.writerow(['', ''])
+                    '''
 
                 if succeeded:
                     prGreen('Successfully saved into {}'.format(filename))
