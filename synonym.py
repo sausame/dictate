@@ -96,8 +96,6 @@ class SynonymChapter:
         with open(pathname, newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter='\t')
 
-            extra
-
             synonym = Synonym()
             for row in reader:
                 result = synonym.toDict(row, extra)
