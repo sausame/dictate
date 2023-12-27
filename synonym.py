@@ -11,6 +11,7 @@ import time
 import traceback
 
 from datetime import datetime
+from phrase import getNumbers
 from tts import LocalTts as Tts
 from utils import getch, getchar, getPathnames, getProperty, reprDict, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
@@ -194,20 +195,6 @@ class SynonymBook:
         return self.chapterDict[chapterKey][pageKey]
 
     def extend(self, pathname):
-
-        def getNumbers(src):
-
-            numbers = []
-
-            REGEX = r'(\d+)-(\d+)'
-            matches = re.finditer(REGEX, src, re.MULTILINE)
-
-            for matchNum, match in enumerate(matches, start=1):
-                for groupNum in range(0, len(match.groups())):
-                    groupNum = groupNum + 1
-                    numbers.append(int(match.group(groupNum)))
-
-            return numbers
 
         numbers = getNumbers(pathname)
 

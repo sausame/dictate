@@ -11,9 +11,79 @@ import time
 import traceback
 
 from datetime import datetime
-from phrase import SentenceGroup
+from phrase import SentenceGroup, getNumbers
 from tts import LocalTts as Tts
 from utils import getMd5, getFileMd5, remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
+
+
+class SynonymSaver:
+
+    @staticmethod
+    def save(prefix, group):
+
+        errorFilename = '{}.error.csv'.format(prefix)
+        succeededFilename = '{}.csv'.format(prefix)
+
+        if len(group) % 4 == 0:
+            succeeded = True
+            filename = succeededFilename
+
+            remove(errorFilename)
+        else:
+            succeeded = False
+            filename = errorFilename
+
+        try:
+            with open(filename, 'w+', newline='') as fp:
+                writer = csv.writer(fp, delimiter='\t')
+
+                '''
+                HEADERS = ['Expression 1', 'Explanation 1', 'Expression 2', 'Explanation 2']
+                writer.writerow(HEADERS)
+                '''
+
+                size = int(len(group) / 4)
+                index = 0
+
+                for index in range(size):
+
+                    pos = index * 4
+
+                    '''
+                    values = [group[pos],
+                              group[pos + 1],
+                              group[pos + 2],
+                              group[pos + 3]]
+
+                    writer.writerow(values)
+                    '''
+                    writer.writerow(['{:^4}'.format(index * 2 + 1),
+                                     '{:^40}'.format(group[pos]),
+                                     group[pos + 1]])
+                    writer.writerow(['{:^4}'.format(index * 2 + 2),
+                                    '{:^40}'.format(group[pos + 2]),
+                                     group[pos + 3]])
+                    # writer.writerow(['', ''])
+
+                if not succeeded:
+                    writer.writerow(group[size * 4:])
+                    print(len(group), reprDict(group))
+
+                if succeeded:
+                    prGreen('Successfully saved into {}'.format(filename))
+                else:
+                    prRed('Failed and saved into {}'.format(filename))
+
+                return succeeded
+
+        except Exception as e:
+            remove(filename)
+
+            prRed('Error occurs at {}'.format(
+                datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
+            traceback.print_exc(file=sys.stdout)
+
+        return False
 
 
 class SynonymPage(SentenceGroup):
@@ -24,7 +94,11 @@ class SynonymPage(SentenceGroup):
 
         super().read(pathname)
 
-        return self.save(pathname, info)
+        self.refine(pathname, info)
+
+        self.adjust()
+
+        return self.saveAsSynonym(pathname)
 
     def refine(self, pathname, info):
 
@@ -48,82 +122,75 @@ class SynonymPage(SentenceGroup):
 
         return False
 
+    def adjust(self):
+
+        newGroup = []
+
+        size = int(len(self.group) / 4)
+        index = 0
+
+        for index in range(size):
+
+            firstPos = index * 2
+            secondPos = firstPos + size * 2
+
+            newGroup.extend([self.group[firstPos],
+                             self.group[firstPos + 1],
+                             self.group[secondPos],
+                             self.group[secondPos + 1]])
+
+        if len(self.group) > size * 4:
+            newGroup.extend(self.group[size * 4:])
+
+        self.group = newGroup
+
     def saveAsSynonym(self, pathname):
 
         pos = pathname.rfind('.')
         prefix = pathname[:pos]
 
-        errorFilename = '{}.error.csv'.format(prefix)
-        succeededFilename = '{}.csv'.format(prefix)
+        return SynonymSaver.save(prefix, self.group)
 
-        size = int(len(self.group) / 4)
-        if len(self.group) % 4 == 0:
-            succeeded = True
-            filename = succeededFilename
 
-            remove(errorFilename)
-        else:
-            succeeded = False
-            filename = errorFilename
+class Chapter:
 
-        try:
-            with open(filename, 'w+', newline='') as fp:
-                writer = csv.writer(fp, delimiter='\t')
+    def __init__(self):
+        self.reset()
 
-                '''
-                HEADERS = ['Expression 1', 'Explanation 1', 'Expression 2', 'Explanation 2']
-                writer.writerow(HEADERS)
-                '''
+        self.currentChapter = -1
 
-                index = 0
+    def __del__(self):
+        self.save()
 
-                for index in range(size):
+    def reset(self):
+        self.group = []
 
-                    firstPos = index * 2
-                    secondPos = firstPos + size * 2
+    def read(self, pathname, info):
 
-                    values = [self.group[firstPos],
-                              self.group[firstPos + 1],
-                              self.group[secondPos],
-                              self.group[secondPos + 1]]
+        page = SynonymPage()
+        if not page.read(pathname, info):
+            return False
 
-                    writer.writerow(values)
+        numbers = getNumbers(pathname)
+        chapterNumber = numbers[0]
 
-                    '''
-                    writer.writerow(['{:^40}'.format(self.group[firstPos]),
-                                     self.group[firstPos + 1]])
-                    writer.writerow(['{:^40}'.format(self.group[secondPos]),
-                                     self.group[secondPos + 1]])
-                    # writer.writerow(['', ''])
-                    '''
+        if self.currentChapter != chapterNumber:
+            self.save()
+            self.reset()
 
-                if succeeded:
-                    prGreen('Successfully saved into {}'.format(filename))
+        pos = pathname.rfind('-')
+        self.prefix = pathname[:pos]
 
-                else:
-                    values = []
-                    for index in range(size * 4, len(self.group)):
-                        values.append(self.group[index])
-                    writer.writerow(values)
+        self.currentChapter = chapterNumber
+        self.group.extend(page.group)
 
-                    print(len(self.group), reprDict(self.group))
+        return True
 
-                    prRed('Failed and saved into {}'.format(filename))
+    def save(self):
+        if self.currentChapter < 0:
+            return False
 
-                return succeeded
-
-        except Exception as e:
-            remove(filename)
-
-            prRed('Error occurs at {}'.format(
-                datetime.now().strftime('%Y-%m-%d %H:%M:%S')))
-            traceback.print_exc(file=sys.stdout)
-
-        return False
-
-    def save(self, pathname, info):
-        self.refine(pathname, info)
-        return self.saveAsSynonym(pathname)
+        return SynonymSaver.save(self.prefix, self.group)
 
 
 class SynonymDictionary:
@@ -203,7 +270,7 @@ class SynonymDictionary:
         failedCount = 0
         skippedCount = 0
 
-        page = SynonymPage()
+        chapter = Chapter()
 
         for pathname in pathnames:
             if self.isParsed(pathname):
@@ -212,7 +279,7 @@ class SynonymDictionary:
 
             info = self.getInfo(pathname)
 
-            if page.read(pathname, info):
+            if chapter.read(pathname, info):
                 self.update(pathname)
                 succeededCount += 1
             else:
