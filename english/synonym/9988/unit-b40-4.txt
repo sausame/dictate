@@ -1,5 +1,5 @@
 comprehensive 
-adj.; 综合的,综合性的,全面
+adj. 综合的,综合性的,全面
 clear 
 adj.确定的;无可置疑的;明白无误的;明显的
 voluntary 
@@ -13,22 +13,26 @@ adj.(修饰不可数名词)微小几乎没有
 research 
 n.研究,调查,探索
 widespread 
-adj.; 普遍的,广泛的n.使用,用,应用,运用
+adj. 普遍的,广泛的
+use
+n.使用,用,应用,运用
 unpopularity
 n.不受欢迎,不得人心
 regular
-adj.定期的; 有规律的; 经常的,频繁的n.贸易,买卖
+adj.定期的; 有规律的; 经常的,频繁的
+trade
+n.贸易,买卖
+
+
+
 full story
 整个事实,事情的全部
-
-
-
 conclusive
 adj.无可置疑的;确实的;决定性的;结论性的
 compulsory 
 adj.强制性的;强迫的;必须的
 ridiculous 
-adj.;. 荒诞可笑的,荒谬的,荒
+adj.荒诞可笑的,荒谬的,荒
 (be) brought in
 被引进,被引入[动词bring的动语态]
 enough 

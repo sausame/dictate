@@ -1,5 +1,5 @@
-spyon ... 
-暗中监视...on[动短语]
+spy on ... 
+暗中监视...[动词短语]
 more caution 
 更加谨慎
 continue
@@ -7,7 +7,9 @@ continue
 transport
 n. 交通工具,交通运输系统运输,运送
 development 
-n. 研制;开发strong adj. 不易损坏的;坚固的;结实的
+n. 研制;开发
+strong 
+adj. 不易损坏的;坚固的;结实的
 available 
 adj.可用的,在手边的;可利用的
 massesn
@@ -21,14 +23,16 @@ energyn.
 affordable
 adj.买得起的,负担得起的
 pollutant 
-n.污染物easily adv. 容易地,轻易地
+n.污染物
+easily 
+adv. 容易地,轻易地
 manufacturingn
 制造业,工业
+
+
+
 monitor
- 监控,监视
-
-
-
+监控,监视
 greater care 
 更加小心
 plough ahead with ... 

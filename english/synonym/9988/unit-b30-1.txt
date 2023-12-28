@@ -1,5 +1,5 @@
 age
-n.
+n.年龄
 stay 
 停留,留下;暂住
 during the week

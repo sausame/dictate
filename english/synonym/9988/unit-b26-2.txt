@@ -2,12 +2,16 @@ jewel
 n. 宝石;宝石饰物
 music 
 n.音乐;乐曲
+film
+n.电影
 space travel
 太空旅行;星际旅行
 space travel
-太空旅行;星际旅行adj.古代的;古老的,古旧的
+太空旅行;星际旅行
 ancient
-fortn.堡垒,要塞
+adj.古代的;古老的,古旧的
+fort
+n.堡垒,要塞
 waterway 
 n.运河;水路,航道
 youth 
@@ -26,11 +30,11 @@ migration
 n.移居,迁徙
 due to ... 
 因为...,由于...[语]
+
+
+
 precious stones
 宝石,珍奇的石头
-
-
-
 jazz 
 n.爵士乐
 cinema
@@ -40,7 +44,7 @@ n.火箭
 international space station
 国际空间站
 medieval 
-adj.中世纪的v
+adj.中世纪的
 fortifcation 
 n.筑垒,堡垒,要塞;防御工事
 river 

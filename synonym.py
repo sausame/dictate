@@ -11,7 +11,7 @@ import time
 import traceback
 
 from datetime import datetime
-from phrase import getNumbers
+from phrase import getNumber, getNumbers
 from tts import LocalTts as Tts
 from utils import getch, getchar, getPathnames, getProperty, reprDict, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
@@ -21,34 +21,31 @@ class Synonym:
     def __init__(self, tts=None):
         self.tts = tts
 
-    def toDict(self, values, extra=None):
+    def toDict(self, part1, part2, extra=None):
 
-        def buildKey(values):
+        def buildKey(part1, part2):
             regex = re.compile('[^a-zA-Z0-9]')
-            word1 = regex.sub('_', values[0].strip())
-            word2 = regex.sub('_', values[2].strip())
+            word1 = regex.sub('_', part1[1].strip())
+            word2 = regex.sub('_', part2[1].strip())
             return '{}---{}'.format(word1, word2)
 
-        word1 = values[0].strip()
-        word2 = values[2].strip()
+        word1 = part1[1].strip()
+        word2 = part2[1].strip()
 
         if word1 > word2:
-            newValues = [
-                values[2],
-                values[3],
-                values[0],
-                values[1],
-            ]
-        else:
-            newValues = values
+            temp = part1
+            part1 = part2
+            part2 = temp
 
-        key = buildKey(newValues)
+        key = buildKey(part1, part2)
 
         result = {
-            'word1': newValues[0].strip(),
-            'word2': newValues[2].strip(),
-            'explanation1': newValues[1].strip(),
-            'explanation2': newValues[3].strip()
+            'word1': part1[1].strip(),
+            'word2': part2[1].strip(),
+            'explanation1': part1[2].strip(),
+            'explanation2': part2[2].strip(),
+            'audio1': part1[3],
+            'audio2': part2[3],
         }
 
         if extra:
@@ -90,16 +87,44 @@ class SynonymChapter:
         self.tts = Tts()
         self.tts.setLanguage('english')
 
-    def toDict(self, pathname, extra=None):
+    def getPositions(self, configsPathname):
+
+        positions = []
+
+        with open(configsPathname, newline='') as csvfile:
+            reader = csv.reader(csvfile, delimiter='\t')
+
+            for row in reader:
+                positions.append((row[1], row[2]))
+
+        return positions
+
+    def toDict(self, pathname, configPathname, extra=None):
+
+        positions = self.getPositions(configPathname)
 
         results = dict()
 
         with open(pathname, newline='') as csvfile:
             reader = csv.reader(csvfile, delimiter='\t')
 
-            synonym = Synonym()
+            rows = []
             for row in reader:
-                result = synonym.toDict(row, extra)
+                rows.append(row)
+
+            if len(rows) != len(positions):
+                prRed('Error: {} != {} in {}'.format(len(rows), len(positions), pathname))
+                return results
+
+            synonym = Synonym()
+            for index in range(int(len(rows) / 2)):
+                part1 = rows[index * 2]
+                part2 = rows[index * 2 + 1]
+
+                part1.append(positions[index * 2])
+                part2.append(positions[index * 2 + 1])
+
+                result = synonym.toDict(part1, part2, extra)
                 results.update(result)
             
         return results
@@ -194,9 +219,33 @@ class SynonymBook:
 
         return self.chapterDict[chapterKey][pageKey]
 
+    def getChapterPathname(self, chapterNumber):
+        chapterKey = self.getChapterKey(chapterNumber)
+
+        return self.chapterDict[chapterKey]
+
     def extend(self, pathname):
 
+        # TODO: remove
         numbers = getNumbers(pathname)
+        if numbers:
+            return
+
+        chapterNumber = getNumber(pathname)
+        if chapterNumber == 0:
+            return
+
+        self.chapterNumbers.append(chapterNumber)
+
+        chapterKey = self.getChapterKey(chapterNumber)
+        self.chapterDict[chapterKey] = pathname
+
+    def extendWithPage(self, pathname):
+
+        numbers = getNumbers(pathname)
+
+        if not numbers or len(numbers) != 2:
+            return
 
         chapterNumber = numbers[0]
         pageNumber = numbers[1]
@@ -238,35 +287,38 @@ class SynonymBook:
     def loadRaw(self):
         return self.load('.txt')
 
-    def toDict(self):
+    def toDict(self, configDir, configPathname):
+
+        def loadConfig(configPathname):
+            with open(configPathname) as fp:
+                return json.loads(fp.read())
 
         if not self.load():
             return None
+
+        config = loadConfig(configPathname)
 
         wholeResults = dict()
         chapter = SynonymChapter()
 
         for chapterNumber in self.chapterNumbers:
-            pages = self.getPages(chapterNumber)
+            filename = config['{}'.format(chapterNumber)]['filename']
+            configPathname = os.path.join(configDir, '{}.csv'.format(filename))
 
-            for pageNumber in pages:
-                pathname = self.getPathname(chapterNumber, pageNumber)
+            pathname = self.getChapterPathname(chapterNumber)
+            extra = {
+                'chapter': chapterNumber,
+            }
 
-                extra = {
-                    'chapter': chapterNumber,
-                    'page': pageNumber,
-                }
-
-                results = chapter.toDict(pathname, extra)
-
-                wholeResults.update(results)
+            results = chapter.toDict(pathname, configPathname, extra)
+            wholeResults.update(results)
 
         return wholeResults
 
-    def saveToFile(self, pathname):
+    def saveToFile(self, pathname, configDir, configPathname):
 
         with open(pathname, 'w+', newline='') as fp:
-            result = self.toDict()
+            result = self.toDict(configDir, configPathname)
             fp.write(reprDict(result))
             prGreen('Save to {}'.format(pathname))
 
@@ -326,7 +378,11 @@ def run(name, configFile, pathname):
         book = SynonymBook(synonymPath)
 
         if pathname:
-            book.saveToFile(pathname)
+            configDir = getProperty(configFile, 'audio-config-dir')
+            filename = getProperty(configFile, 'audio-config-file-name')
+            configPathname = os.path.join(configDir, filename)
+
+            book.saveToFile(pathname, configDir, configPathname)
         else:
             os.system('clear')
             print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))

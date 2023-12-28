@@ -11,6 +11,18 @@ from datetime import datetime
 from tts import LocalTts as Tts
 from utils import remove, reprDict, runCommand, getch, getchar, getPathnames, getProperty, prGreen, prRed, prYellow, prLightPurple, prPurple, prCyan, prLightGray, prBlack, stdinReadline
 
+def getNumber(pathname):
+
+    REGEX = r'(\d+)\.'
+    matches = re.finditer(REGEX, pathname, re.MULTILINE)
+
+    for matchNum, match in enumerate(matches, start=1):
+        for groupNum in range(0, len(match.groups())):
+            groupNum = groupNum + 1
+            return int(match.group(groupNum))
+
+    return 0
+
 def getNumbers(pathname):
 
     numbers = []

@@ -23,7 +23,9 @@ vt.做;生产,制造
 top performer 
 顶尖的演奏者
 subject
-n.(学习、调查、实验的) 对象subjectn.(学习、调查、实验的) 对象
+n.(学习、调查、实验的) 对象
+subject
+n.(学习、调查、实验的) 对象
 stressful
 adj.紧张的;压力大的
 
@@ -50,7 +52,9 @@ n.回演出;回比赛
 in different countries
 在不同的国家[介词短语]
 produce 
-v.生产,出产,制造leading musician 顶尖的音乐家
+v.生产,出产,制造
+leading musician 
+顶尖的音乐家
 interviewee
 n.被访者
 respondent 
