@@ -21,7 +21,7 @@ class Synonym:
     def __init__(self, tts=None):
         self.tts = tts
 
-    def toDict(self, part1, part2, extra=None):
+    def toDict(self, part1, part2, extra=None, compress=False):
 
         def buildKey(part1, part2):
             regex = re.compile('[^a-zA-Z0-9]')
@@ -39,14 +39,26 @@ class Synonym:
 
         key = buildKey(part1, part2)
 
-        result = {
-            'word1': part1[1].strip(),
-            'word2': part2[1].strip(),
-            'explanation1': part1[2].strip(),
-            'explanation2': part2[2].strip(),
-            'audio1': part1[3],
-            'audio2': part2[3],
-        }
+        if compress:
+            result = {
+                'w1': part1[1].strip(),
+                'w2': part2[1].strip(),
+                'e1': part1[2].strip(),
+                'e2': part2[2].strip(),
+                'a1': part1[3],
+                'a2': part2[3],
+            }
+
+        else:
+
+            result = {
+                'word1': part1[1].strip(),
+                'word2': part2[1].strip(),
+                'explanation1': part1[2].strip(),
+                'explanation2': part2[2].strip(),
+                'audio1': part1[3],
+                'audio2': part2[3],
+            }
 
         if extra:
             result.update(extra)
@@ -99,7 +111,7 @@ class SynonymChapter:
 
         return positions
 
-    def toDict(self, pathname, configPathname, extra=None):
+    def toDict(self, pathname, configPathname, extra=None, compress=False):
 
         positions = self.getPositions(configPathname)
 
@@ -113,7 +125,8 @@ class SynonymChapter:
                 rows.append(row)
 
             if len(rows) != len(positions):
-                prRed('Error: {} != {} in {}'.format(len(rows), len(positions), pathname))
+                prRed('Error: {} != {} in {}'.format(
+                    len(rows), len(positions), pathname))
                 return results
 
             synonym = Synonym()
@@ -124,9 +137,9 @@ class SynonymChapter:
                 part1.append(positions[index * 2])
                 part2.append(positions[index * 2 + 1])
 
-                result = synonym.toDict(part1, part2, extra)
+                result = synonym.toDict(part1, part2, extra, compress)
                 results.update(result)
-            
+
         return results
 
     def study(self, pathname):
@@ -287,7 +300,7 @@ class SynonymBook:
     def loadRaw(self):
         return self.load('.txt')
 
-    def toDict(self, configDir, configPathname):
+    def toDict(self, configDir, configPathname, compress=False):
 
         def loadConfig(configPathname):
             with open(configPathname) as fp:
@@ -306,20 +319,40 @@ class SynonymBook:
             configPathname = os.path.join(configDir, '{}.csv'.format(filename))
 
             pathname = self.getChapterPathname(chapterNumber)
-            extra = {
-                'chapter': chapterNumber,
-            }
+            if compress:
+                extra = {
+                    'c': chapterNumber,
+                }
+            else:
+                extra = {
+                    'chapter': chapterNumber,
+                }
 
-            results = chapter.toDict(pathname, configPathname, extra)
+            results = chapter.toDict(pathname, configPathname, extra, compress=compress)
             wholeResults.update(results)
 
         return wholeResults
 
-    def saveToFile(self, pathname, configDir, configPathname):
+    def saveToFile(self, pathname, configDir, configPathname, compress=False):
 
         with open(pathname, 'w+', newline='') as fp:
-            result = self.toDict(configDir, configPathname)
-            fp.write(reprDict(result))
+            synonyms = self.toDict(configDir, configPathname, compress)
+
+            if compress:
+                content = {
+                    'd': int(datetime.now().timestamp()),
+                    's': synonyms,
+                }
+                data = reprDict(content, indent=0).replace(
+                    '\n', '').replace('": ', '":')
+            else:
+                content = {
+                    'date': int(datetime.now().timestamp()),
+                    'synonyms': synonyms,
+                }
+                data = reprDict(content)
+
+            fp.write(data)
             prGreen('Save to {}'.format(pathname))
 
     def study(self):
@@ -382,7 +415,18 @@ def run(name, configFile, pathname):
             filename = getProperty(configFile, 'audio-config-file-name')
             configPathname = os.path.join(configDir, filename)
 
-            book.saveToFile(pathname, configDir, configPathname)
+            compress = False
+
+            prCyan('Compress it? (N/y, N is default)')
+            flag, _ = stdinReadline(2, isPrompt=False)
+
+            if len(flag) > 0:
+                flag = flag.upper()
+
+                if flag == 'Y':
+                    compress = True
+
+            book.saveToFile(pathname, configDir, configPathname, compress)
         else:
             os.system('clear')
             print('Now: ', datetime.now().strftime('%Y-%m-%d %H:%M:%S'))
