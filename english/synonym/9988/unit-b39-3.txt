@@ -1,7 +1,7 @@
 rewardm. 
 奖励,奖赏
-achievablead
-;可达到的;可获得的
+achievable
+adj.可达到的;可获得的
 aim
 n.目标,目的
 inspire
@@ -12,8 +12,8 @@ surprise
 以 使惊讶,给...惊喜
 permanent
 adj.永久(性)的,永恒的
-long-lastingadj.
-持久的,持续的,长期的
+long-lasting
+adj.持久的,持续的,长期的
 available
 adj.能找到的,可获得的,可用的
 poisonous
@@ -31,8 +31,8 @@ treat
 n.款待
 manageableadj.
 可做到的,容易管理的,容易对付的
-goaln.
-目标
+goal
+n.目标
 useful ideas
 有用的想法,有帮助的点子
 various types
@@ -41,15 +41,15 @@ expect
 v.预期,预料,期待
 wash away
 (编织物的颜色遇水后) 掉色了[动词短语]
-permanentadi.
-永久(性)的,永恒的
-rareadj.
-稀有的,罕见的
+permanent
+adj.永久(性)的,永恒的
+rare
+adj.稀有的,罕见的
 extremely dangerous
 极其危险的[副词 +形容词]
 cost a fortune
 花大价钱,价格很高[动词短语]
-damage.
-损坏,,破坏,毁坏
+damage
+v.损坏,破坏,毁坏
 distinct
 adj.有区别的,不同的;不寻常的

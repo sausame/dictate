@@ -10,8 +10,8 @@ averagead.
 一般的,通常的,普通的
 travel
 吃旅行;行进,出行
-limited ad.
-(停车场位置等)有限的
+limited
+adj. (停车场位置等)有限的
 poor 
 adj.劣质的,糟糕的;不理想的
 advantage 
@@ -35,16 +35,16 @@ pay
 vt.付款,付钱
 typically 
 adv. 典型地,有代表性地;通
-gov. 
-去,行进
+go
+v. 去,行进
 hardly
 adv. 几乎不;几乎没有
 problem 
 n.问题,困难
 good aspects
 好的方面
-mabifto
-bestadj.最好的,绝佳的
+best
+adj.最好的,绝佳的
 problem 
 n.问,难
 in a relatively short space of time
